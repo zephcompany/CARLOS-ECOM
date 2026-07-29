@@ -231,7 +231,7 @@
   .kb-copy{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
   .kb-slots-wrap{width:100%}
   .kb-head{display:flex;justify-content:space-between;font-size:13px;color:#b3b3b3;letter-spacing:.04em;margin-bottom:14px}
-  .kb-slots{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .kb-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
   .kb-slot{aspect-ratio:3/4;border:1.5px dashed #555;border-radius:var(--r);display:flex;flex-direction:column;
     align-items:center;justify-content:center;gap:8px;text-align:center;padding:12px;cursor:pointer;transition:.15s;color:#8a8a8a;font-size:13px}
   .kb-slot:hover{border-color:#fff;color:#fff}
@@ -1257,6 +1257,8 @@
     /* corrige o padding da seção da oferta */
     .kitband-in{padding:30px 20px 40px!important;gap:22px;width:100%;max-width:100%}
     .kitband .kb-copy{padding:0}
+    .kitband .kb-slots{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .kitband .kb-slot{padding:8px;min-width:0}
     .promo-visual-wrap{width:100%;min-width:0}
     .promo-visual{width:100%;aspect-ratio:724/572}
     .promo-visual img{width:100%;height:100%;object-fit:cover}
@@ -1402,11 +1404,9 @@
           <a onclick="openRules()" style="color:#fff;border-bottom:1.5px solid #fff;padding-bottom:2px;font-weight:700;font-size:13px;margin-left:16px">Ver regras da promoção</a>
         </div>
       </div>
-      <div class="kb-slots-wrap promo-visual-wrap">
+      <div class="kb-slots-wrap">
         <div class="kb-head"><span id="kb-count">Selecionados: 0 de 3</span><span>1 grátis</span></div>
-        <div class="promo-visual">
-          <img src="https://cursoliveshop.com.br/wp-content/uploads/2026/07/Leve-3-pague-2-banner.jpg" alt="Banner da promoção Leve 3 Pague 2" loading="lazy">
-        </div>
+        <div class="kb-slots" id="kb-slots"></div>
         <button class="btn block" id="kb-cta" style="background:#fff;color:var(--ink);border-color:#fff;margin-top:16px;opacity:.4;pointer-events:none" onclick="addKitToCart()">Adicionar kit ao carrinho</button>
       </div>
     </div>
