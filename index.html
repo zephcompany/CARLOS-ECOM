@@ -225,6 +225,9 @@
   /* ============ COMPRE 3 E LEVE 4 (kit builder) ============ */
   .kitband{background:var(--ink);color:#fff}
   .kitband-in{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center;padding-block:56px}
+  .promo-visual{border:1px solid rgba(255,255,255,.16);border-radius:var(--r);overflow:hidden;background:#fff}
+  .promo-visual img,.promo-campaign img{display:block;width:100%;height:100%;object-fit:cover}
+  .promo-campaign{min-height:320px;background:#fff}
   .kb-copy{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
   .kb-slots-wrap{width:100%}
   .kb-head{display:flex;justify-content:space-between;font-size:13px;color:#b3b3b3;letter-spacing:.04em;margin-bottom:14px}
@@ -1217,6 +1220,60 @@
   .clp-hero-banner{min-height:0;height:auto;display:block;background:var(--brand-d);align-items:stretch}
   .clp-hero-banner picture{display:block}
   .clp-hero-banner .clp-hero-img{position:static;display:block;width:100%;height:auto;object-fit:initial}
+
+
+  /* ================= AJUSTES MOBILE ================= */
+  html,body{max-width:100%;overflow-x:hidden}
+  .page,.sec,.wrap,main,section{min-width:0}
+  img,svg,video,iframe{max-width:100%}
+
+  @media(max-width:768px){
+    /* remove animações de entrada e transições pesadas no mobile */
+    .reveal,.reveal.in,
+    .page.on,.page.leaving,.page.on.leaving,
+    .hero-copy .box,.clp-hero-box,
+    .rules-diagram .rd-item,
+    .kitmodal.on .kitpick{
+      animation:none!important;
+      transition:none!important;
+      transform:none!important;
+      opacity:1!important;
+    }
+    .page-veil,.nav-fade{display:none!important}
+    .card,.catblock,.quote,.step,.rule,.rbenefit,.kit,.acc-order,.co-citem,
+    .pimg,.pimg-hover,.cb-img,.btn,.btab,.chip,.variant,.schip,.iconbtn,
+    .mobile-menu,.drawer,.search-panel,.kitmodal,.copop,.kitmodal-card,.copop-card{
+      transition:none!important;
+    }
+    .card:hover,.catblock:hover,.quote:hover,.step:hover,.rbenefit:hover,.kit:hover,
+    .kitpick:hover,.kb-slot:not(.filled):hover,.gallery .thumb:hover{
+      transform:none!important;
+      box-shadow:none!important;
+    }
+
+    /* corrige o padding da seção da oferta */
+    .kitband-in{padding:30px 20px 40px!important;gap:22px;width:100%;max-width:100%}
+    .kitband .kb-copy{padding:0}
+    .promo-visual-wrap{width:100%;min-width:0}
+    .promo-visual{width:100%;aspect-ratio:724/572}
+    .promo-visual img{width:100%;height:100%;object-fit:cover}
+    .promo-hero .txt{padding:26px 20px!important}
+    .promo-campaign{min-height:0;aspect-ratio:724/572}
+
+    /* evita qualquer elemento criando scroll lateral */
+    .wrap{width:100%;max-width:100%;padding-left:20px;padding-right:20px}
+    .grid,.prow,.catblocks,.quotes,.steps,.rbenefits,.kb-slots,.kitpick-grid,
+    .co-grid,.pdp,.about,.promo-hero,.reseller-hero,.lp-hero,.margin-strip,
+    .news,.form,.acc-layout,.acc-auth-grid{max-width:100%;min-width:0}
+    .prow{grid-auto-columns:minmax(82vw,1fr)}
+    .news .field{min-width:0;width:100%}
+    .news input{min-width:0}
+    .cta-row{max-width:100%}
+    .cta-row .btn{max-width:100%}
+    .co-summary,.drawer,.mobile-menu,.search-panel{max-width:100vw}
+    .tabhead{overflow-x:auto;max-width:100%;scrollbar-width:none}
+    .tabhead::-webkit-scrollbar{display:none}
+  }
 </style>
 </head>
 <body>
@@ -1230,14 +1287,14 @@
     <span>Águas · Energéticos · Sucos</span><em>◆</em>
     <span>Seja um revendedor oficial</span><em>◆</em>
     <span>Entrega para todo o Brasil com rastreio</span><em>◆</em>
-    <span>Compre 3, leve 1 · por tempo limitado</span><em>◆</em>
+    <span>Leve 3, pague 2 · por tempo limitado</span><em>◆</em>
     <span>Frete grátis acima de R$ 99</span><em>◆</em>
     <span>3 marcas, 1 carrinho</span><em>◆</em>
     <span>Parcele em até 6x sem juros</span><em>◆</em>
     <span>Águas · Energéticos · Sucos</span><em>◆</em>
     <span>Seja um revendedor oficial</span><em>◆</em>
     <span>Entrega para todo o Brasil com rastreio</span><em>◆</em>
-    <span>Compre 3, leve 1 · por tempo limitado</span><em>◆</em>
+    <span>Leve 3, pague 2 · por tempo limitado</span><em>◆</em>
   </div>
 </div>
 
@@ -1251,7 +1308,7 @@
 
     <ul class="menu">
       <li><a data-nav="home" onclick="go('home')">Início</a></li>
-      <li><a data-nav="oferta" onclick="go('oferta')">Compre 3, Leve 1</a></li>
+      <li><a data-nav="oferta" onclick="go('oferta')">Leve 3, Pague 2</a></li>
       <li><a data-nav="mais-vendidos" onclick="go('mais-vendidos')">Mais Vendidos</a></li>
       <li class="has-drop">
         <a>Categorias <i class="caret"></i></a>
@@ -1330,21 +1387,23 @@
     </div>
   </section>
 
-  <!-- COMPRE 3 E LEVE 4 (kit builder) -->
+  <!-- LEVE 3 PAGUE 2 (kit builder) -->
   <section class="kitband">
     <div class="wrap kitband-in">
       <div class="kb-copy">
         <span class="eyebrow" style="color:#9a9a9a">Promoção</span>
-        <h2 class="h2" style="color:#fff">Compre 3 e leve 4</h2>
-        <p style="color:#c7c7c7;max-width:34ch">Monte seu kit com produtos selecionados e receba uma unidade adicional.</p>
+        <h2 class="h2" style="color:#fff">Leve 3 e pague 2</h2>
+        <p style="color:#c7c7c7;max-width:34ch">Monte seu kit com 3 produtos selecionados e o item de menor valor sai grátis.</p>
         <div class="cta-row" style="align-items:center;gap:32px;flex-wrap:wrap">
           <button class="btn" style="background:#fff;color:var(--ink);border-color:#fff" onclick="openKit()">Montar meu kit</button>
           <a onclick="openRules()" style="color:#fff;border-bottom:1.5px solid #fff;padding-bottom:2px;font-weight:700;font-size:13px;margin-left:16px">Ver regras da promoção</a>
         </div>
       </div>
-      <div class="kb-slots-wrap">
-        <div class="kb-head"><span id="kb-count">Selecionados: 0 de 4</span><span>1 grátis</span></div>
-        <div class="kb-slots" id="kb-slots"></div>
+      <div class="kb-slots-wrap promo-visual-wrap">
+        <div class="kb-head"><span id="kb-count">Selecionados: 0 de 3</span><span>1 grátis</span></div>
+        <div class="promo-visual">
+          <img src="https://cursoliveshop.com.br/wp-content/uploads/2026/07/Leve-3-pague-2-banner.jpg" alt="Banner da promoção Leve 3 Pague 2" loading="lazy">
+        </div>
         <button class="btn block" id="kb-cta" style="background:#fff;color:var(--ink);border-color:#fff;margin-top:16px;opacity:.4;pointer-events:none" onclick="addKitToCart()">Adicionar kit ao carrinho</button>
       </div>
     </div>
@@ -1460,17 +1519,17 @@
   </section>
 </section>
 
-<!-- ================= PÁGINA: OFERTA (COMPRE 3 LEVE 1) ================= -->
+<!-- ================= PÁGINA: OFERTA (LEVE 3 PAGUE 2) ================= -->
 <section class="page" id="page-oferta">
-  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Compre 3, Leve 1</b></div>
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Leve 3, Pague 2</b></div>
 
   <section class="sec tight">
     <div class="wrap">
       <div class="promo-hero">
         <div class="txt">
           <span class="badge">Oferta por tempo limitado</span>
-          <div class="big-off">Compre 3<br>Leve 1</div>
-          <p class="lead">Monte um combo com qualquer produto das 3 marcas. O de menor valor sai por nossa conta — direto no carrinho.</p>
+          <div class="big-off">Leve 3<br>Pague 2</div>
+          <p class="lead">Monte um combo com qualquer produto das 3 marcas. Na oferta Leve 3, Pague 2, o item de menor valor sai por nossa conta, direto no carrinho.</p>
           <div class="countdown" style="margin:6px 0 4px">
             <div class="u"><b>01</b><small>Dias</small></div>
             <div class="u"><b>08</b><small>Horas</small></div>
@@ -1479,7 +1538,7 @@
           </div>
           <div class="cta-row" style="margin-top:8px"><a class="btn" onclick="scrollGrid()">Montar meu combo</a></div>
         </div>
-        <div class="ph"><span class="ph-label">Imagem da campanha</span></div>
+        <div class="ph promo-campaign"><img src="https://cursoliveshop.com.br/wp-content/uploads/2026/07/Leve-3-pague-2-banner.jpg" alt="Banner da campanha Leve 3 Pague 2" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -1488,8 +1547,8 @@
     <div class="wrap">
       <div class="sec-head"><div class="t"><span class="eyebrow">Simples assim</span><h2 class="h2">Como funciona</h2></div></div>
       <div class="steps">
-        <div class="step"><span class="num">1</span><h3 class="h3">Escolha 4 produtos</h3><p class="muted" style="font-size:14px">De qualquer categoria: Vittari, Power Energy ou Natural Health+.</p></div>
-        <div class="step"><span class="num">2</span><h3 class="h3">Adicione ao carrinho</h3><p class="muted" style="font-size:14px">O desconto do item mais barato é aplicado automaticamente.</p></div>
+        <div class="step"><span class="num">1</span><h3 class="h3">Escolha 3 produtos</h3><p class="muted" style="font-size:14px">De qualquer categoria: Vittari, Power Energy ou Natural Health+.</p></div>
+        <div class="step"><span class="num">2</span><h3 class="h3">Adicione ao carrinho</h3><p class="muted" style="font-size:14px">O desconto do item mais barato entre os 3 é aplicado automaticamente.</p></div>
         <div class="step"><span class="num">3</span><h3 class="h3">Finalize e receba</h3><p class="muted" style="font-size:14px">Pague menos e receba em casa com frete grátis.</p></div>
       </div>
     </div>
@@ -2194,7 +2253,7 @@
       </div>
       <div><h4>Loja</h4><ul>
         <li><a onclick="go('home')">Início</a></li>
-        <li><a onclick="go('oferta')">Compre 3, Leve 1</a></li>
+        <li><a onclick="go('oferta')">Leve 3, Pague 2</a></li>
         <li><a onclick="go('mais-vendidos')">Mais vendidos</a></li>
         <li><a onclick="goCat('agua')">Água Vittari</a></li>
         <li><a onclick="goCat('energetico')">Power Energy</a></li>
@@ -2261,7 +2320,7 @@
   <div class="overlay on" style="position:absolute" onclick="closeKit()"></div>
   <div class="kitmodal-card">
     <div class="kitmodal-head">
-      <div class="t"><h3 class="h3">Escolha os produtos do seu kit</h3><small id="kit-modal-sub">Selecione 4 itens · o mais barato sai grátis</small></div>
+      <div class="t"><h3 class="h3">Escolha os produtos do seu kit</h3><small id="kit-modal-sub">Selecione 3 itens · o mais barato sai grátis</small></div>
       <button class="close-x" onclick="closeKit()"></button>
     </div>
     <div class="kitmodal-body">
@@ -2288,18 +2347,18 @@
   <div class="overlay on" style="position:absolute" onclick="closeRules()"></div>
   <div class="kitmodal-card">
     <div class="kitmodal-head">
-      <div class="t"><h3 class="h3">Regras da promoção</h3><small>Compre 3, Leve 4 · Natural Health</small></div>
+      <div class="t"><h3 class="h3">Regras da promoção</h3><small>Leve 3, Pague 2 · Natural Health</small></div>
       <button class="close-x" onclick="closeRules()"></button>
     </div>
     <div class="kitmodal-body">
       <div class="rules-diagram" id="rules-diagram"></div>
-      <div class="rules-highlight">O produto de <b>menor valor</b> entre os 4 sai <b>100% grátis</b>, aplicado automaticamente no carrinho.</div>
+      <div class="rules-highlight">O produto de <b>menor valor</b> entre os 3 sai <b>100% grátis</b>, aplicado automaticamente no carrinho.</div>
 
       <div class="rules-grid">
-        <div class="rule"><span class="rule-n">1</span><div><b>Monte um kit de 4 itens</b><p>Combine à vontade entre Água Vittari, Power Energy e Suco Natural Health+.</p></div></div>
-        <div class="rule"><span class="rule-n">2</span><div><b>O 4º item é grátis</b><p>O desconto equivale ao produto de menor preço do kit.</p></div></div>
-        <div class="rule"><span class="rule-n">3</span><div><b>Sem limite de kits</b><p>Quer levar 8 itens? São 2 kits e 2 unidades grátis.</p></div></div>
-        <div class="rule"><span class="rule-n">4</span><div><b>Aplicado no carrinho</b><p>Nada de cupom: o desconto aparece sozinho ao fechar os 4 itens.</p></div></div>
+        <div class="rule"><span class="rule-n">1</span><div><b>Monte um kit de 3 itens</b><p>Combine à vontade entre Água Vittari, Power Energy e Suco Natural Health+.</p></div></div>
+        <div class="rule"><span class="rule-n">2</span><div><b>O 3º item é grátis</b><p>O desconto equivale ao produto de menor preço do kit.</p></div></div>
+        <div class="rule"><span class="rule-n">3</span><div><b>Sem limite de kits</b><p>Quer levar 6 itens? São 2 kits e 2 unidades grátis.</p></div></div>
+        <div class="rule"><span class="rule-n">4</span><div><b>Aplicado no carrinho</b><p>Nada de cupom: o desconto aparece sozinho ao fechar os 3 itens.</p></div></div>
       </div>
 
       <div class="rules-terms">
@@ -2342,7 +2401,7 @@
     <button class="close-x" onclick="closeMobile()"></button>
   </div>
   <a onclick="go('home');closeMobile()">Início</a>
-  <a onclick="go('oferta');closeMobile()">Compre 3, Leve 1</a>
+  <a onclick="go('oferta');closeMobile()">Leve 3, Pague 2</a>
   <a onclick="go('mais-vendidos');closeMobile()">Mais Vendidos</a>
   <a onclick="goCat('agua');closeMobile()">Água Vittari</a>
   <a onclick="goCat('energetico');closeMobile()">Power Energy</a>
@@ -2388,8 +2447,8 @@
     p1:'https://ketgroisman.com.br/wp-content/uploads/2026/07/173ff07fb-e479-402f-a52a-45171171f4d9.jpg',
     p2:'https://ketgroisman.com.br/wp-content/uploads/2026/07/73ff07fb-e479-402f-a52a-45171171f4d9.jpg',
     p4:'https://ketgroisman.com.br/wp-content/uploads/2026/07/273ff07fb-e479-402f-a52a-45171171f4d9.jpg',
-    p7:'https://ketgroisman.com.br/wp-content/uploads/2026/07/8b2d2942-1872-46fc-be32-1d430bfdb25c.jpg',
-    p11:'https://ketgroisman.com.br/wp-content/uploads/2026/07/8cf6d360-8a70-468d-b510-09ed8afb0984.jpg',
+    p7:'https://clarissaloizel.com/wp-content/uploads/2026/07/Lata-269ml-tradicional-1.jpg',
+    p11:'https://clarissaloizel.com/wp-content/uploads/2026/07/Lata-269ml-tradicional.jpg',
     p13:'https://ketgroisman.com.br/wp-content/uploads/2026/07/Frame-5.jpg',
     p14:'https://ketgroisman.com.br/wp-content/uploads/2026/07/Frame-6.jpg',
     p15:'https://ketgroisman.com.br/wp-content/uploads/2026/07/Frame-7.jpg',
@@ -2401,6 +2460,8 @@
     p1:'https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_29_36.png',
     p2:'https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_29_33.png',
     p4:'https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_29_38.png',
+    p7:'https://clarissaloizel.com/wp-content/uploads/2026/07/Branding-Power-Energy-1.jpg',
+    p11:'https://clarissaloizel.com/wp-content/uploads/2026/07/Branding-Power-Energy.jpg',
     p13:'https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_40_28.png',
     p14:'https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_40_32.png',
     p15:'https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_41_36.png',
@@ -3008,40 +3069,44 @@
     fill('grid-search',list.map(p=>card(p)));
   }
 
-  /* ================= KIT (Compre 3 e leve 4) ================= */
-  let kit=[]; // ids, máx 4
+  /* ================= KIT (Leve 3, Pague 2) ================= */
+  let kit=[]; // ids, máx 3
   function renderKit(){
     const slots=document.getElementById('kb-slots');
-    // marca o mais barato como grátis quando tiver 4
     let freeIdx=-1;
-    if(kit.length===4){let min=Infinity;kit.forEach((id,i)=>{const p=byId(id);if(p.price<min){min=p.price;freeIdx=i;}});}
-    let html='';
-    for(let i=0;i<4;i++){
-      if(kit[i]){const p=byId(kit[i]);const free=i===freeIdx;
-        html+=`<div class="kb-slot filled${free?' free':''}" onclick="kitRemoveAt(${i})">
-          ${free?'<span class="kb-freetag">Grátis</span>':''}
-          ${p.img?`<img class="kb-img" src="${p.img}" alt="" loading="lazy" onerror="this.remove()">`:'<div class="kb-bottle"></div>'}
-          <span class="kb-name">${p.name}</span>
-          <span class="kb-price">${free?'R$ 0,00':fmt(p.price)}</span>
-          <span class="kb-remove">Remover</span>
-        </div>`;
-      } else {
-        html+=`<div class="kb-slot" onclick="openKit()"><span>Espaço ${i+1}</span><span style="font-size:11px;color:#666">Toque para escolher</span></div>`;
+    if(kit.length===3){let min=Infinity;kit.forEach((id,i)=>{const p=byId(id);if(p.price<min){min=p.price;freeIdx=i;}});}
+    if(slots){
+      let html='';
+      for(let i=0;i<3;i++){
+        if(kit[i]){const p=byId(kit[i]);const free=i===freeIdx;
+          html+=`<div class="kb-slot filled${free?' free':''}" onclick="kitRemoveAt(${i})">
+            ${free?'<span class="kb-freetag">Grátis</span>':''}
+            ${p.img?`<img class="kb-img" src="${p.img}" alt="" loading="lazy" onerror="this.remove()">`:'<div class="kb-bottle"></div>'}
+            <span class="kb-name">${p.name}</span>
+            <span class="kb-price">${free?'R$ 0,00':fmt(p.price)}</span>
+            <span class="kb-remove">Remover</span>
+          </div>`;
+        } else {
+          html+=`<div class="kb-slot" onclick="openKit()"><span>Espaço ${i+1}</span><span style="font-size:11px;color:#666">Toque para escolher</span></div>`;
+        }
       }
+      slots.innerHTML=html;
     }
-    slots.innerHTML=html;
-    document.getElementById('kb-count').textContent='Selecionados: '+kit.length+' de 4';
+    const count=document.getElementById('kb-count');
+    if(count)count.textContent='Selecionados: '+kit.length+' de 3';
     const cta=document.getElementById('kb-cta');
-    const ready=kit.length===4;
-    cta.style.opacity=ready?'1':'.4';
-    cta.style.pointerEvents=ready?'auto':'none';
+    const ready=kit.length===3;
+    if(cta){
+      cta.style.opacity=ready?'1':'.4';
+      cta.style.pointerEvents=ready?'auto':'none';
+    }
   }
   function renderKitPicker(){
     const grid=document.getElementById('kitpick-grid');
     if(!grid)return;
     grid.innerHTML=CATALOG.map(p=>{
       const n=kit.filter(x=>x===p.id).length;
-      const full=kit.length>=4;
+      const full=kit.length>=3;
       return `<button class="kitpick${n?' picked':''}${full&&!n?' off':''}" onclick="kitAdd('${p.id}')">
         <span class="kp-media">
           ${p.img?`<img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.remove()">`:'<span class="kp-bottle"></span>'}
@@ -3053,8 +3118,8 @@
       </button>`;
     }).join('');
     const sub=document.getElementById('kit-modal-sub');
-    if(sub)sub.innerHTML=kit.length<4
-      ? `Selecionados <b>${kit.length}</b> de 4 · o mais barato sai grátis`
+    if(sub)sub.innerHTML=kit.length<3
+      ? `Selecionados <b>${kit.length}</b> de 3 · o mais barato sai grátis`
       : `Kit completo! O item mais barato saiu grátis`;
   }
   function openKit(){
@@ -3066,17 +3131,17 @@
   function renderRulesDiagram(){
     const el=document.getElementById('rules-diagram');
     if(!el)return;
-    const pick=[byId('p1'),byId('p13'),byId('p7'),byId('p16')].filter(Boolean);
+    const pick=[byId('p1'),byId('p13'),byId('p7')].filter(Boolean);
     let h='';
     pick.forEach((p,i)=>{
-      const free=i===3;
+      const free=i===2;
       if(i)h+=`<span class="rd-op">${free?'=':'+'}</span>`;
       h+=`<div class="rd-item${free?' free':''}">
         <div class="rd-box">
           ${p.img?`<img src="${p.img}" alt="" loading="lazy" onerror="this.remove()">`:'<span class="rd-bottle"></span>'}
           ${free?'<span class="rd-freetag">Grátis</span>':''}
         </div>
-        <b>${free?'4º item':'Item '+(i+1)}</b><small>${free?'por nossa conta':'você paga'}</small>
+        <b>${free?'3º item':'Item '+(i+1)}</b><small>${free?'por nossa conta':'você paga'}</small>
       </div>`;
     });
     el.innerHTML=h;
@@ -3084,13 +3149,13 @@
   function openRules(){renderRulesDiagram();document.getElementById('rulesModal').classList.add('on');document.body.style.overflow='hidden';}
   function closeRules(){document.getElementById('rulesModal').classList.remove('on');document.body.style.overflow='';}
   function kitAdd(id){
-    if(kit.length>=4){toast('Seu kit já tem 4 itens');return;}
+    if(kit.length>=3){toast('Seu kit já tem 3 itens');return;}
     kit.push(id);renderKit();renderKitPicker();
-    if(kit.length>=4){setTimeout(()=>{closeKit();toast('Kit completo! O item mais barato saiu grátis');},420);}
+    if(kit.length>=3){setTimeout(()=>{closeKit();toast('Kit completo! O item mais barato saiu grátis');},420);}
   }
   function kitRemoveAt(i){kit.splice(i,1);renderKit();renderKitPicker();}
   function addKitToCart(){
-    if(kit.length!==4)return;
+    if(kit.length!==3)return;
     kit.forEach(id=>{const l=CART.find(x=>x.id===id);if(l)l.qty+=1;else CART.push({id,qty:1});});
     renderCart();
     const min=Math.min(...kit.map(id=>byId(id).price));
@@ -3146,6 +3211,10 @@
     const cur=document.querySelector('.page.on');
     if(!veil){veil=document.createElement('div');veil.className='page-veil';document.body.appendChild(veil);}
     if(!cur||cur===el){showPage(el,page);return;}
+    if(window.matchMedia('(max-width: 768px)').matches){
+      showPage(el,page);
+      return;
+    }
     navBusy=true;
     cur.classList.add('leaving');
     veil.classList.add('on');
