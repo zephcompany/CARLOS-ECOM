@@ -30,7 +30,9 @@
     var style=document.createElement('style');
     style.id='nh-cart-qty-hotfix';
     style.textContent='\
-      .cqty{display:inline-flex!important;align-items:center!important;gap:0!important;border:1px solid var(--line)!important;border-radius:var(--r)!important;margin-top:8px!important;overflow:hidden!important;background:#fff!important;width:auto!important;}\
+      .citem .cinfo{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;min-width:0!important;}\
+      .citem .cinfo>b,.citem .cinfo>small{display:block!important;width:100%!important;}\
+      .cqty{display:inline-flex!important;align-items:center!important;gap:0!important;border:1px solid var(--line)!important;border-radius:var(--r)!important;margin-top:12px!important;overflow:hidden!important;background:#fff!important;width:auto!important;align-self:flex-start!important;}\
       .cqty button{width:32px!important;height:30px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;margin:0!important;line-height:1!important;font-size:17px!important;color:var(--ink)!important;background:#fff!important;border:0!important;}\
       .cqty button:hover{background:var(--fill)!important;}\
       .cqty span{width:34px!important;height:30px!important;display:flex!important;align-items:center!important;justify-content:center!important;border-left:1px solid var(--line)!important;border-right:1px solid var(--line)!important;font-size:13px!important;font-weight:700!important;line-height:1!important;}';
@@ -48,13 +50,10 @@
     ensureQtyStyles();
     refreshCartBadge();
 
-    /* Botões/card que já chamam buyNow. */
     window.buyNow=function(id,qty){
       directCheckout(id,qty);
     };
 
-    /* PDP: o HTML original chama addPdp(true) no botão Comprar agora.
-       Quando true, não adiciona no drawer: vai direto ao checkout do item atual. */
     window.addPdp=function(buy){
       if(typeof pdpId==='undefined' || !pdpId)return;
       var qty=(typeof pdpQty==='undefined')?1:pdpQty;
