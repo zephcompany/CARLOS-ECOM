@@ -1,0 +1,15 @@
+<section class="shopify-system-page">
+  <a href="{{ routes.root_url }}" style="display:inline-block;margin-bottom:18px">← Início</a>
+  <h1>{{ collection.title }}</h1>
+  {% if collection.description != blank %}<div class="lead" style="margin-bottom:28px">{{ collection.description }}</div>{% endif %}
+  <div class="shopify-product-grid">
+    {% for product in collection.products %}
+      <article class="shopify-product-card">
+        <a href="{{ product.url }}">{% if product.featured_image %}{{ product.featured_image | image_url: width: 700 | image_tag: loading: 'lazy', alt: product.title }}{% endif %}<h3>{{ product.title }}</h3></a>
+        <div style="font-weight:800;font-size:20px;margin-bottom:12px">{{ product.price | money }}</div>
+        {% form 'product', product %}<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}"><button class="btn block sm" type="submit">Adicionar</button>{% endform %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% schema %}{"name":"Coleção","settings":[]}{% endschema %}

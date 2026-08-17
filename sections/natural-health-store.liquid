@@ -1,0 +1,1439 @@
+<script>
+window.NH_ASSETS={
+  "nh-embedded-92a8c23588.jpg": {{ "nh-embedded-92a8c23588.jpg" | asset_url | json }},
+  "nh-embedded-d00b8bb93b.jpg": {{ "nh-embedded-d00b8bb93b.jpg" | asset_url | json }},
+  "nh-embedded-3e00f152a9.jpg": {{ "nh-embedded-3e00f152a9.jpg" | asset_url | json }},
+  "nh-embedded-d6368b5bf6.jpg": {{ "nh-embedded-d6368b5bf6.jpg" | asset_url | json }},
+  "nh-embedded-9d9a6d2e1e.jpg": {{ "nh-embedded-9d9a6d2e1e.jpg" | asset_url | json }},
+  "nh-embedded-c8d83f1f21.jpg": {{ "nh-embedded-c8d83f1f21.jpg" | asset_url | json }}
+};
+window.NH_SHOPIFY_PRODUCTS=[
+{% assign p_vittari_limao_siciliano = all_products["vittari-limao-siciliano"] %}
+{
+  id:"p1",
+  handle:{{ p_vittari_limao_siciliano.handle | json }},
+  url:{{ p_vittari_limao_siciliano.url | json }},
+  name:{{ p_vittari_limao_siciliano.title | json }},
+  brand:"agua",flavor:"Lim\u00e3o Siciliano",vol:"355ml",stars:5,rev:214,flag:"Mais vendido",
+  variantId:{{ p_vittari_limao_siciliano.selected_or_first_available_variant.id | json }},
+  available:{{ p_vittari_limao_siciliano.available | json }},
+  priceCents:{{ p_vittari_limao_siciliano.price | json }},
+  compareAtCents:{{ p_vittari_limao_siciliano.compare_at_price | json }},
+  img:{% if p_vittari_limao_siciliano.featured_image %}{{ p_vittari_limao_siciliano.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_vittari_limao_siciliano.images.size > 1 %}{{ p_vittari_limao_siciliano.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_vittari_frutas_vermelhas = all_products["vittari-frutas-vermelhas"] %}
+{
+  id:"p2",
+  handle:{{ p_vittari_frutas_vermelhas.handle | json }},
+  url:{{ p_vittari_frutas_vermelhas.url | json }},
+  name:{{ p_vittari_frutas_vermelhas.title | json }},
+  brand:"agua",flavor:"Frutas Vermelhas",vol:"355ml",stars:5,rev:96,flag:"",
+  variantId:{{ p_vittari_frutas_vermelhas.selected_or_first_available_variant.id | json }},
+  available:{{ p_vittari_frutas_vermelhas.available | json }},
+  priceCents:{{ p_vittari_frutas_vermelhas.price | json }},
+  compareAtCents:{{ p_vittari_frutas_vermelhas.compare_at_price | json }},
+  img:{% if p_vittari_frutas_vermelhas.featured_image %}{{ p_vittari_frutas_vermelhas.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_vittari_frutas_vermelhas.images.size > 1 %}{{ p_vittari_frutas_vermelhas.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_vittari_maca_verde = all_products["vittari-maca-verde"] %}
+{
+  id:"p4",
+  handle:{{ p_vittari_maca_verde.handle | json }},
+  url:{{ p_vittari_maca_verde.url | json }},
+  name:{{ p_vittari_maca_verde.title | json }},
+  brand:"agua",flavor:"Ma\u00e7\u00e3 Verde",vol:"355ml",stars:4,rev:88,flag:"",
+  variantId:{{ p_vittari_maca_verde.selected_or_first_available_variant.id | json }},
+  available:{{ p_vittari_maca_verde.available | json }},
+  priceCents:{{ p_vittari_maca_verde.price | json }},
+  compareAtCents:{{ p_vittari_maca_verde.compare_at_price | json }},
+  img:{% if p_vittari_maca_verde.featured_image %}{{ p_vittari_maca_verde.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_vittari_maca_verde.images.size > 1 %}{{ p_vittari_maca_verde.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_power_energy_original = all_products["power-energy-original"] %}
+{
+  id:"p7",
+  handle:{{ p_power_energy_original.handle | json }},
+  url:{{ p_power_energy_original.url | json }},
+  name:{{ p_power_energy_original.title | json }},
+  brand:"energetico",flavor:"Original",vol:"269ml",stars:5,rev:820,flag:"Mais vendido",
+  variantId:{{ p_power_energy_original.selected_or_first_available_variant.id | json }},
+  available:{{ p_power_energy_original.available | json }},
+  priceCents:{{ p_power_energy_original.price | json }},
+  compareAtCents:{{ p_power_energy_original.compare_at_price | json }},
+  img:{% if p_power_energy_original.featured_image %}{{ p_power_energy_original.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_power_energy_original.images.size > 1 %}{{ p_power_energy_original.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_power_energy_zero_acucar = all_products["power-energy-zero-acucar"] %}
+{
+  id:"p11",
+  handle:{{ p_power_energy_zero_acucar.handle | json }},
+  url:{{ p_power_energy_zero_acucar.url | json }},
+  name:{{ p_power_energy_zero_acucar.title | json }},
+  brand:"energetico",flavor:"Zero A\u00e7\u00facar",vol:"269ml",stars:5,rev:412,flag:"Zero a\u00e7\u00facar",
+  variantId:{{ p_power_energy_zero_acucar.selected_or_first_available_variant.id | json }},
+  available:{{ p_power_energy_zero_acucar.available | json }},
+  priceCents:{{ p_power_energy_zero_acucar.price | json }},
+  compareAtCents:{{ p_power_energy_zero_acucar.compare_at_price | json }},
+  img:{% if p_power_energy_zero_acucar.featured_image %}{{ p_power_energy_zero_acucar.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_power_energy_zero_acucar.images.size > 1 %}{{ p_power_energy_zero_acucar.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_suco_nh_laranja = all_products["suco-nh-laranja"] %}
+{
+  id:"p13",
+  handle:{{ p_suco_nh_laranja.handle | json }},
+  url:{{ p_suco_nh_laranja.url | json }},
+  name:{{ p_suco_nh_laranja.title | json }},
+  brand:"sucos",flavor:"Laranja",vol:"300ml",stars:5,rev:520,flag:"Mais vendido",
+  variantId:{{ p_suco_nh_laranja.selected_or_first_available_variant.id | json }},
+  available:{{ p_suco_nh_laranja.available | json }},
+  priceCents:{{ p_suco_nh_laranja.price | json }},
+  compareAtCents:{{ p_suco_nh_laranja.compare_at_price | json }},
+  img:{% if p_suco_nh_laranja.featured_image %}{{ p_suco_nh_laranja.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_suco_nh_laranja.images.size > 1 %}{{ p_suco_nh_laranja.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_suco_nh_uva = all_products["suco-nh-uva"] %}
+{
+  id:"p14",
+  handle:{{ p_suco_nh_uva.handle | json }},
+  url:{{ p_suco_nh_uva.url | json }},
+  name:{{ p_suco_nh_uva.title | json }},
+  brand:"sucos",flavor:"Uva",vol:"300ml",stars:5,rev:180,flag:"",
+  variantId:{{ p_suco_nh_uva.selected_or_first_available_variant.id | json }},
+  available:{{ p_suco_nh_uva.available | json }},
+  priceCents:{{ p_suco_nh_uva.price | json }},
+  compareAtCents:{{ p_suco_nh_uva.compare_at_price | json }},
+  img:{% if p_suco_nh_uva.featured_image %}{{ p_suco_nh_uva.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_suco_nh_uva.images.size > 1 %}{{ p_suco_nh_uva.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_suco_nh_goiaba = all_products["suco-nh-goiaba"] %}
+{
+  id:"p15",
+  handle:{{ p_suco_nh_goiaba.handle | json }},
+  url:{{ p_suco_nh_goiaba.url | json }},
+  name:{{ p_suco_nh_goiaba.title | json }},
+  brand:"sucos",flavor:"Goiaba",vol:"300ml",stars:4,rev:140,flag:"",
+  variantId:{{ p_suco_nh_goiaba.selected_or_first_available_variant.id | json }},
+  available:{{ p_suco_nh_goiaba.available | json }},
+  priceCents:{{ p_suco_nh_goiaba.price | json }},
+  compareAtCents:{{ p_suco_nh_goiaba.compare_at_price | json }},
+  img:{% if p_suco_nh_goiaba.featured_image %}{{ p_suco_nh_goiaba.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_suco_nh_goiaba.images.size > 1 %}{{ p_suco_nh_goiaba.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_suco_nh_maracuja = all_products["suco-nh-maracuja"] %}
+{
+  id:"p16",
+  handle:{{ p_suco_nh_maracuja.handle | json }},
+  url:{{ p_suco_nh_maracuja.url | json }},
+  name:{{ p_suco_nh_maracuja.title | json }},
+  brand:"sucos",flavor:"Maracuj\u00e1",vol:"300ml",stars:5,rev:290,flag:"",
+  variantId:{{ p_suco_nh_maracuja.selected_or_first_available_variant.id | json }},
+  available:{{ p_suco_nh_maracuja.available | json }},
+  priceCents:{{ p_suco_nh_maracuja.price | json }},
+  compareAtCents:{{ p_suco_nh_maracuja.compare_at_price | json }},
+  img:{% if p_suco_nh_maracuja.featured_image %}{{ p_suco_nh_maracuja.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_suco_nh_maracuja.images.size > 1 %}{{ p_suco_nh_maracuja.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+},
+{% assign p_suco_nh_caju = all_products["suco-nh-caju"] %}
+{
+  id:"p18",
+  handle:{{ p_suco_nh_caju.handle | json }},
+  url:{{ p_suco_nh_caju.url | json }},
+  name:{{ p_suco_nh_caju.title | json }},
+  brand:"sucos",flavor:"Caju",vol:"300ml",stars:4,rev:190,flag:"",
+  variantId:{{ p_suco_nh_caju.selected_or_first_available_variant.id | json }},
+  available:{{ p_suco_nh_caju.available | json }},
+  priceCents:{{ p_suco_nh_caju.price | json }},
+  compareAtCents:{{ p_suco_nh_caju.compare_at_price | json }},
+  img:{% if p_suco_nh_caju.featured_image %}{{ p_suco_nh_caju.featured_image | image_url: width: 1000 | json }}{% else %}null{% endif %},
+  imgHover:{% if p_suco_nh_caju.images.size > 1 %}{{ p_suco_nh_caju.images[1] | image_url: width: 1000 | json }}{% else %}null{% endif %}
+}
+];
+</script>
+
+
+<!-- ============ FAIXA EM CIMA (marquee) ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Frete grátis acima de R$ 100 · entrega normal</span><em>◆</em>
+    <span>3 marcas, 1 carrinho</span><em>◆</em>
+    <span>Parcele em até 6x sem juros</span><em>◆</em>
+    <span>Águas · Energéticos · Sucos</span><em>◆</em>
+    <span>Seja um revendedor oficial</span><em>◆</em>
+    <span>Entrega para todo o Brasil com rastreio</span><em>◆</em>
+    <span>Leve 6, pague 5 · por tempo limitado</span><em>◆</em>
+    <span>Frete grátis acima de R$ 100 · entrega normal</span><em>◆</em>
+    <span>3 marcas, 1 carrinho</span><em>◆</em>
+    <span>Parcele em até 6x sem juros</span><em>◆</em>
+    <span>Águas · Energéticos · Sucos</span><em>◆</em>
+    <span>Seja um revendedor oficial</span><em>◆</em>
+    <span>Entrega para todo o Brasil com rastreio</span><em>◆</em>
+    <span>Leve 6, pague 5 · por tempo limitado</span><em>◆</em>
+  </div>
+</div>
+
+<!-- ============ HEADER / MENU ============ -->
+<header class="site">
+  <div class="wrap nav">
+    <button class="iconbtn hamb" onclick="openMobile()" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <a class="brand" onclick="go('home')" aria-label="Natural Health"><svg class="logo-svg" viewBox="0 0 1679 406" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M157.908 134.162C147.73 109.716 132.608 90.7991 114.869 77.121C86.9513 55.8762 52.3453 48.6006 18.3208 56.1672C12.2139 57.6224 6.10698 59.3685 3.05176e-05 61.6967L0.872416 63.7338C16.8668 103.895 46.2384 129.214 79.972 138.818C104.691 146.385 131.736 144.639 157.908 134.162Z" fill="#03591A"/> <path d="M160.525 128.051C150.347 111.171 145.403 93.4187 145.112 76.5393C144.822 50.3472 155.581 26.1922 175.356 8.73072C178.846 5.52946 182.917 2.61922 186.988 0L187.861 1.45512C205.018 28.8114 207.345 57.9138 198.33 82.6508C191.351 100.985 178.555 116.992 160.525 128.051Z" fill="#03591A"/> <path d="M135.224 158.899C202.982 158.899 257.653 213.321 257.653 281.42V368.437H225.664V365.526C203.272 390.263 170.993 405.688 134.933 405.688C65.7207 405.688 11.0491 350.975 11.3399 281.42C11.3399 213.612 66.0116 158.899 135.224 158.899ZM134.351 191.785C84.332 191.785 43.6194 232.237 43.9102 282.293C43.9103 332.349 84.3321 372.802 134.351 372.802C184.369 372.802 224.792 332.35 224.792 282.293C224.792 232.237 184.369 191.785 134.351 191.785Z" fill="#03591A"/> <path d="M342.54 202.48V94.8015H409.995C418.029 94.8015 424.707 96.4188 430.028 99.6533C435.454 102.888 439.523 107.114 442.236 112.331C444.949 117.547 446.305 123.182 446.305 129.233C446.305 136.12 444.688 142.276 441.453 147.702C438.219 153.023 433.837 157.301 428.307 160.535L449.435 202.48H410.621L394.188 166.326H377.128V202.48H342.54ZM377.128 142.38H401.387C404.1 142.38 406.395 141.337 408.273 139.25C410.151 137.059 411.091 134.19 411.091 130.642C411.091 128.451 410.673 126.521 409.838 124.851C409.004 123.182 407.856 121.878 406.395 120.939C404.935 119.895 403.265 119.373 401.387 119.373H377.128V142.38ZM503.711 204.358C493.799 204.358 485.191 202.845 477.887 199.819C470.687 196.689 465.105 191.941 461.14 185.577C457.28 179.212 455.35 171.074 455.35 161.161C455.35 151.458 457.28 143.424 461.14 137.059C465.001 130.694 470.374 125.947 477.261 122.817C484.252 119.582 492.442 117.965 501.833 117.965C511.745 117.965 520.144 119.53 527.031 122.66C534.021 125.686 539.343 130.381 542.995 136.746C546.647 143.111 548.472 151.249 548.472 161.161V166.483H486.495C486.495 170.239 487.017 173.473 488.06 176.186C489.208 178.899 490.981 180.986 493.381 182.447C495.885 183.803 499.12 184.481 503.085 184.481C505.902 184.481 508.25 184.168 510.128 183.542C512.11 182.916 513.675 182.081 514.823 181.038C516.075 179.89 516.962 178.586 517.484 177.125C518.005 175.665 518.266 174.099 518.266 172.43H548.472C548.472 177.334 547.533 181.768 545.655 185.733C543.777 189.698 540.96 193.089 537.204 195.906C533.448 198.619 528.752 200.706 523.118 202.167C517.588 203.627 511.119 204.358 503.711 204.358ZM486.651 151.771H517.014C517.014 149.58 516.701 147.649 516.075 145.98C515.449 144.206 514.51 142.745 513.258 141.598C512.11 140.346 510.649 139.407 508.876 138.781C507.206 138.155 505.276 137.841 503.085 137.841C499.642 137.841 496.772 138.415 494.477 139.563C492.181 140.711 490.408 142.328 489.156 144.415C487.903 146.397 487.069 148.849 486.651 151.771ZM594.641 204.358C587.338 204.358 581.077 202.793 575.86 199.663C570.643 196.428 566.626 191.628 563.809 185.264C561.096 178.795 559.74 170.708 559.74 161.005C559.74 151.406 561.096 143.424 563.809 137.059C566.626 130.694 570.643 125.947 575.86 122.817C581.077 119.582 587.338 117.965 594.641 117.965C597.563 117.965 600.38 118.33 603.093 119.06C605.91 119.686 608.466 120.73 610.762 122.191C613.162 123.547 615.144 125.321 616.709 127.512H617.805V89.0107H648.95V202.48H623.596L621.404 190.742H620.309C617.387 195.437 613.736 198.88 609.353 201.071C604.971 203.262 600.067 204.358 594.641 204.358ZM604.345 181.351C607.58 181.351 610.188 180.568 612.17 179.003C614.257 177.438 615.77 175.351 616.709 172.743C617.648 170.03 618.118 167.057 618.118 163.822V158.657C618.118 156.257 617.857 154.014 617.335 151.927C616.814 149.736 615.979 147.858 614.831 146.293C613.788 144.624 612.379 143.319 610.605 142.38C608.832 141.441 606.745 140.972 604.345 140.972C601.11 140.972 598.502 141.65 596.52 143.006C594.537 144.363 593.076 146.241 592.137 148.641C591.303 151.04 590.885 153.858 590.885 157.092V165.387C590.885 168.622 591.303 171.439 592.137 173.839C593.076 176.238 594.537 178.116 596.52 179.473C598.502 180.725 601.11 181.351 604.345 181.351ZM712.492 204.358C702.579 204.358 693.971 202.845 686.668 199.819C679.468 196.689 673.886 191.941 669.921 185.577C666.061 179.212 664.13 171.074 664.13 161.161C664.13 151.458 666.061 143.424 669.921 137.059C673.782 130.694 679.155 125.947 686.041 122.817C693.032 119.582 701.223 117.965 710.613 117.965C720.526 117.965 728.925 119.53 735.811 122.66C742.802 125.686 748.123 130.381 751.775 136.746C755.427 143.111 757.253 151.249 757.253 161.161V166.483H695.276C695.276 170.239 695.797 173.473 696.841 176.186C697.988 178.899 699.762 180.986 702.162 182.447C704.666 183.803 707.901 184.481 711.865 184.481C714.683 184.481 717.03 184.168 718.908 183.542C720.891 182.916 722.456 182.081 723.604 181.038C724.856 179.89 725.743 178.586 726.264 177.125C726.786 175.665 727.047 174.099 727.047 172.43H757.253C757.253 177.334 756.314 181.768 754.436 185.733C752.558 189.698 749.741 193.089 745.984 195.906C742.228 198.619 737.533 200.706 731.899 202.167C726.369 203.627 719.9 204.358 712.492 204.358ZM695.432 151.771H725.795C725.795 149.58 725.482 147.649 724.856 145.98C724.23 144.206 723.291 142.745 722.039 141.598C720.891 140.346 719.43 139.407 717.656 138.781C715.987 138.155 714.057 137.841 711.865 137.841C708.422 137.841 705.553 138.415 703.257 139.563C700.962 140.711 699.188 142.328 697.936 144.415C696.684 146.397 695.849 148.849 695.432 151.771ZM342.54 372.48V264.801H371.963L405.456 303.459C406.395 304.503 407.647 306.016 409.212 307.998C410.778 309.98 412.343 312.015 413.908 314.102C415.577 316.084 416.829 317.702 417.664 318.954L418.446 318.641C418.342 315.719 418.29 312.85 418.29 310.033C418.29 307.111 418.29 304.92 418.29 303.459V264.801H449.748V372.48H420.481L382.762 329.44C380.989 327.353 379.476 325.475 378.224 323.805C376.972 322.032 375.772 320.362 374.624 318.797L373.841 319.11C373.946 321.093 373.998 323.075 373.998 325.057C373.998 327.04 373.998 328.501 373.998 329.44V372.48H342.54ZM495.137 374.358C490.859 374.358 486.946 373.94 483.399 373.106C479.851 372.375 476.773 371.123 474.165 369.35C471.556 367.471 469.522 365.072 468.061 362.15C466.705 359.124 466.026 355.472 466.026 351.195C466.026 345.038 467.279 340.03 469.783 336.17C472.391 332.309 476.147 329.335 481.051 327.249C485.955 325.162 491.903 323.753 498.893 323.023C505.988 322.188 514.075 321.771 523.152 321.771V317.702C523.152 315.406 522.578 313.58 521.431 312.224C520.387 310.763 518.979 309.667 517.205 308.937C515.431 308.207 513.397 307.841 511.101 307.841C509.327 307.841 507.501 308.05 505.623 308.468C503.745 308.885 502.18 309.615 500.928 310.659C499.78 311.702 499.206 313.163 499.206 315.041V315.667H468.531C468.426 315.25 468.374 314.884 468.374 314.571C468.374 314.258 468.374 313.893 468.374 313.476C468.374 308.363 469.991 303.929 473.226 300.173C476.565 296.312 481.417 293.338 487.781 291.252C494.25 289.06 502.18 287.965 511.571 287.965C519.187 287.965 526.23 288.8 532.699 290.469C539.168 292.138 544.385 294.956 548.35 298.92C552.315 302.781 554.298 308.102 554.298 314.884V347.125C554.298 348.795 554.715 350.255 555.55 351.508C556.384 352.655 557.636 353.229 559.306 353.229H564.94V371.228C563.688 371.958 561.601 372.636 558.68 373.262C555.863 373.993 552.524 374.358 548.663 374.358C544.49 374.358 540.838 373.94 537.708 373.106C534.577 372.271 532.021 371.071 530.039 369.506C528.161 367.941 526.856 366.115 526.126 364.028H525.03C522.839 366.011 520.283 367.784 517.361 369.35C514.544 370.915 511.31 372.115 507.658 372.949C504.006 373.888 499.832 374.358 495.137 374.358ZM507.814 354.951C509.797 354.951 511.675 354.69 513.449 354.168C515.327 353.542 516.996 352.76 518.457 351.821C519.918 350.777 521.065 349.577 521.9 348.221C522.735 346.76 523.152 345.195 523.152 343.526V336.483C516.996 336.483 511.988 336.952 508.127 337.891C504.371 338.83 501.606 340.082 499.832 341.647C498.059 343.213 497.172 345.038 497.172 347.125C497.172 349.212 497.693 350.829 498.737 351.977C499.78 353.125 501.084 353.907 502.65 354.325C504.319 354.742 506.041 354.951 507.814 354.951ZM610.17 374.358C604.536 374.358 599.527 373.732 595.145 372.48C590.867 371.123 587.528 368.828 585.129 365.593C582.729 362.359 581.529 357.924 581.529 352.29V310.972H569.947V289.843H582.781L589.511 264.801H612.674V289.843H630.203V310.972H612.674V342.43C612.674 345.978 613.248 348.69 614.396 350.568C615.544 352.342 617.891 353.229 621.439 353.229H630.203V371.541C628.534 372.062 626.447 372.532 623.943 372.949C621.543 373.471 619.091 373.836 616.587 374.045C614.187 374.254 612.048 374.358 610.17 374.358ZM673.139 374.358C663.331 374.358 656.08 371.645 651.385 366.219C646.689 360.794 644.342 353.177 644.342 343.369V289.843H675.487V339.613C675.487 341.282 675.696 342.847 676.113 344.308C676.635 345.769 677.313 347.021 678.148 348.064C678.982 349.108 680.078 349.942 681.434 350.568C682.791 351.09 684.304 351.351 685.973 351.351C688.582 351.351 690.825 350.777 692.703 349.629C694.685 348.377 696.198 346.76 697.242 344.778C698.389 342.795 698.963 340.656 698.963 338.361V289.843H730.109V372.48H704.598L703.033 359.959H701.937C699.955 362.985 697.398 365.593 694.268 367.784C691.242 369.976 687.903 371.593 684.251 372.636C680.6 373.784 676.896 374.358 673.139 374.358ZM749.045 372.48V289.843H774.556L776.591 302.364H777.686C779.043 299.233 780.764 296.573 782.851 294.382C785.042 292.191 787.546 290.573 790.363 289.53C793.181 288.382 796.154 287.808 799.284 287.808C801.371 287.808 803.249 288.017 804.919 288.434C806.588 288.852 807.788 289.269 808.518 289.686V315.823H798.502C795.163 315.823 792.294 316.293 789.894 317.232C787.598 318.067 785.72 319.371 784.26 321.145C782.903 322.814 781.86 324.901 781.129 327.405C780.503 329.805 780.19 332.57 780.19 335.7V372.48H749.045ZM841.475 374.358C837.197 374.358 833.284 373.94 829.736 373.106C826.189 372.375 823.111 371.123 820.502 369.35C817.894 367.471 815.859 365.072 814.398 362.15C813.042 359.124 812.364 355.472 812.364 351.195C812.364 345.038 813.616 340.03 816.12 336.17C818.729 332.309 822.485 329.335 827.389 327.249C832.293 325.162 838.24 323.753 845.231 323.023C852.326 322.188 860.412 321.771 869.49 321.771V317.702C869.49 315.406 868.916 313.58 867.768 312.224C866.725 310.763 865.316 309.667 863.542 308.937C861.769 308.207 859.734 307.841 857.438 307.841C855.665 307.841 853.839 308.05 851.961 308.468C850.083 308.885 848.517 309.615 847.265 310.659C846.118 311.702 845.544 313.163 845.544 315.041V315.667H814.868C814.764 315.25 814.712 314.884 814.712 314.571C814.712 314.258 814.712 313.893 814.712 313.476C814.712 308.363 816.329 303.929 819.563 300.173C822.902 296.312 827.754 293.338 834.119 291.252C840.588 289.06 848.517 287.965 857.908 287.965C865.525 287.965 872.568 288.8 879.037 290.469C885.506 292.138 890.723 294.956 894.688 298.92C898.653 302.781 900.635 308.102 900.635 314.884V347.125C900.635 348.795 901.052 350.255 901.887 351.508C902.722 352.655 903.974 353.229 905.643 353.229H911.278V371.228C910.026 371.958 907.939 372.636 905.017 373.262C902.2 373.993 898.861 374.358 895.001 374.358C890.827 374.358 887.175 373.94 884.045 373.106C880.915 372.271 878.359 371.071 876.376 369.506C874.498 367.941 873.194 366.115 872.463 364.028H871.368C869.177 366.011 866.62 367.784 863.699 369.35C860.882 370.915 857.647 372.115 853.995 372.949C850.343 373.888 846.17 374.358 841.475 374.358ZM854.152 354.951C856.134 354.951 858.012 354.69 859.786 354.168C861.664 353.542 863.334 352.76 864.794 351.821C866.255 350.777 867.403 349.577 868.238 348.221C869.072 346.76 869.49 345.195 869.49 343.526V336.483C863.334 336.483 858.325 336.952 854.465 337.891C850.709 338.83 847.944 340.082 846.17 341.647C844.396 343.213 843.509 345.038 843.509 347.125C843.509 349.212 844.031 350.829 845.074 351.977C846.118 353.125 847.422 353.907 848.987 354.325C850.656 354.742 852.378 354.951 854.152 354.951ZM921.449 372.48V259.011H952.595V372.48H921.449ZM973.62 372.48V264.801H1008.21V304.085H1046.24V264.801H1080.83V372.48H1046.24V331.631H1008.21V372.48H973.62ZM1146.41 374.358C1136.49 374.358 1127.89 372.845 1120.58 369.819C1113.38 366.689 1107.8 361.941 1103.84 355.577C1099.98 349.212 1098.05 341.074 1098.05 331.161C1098.05 321.458 1099.98 313.424 1103.84 307.059C1107.7 300.694 1113.07 295.947 1119.96 292.817C1126.95 289.582 1135.14 287.965 1144.53 287.965C1154.44 287.965 1162.84 289.53 1169.73 292.66C1176.72 295.686 1182.04 300.381 1185.69 306.746C1189.34 313.111 1191.17 321.249 1191.17 331.161V336.483H1129.19C1129.19 340.239 1129.71 343.473 1130.76 346.186C1131.9 348.899 1133.68 350.986 1136.08 352.447C1138.58 353.803 1141.82 354.481 1145.78 354.481C1148.6 354.481 1150.95 354.168 1152.82 353.542C1154.81 352.916 1156.37 352.081 1157.52 351.038C1158.77 349.89 1159.66 348.586 1160.18 347.125C1160.7 345.665 1160.96 344.099 1160.96 342.43H1191.17C1191.17 347.334 1190.23 351.768 1188.35 355.733C1186.47 359.698 1183.66 363.089 1179.9 365.906C1176.14 368.619 1171.45 370.706 1165.81 372.167C1160.28 373.627 1153.81 374.358 1146.41 374.358ZM1129.35 321.771H1159.71C1159.71 319.58 1159.4 317.649 1158.77 315.98C1158.14 314.206 1157.21 312.745 1155.95 311.598C1154.81 310.346 1153.35 309.407 1151.57 308.781C1149.9 308.155 1147.97 307.841 1145.78 307.841C1142.34 307.841 1139.47 308.415 1137.17 309.563C1134.88 310.711 1133.1 312.328 1131.85 314.415C1130.6 316.397 1129.76 318.849 1129.35 321.771ZM1230.61 374.358C1226.33 374.358 1222.42 373.94 1218.87 373.106C1215.32 372.375 1212.24 371.123 1209.64 369.35C1207.03 367.471 1204.99 365.072 1203.53 362.15C1202.17 359.124 1201.5 355.472 1201.5 351.195C1201.5 345.038 1202.75 340.03 1205.25 336.17C1207.86 332.309 1211.62 329.335 1216.52 327.249C1221.43 325.162 1227.37 323.753 1234.36 323.023C1241.46 322.188 1249.55 321.771 1258.62 321.771V317.702C1258.62 315.406 1258.05 313.58 1256.9 312.224C1255.86 310.763 1254.45 309.667 1252.68 308.937C1250.9 308.207 1248.87 307.841 1246.57 307.841C1244.8 307.841 1242.97 308.05 1241.09 308.468C1239.22 308.885 1237.65 309.615 1236.4 310.659C1235.25 311.702 1234.68 313.163 1234.68 315.041V315.667H1204C1203.9 315.25 1203.84 314.884 1203.84 314.571C1203.84 314.258 1203.84 313.893 1203.84 313.476C1203.84 308.363 1205.46 303.929 1208.7 300.173C1212.04 296.312 1216.89 293.338 1223.25 291.252C1229.72 289.06 1237.65 287.965 1247.04 287.965C1254.66 287.965 1261.7 288.8 1268.17 290.469C1274.64 292.138 1279.86 294.956 1283.82 298.92C1287.79 302.781 1289.77 308.102 1289.77 314.884V347.125C1289.77 348.795 1290.19 350.255 1291.02 351.508C1291.85 352.655 1293.11 353.229 1294.78 353.229H1300.41V371.228C1299.16 371.958 1297.07 372.636 1294.15 373.262C1291.33 373.993 1287.99 374.358 1284.13 374.358C1279.96 374.358 1276.31 373.94 1273.18 373.106C1270.05 372.271 1267.49 371.071 1265.51 369.506C1263.63 367.941 1262.33 366.115 1261.6 364.028H1260.5C1258.31 366.011 1255.75 367.784 1252.83 369.35C1250.01 370.915 1246.78 372.115 1243.13 372.949C1239.48 373.888 1235.3 374.358 1230.61 374.358ZM1243.28 354.951C1245.27 354.951 1247.15 354.69 1248.92 354.168C1250.8 353.542 1252.47 352.76 1253.93 351.821C1255.39 350.777 1256.54 349.577 1257.37 348.221C1258.21 346.76 1258.62 345.195 1258.62 343.526V336.483C1252.47 336.483 1247.46 336.952 1243.6 337.891C1239.84 338.83 1237.08 340.082 1235.3 341.647C1233.53 343.213 1232.64 345.038 1232.64 347.125C1232.64 349.212 1233.16 350.829 1234.21 351.977C1235.25 353.125 1236.55 353.907 1238.12 354.325C1239.79 354.742 1241.51 354.951 1243.28 354.951ZM1310.58 372.48V259.011H1341.73V372.48H1310.58ZM1395.62 374.358C1389.99 374.358 1384.98 373.732 1380.59 372.48C1376.32 371.123 1372.98 368.828 1370.58 365.593C1368.18 362.359 1366.98 357.924 1366.98 352.29V310.972H1355.4V289.843H1368.23L1374.96 264.801H1398.12V289.843H1415.65V310.972H1398.12V342.43C1398.12 345.978 1398.7 348.69 1399.85 350.568C1400.99 352.342 1403.34 353.229 1406.89 353.229H1415.65V371.541C1413.98 372.062 1411.9 372.532 1409.39 372.949C1406.99 373.471 1404.54 373.836 1402.04 374.045C1399.64 374.254 1397.5 374.358 1395.62 374.358ZM1430.1 372.48V259.011H1461.25V298.451H1462.34C1464.12 296.155 1466.36 294.277 1469.07 292.817C1471.79 291.252 1474.71 290.052 1477.84 289.217C1480.97 288.382 1484.05 287.965 1487.07 287.965C1493.65 287.965 1499.02 289.217 1503.19 291.721C1507.47 294.121 1510.65 297.616 1512.74 302.207C1514.83 306.798 1515.87 312.38 1515.87 318.954V372.48H1484.73V322.71C1484.73 320.936 1484.46 319.371 1483.94 318.015C1483.53 316.554 1482.9 315.302 1482.06 314.258C1481.23 313.215 1480.13 312.432 1478.78 311.911C1477.53 311.285 1476.01 310.972 1474.24 310.972C1471.63 310.972 1469.34 311.598 1467.35 312.85C1465.47 313.998 1463.96 315.563 1462.81 317.545C1461.77 319.423 1461.25 321.562 1461.25 323.962V372.48H1430.1Z" fill="black"/> <path d="M1566.42 372.48V341.491H1535.43V320.832H1566.42V289.843H1587.08V320.832H1618.07V341.491H1587.08V372.48H1566.42Z" fill="#FF9A0C"/> </svg></a>
+
+    <ul class="menu">
+      <li><a data-nav="home" onclick="go('home')">Início</a></li>
+      <li><a data-nav="oferta" onclick="go('oferta')">Leve 6, Pague 5</a></li>
+      <li><a data-nav="mais-vendidos" onclick="go('mais-vendidos')">Mais Vendidos</a></li>
+      <li class="has-drop">
+        <a>Categorias <i class="caret"></i></a>
+        <ul class="drop">
+          <li><a onclick="goCat('agua')"><span class="di-logo"><img class="blogo" src="https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_54_19-3.png" alt="Vittari" loading="lazy" onerror="this.remove()"></span><span><b>Água Vittari</b><small>Água com gás saborizada</small></span></a></li>
+          <li><a onclick="goCat('energetico')"><span class="di-logo"><img class="blogo" src="https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_54_19-2-1.png" alt="+Power Energy" loading="lazy" onerror="this.remove()"></span><span><b>Power Energy</b><small>Energético</small></span></a></li>
+          <li><a onclick="goCat('sucos')"><span class="di-logo"><img class="blogo" src="https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_54_19-4.png" alt="Natural Health+" loading="lazy" onerror="this.remove()"></span><span><b>Suco Natural Health+</b><small>Sucos naturais</small></span></a></li>
+        </ul>
+      </li>
+      <li><a data-nav="revendedor" onclick="go('revendedor')">Seja Revendedor Oficial</a></li>
+    </ul>
+
+    <div class="actions">
+      <button class="iconbtn" onclick="openSearch()" aria-label="Pesquisar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      </button>
+      <button class="iconbtn" onclick="openAccount()" aria-label="Minha conta">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3.5-6 7-6s7 2 7 6"/></svg>
+      </button>
+      <button class="iconbtn" onclick="openCart()" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24"><path d="M5 7h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" id="cart-count">3</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= PÁGINA: INÍCIO ================= -->
+<section class="page on" id="page-home">
+
+  <!-- HERO (banner / vídeo) -->
+  <div class="hero hero-banner">
+    <picture>
+      <source media="(max-width:760px)" srcset="{{ 'nh-embedded-92a8c23588.jpg' | asset_url }}">
+      <img class="hero-banner-img" src="{{ 'nh-embedded-d00b8bb93b.jpg' | asset_url }}" alt="Natural Health" onerror="this.onerror=null;this.src='{{ 'nh-embedded-d00b8bb93b.jpg' | asset_url }}'">
+    </picture>
+  </div>
+
+  <!-- FAIXA DE BENEFÍCIOS -->
+  <div class="promise">
+    <div class="wrap promise-row">
+      <div class="pm">
+        <span class="pm-ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M8.7 12.2l2.2 2.2 4.4-4.4"/></svg></span>
+        <span><b>Compra segura</b><small>Ambiente protegido do início ao fim</small></span>
+      </div>
+      <div class="pm">
+        <span class="pm-ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="12" height="9"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.7"/><circle cx="17" cy="18" r="1.7"/></svg></span>
+        <span><b>Envio para todo o Brasil</b><small>Entrega nacional com rastreio</small></span>
+      </div>
+      <div class="pm">
+        <span class="pm-ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5"/><path d="M12 12v9"/></svg></span>
+        <span><b>Condições em kits</b><small>Combos com preço especial</small></span>
+      </div>
+      <div class="pm">
+        <span class="pm-ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4z"/></svg></span>
+        <span><b>Atendimento a revendedores</b><small>Suporte comercial dedicado</small></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUTOS GERAIS -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">Queridinho do público</span><h2 class="h2">Escolha seu próximo favorito</h2></div>
+        <div class="brandtabs" id="brandtabs">
+          <button class="btab on" onclick="filterGrid('todos',this)">Todos</button>
+          <button class="btab" onclick="filterGrid('agua',this)">Vittari</button>
+          <button class="btab" onclick="filterGrid('energetico',this)">+Power Energy</button>
+          <button class="btab" onclick="filterGrid('sucos',this)">Natural Health+</button>
+        </div>
+      </div>
+      <div class="grid cols-4" id="grid-geral"></div>
+    </div>
+  </section>
+
+  <!-- LEVE 3 PAGUE 2 (kit builder) -->
+  <section class="kitband">
+    <div class="wrap kitband-in">
+      <div class="kb-copy">
+        <span class="eyebrow" style="color:#9a9a9a">Promoção</span>
+        <h2 class="h2" style="color:#fff">Leve 6 e pague 5</h2>
+        <p style="color:#c7c7c7;max-width:34ch">Monte seu fardo com 6 produtos selecionados e o item de menor valor sai grátis.</p>
+        <div class="cta-row" style="align-items:center;gap:32px;flex-wrap:wrap">
+          <button class="btn" style="background:#fff;color:var(--ink);border-color:#fff" onclick="openKit()">Montar meu fardo</button>
+          <a onclick="openRules()" style="color:#fff;border-bottom:1.5px solid #fff;padding-bottom:2px;font-weight:700;font-size:13px;margin-left:16px">Ver regras da promoção</a>
+        </div>
+      </div>
+      <div class="kb-slots-wrap">
+        <div class="kb-head"><span id="kb-count">Selecionados: 0 de 6</span><span>1 grátis</span></div>
+        <div class="kb-slots" id="kb-slots"></div>
+        <button class="btn block" id="kb-cta" style="background:#fff;color:var(--ink);border-color:#fff;margin-top:16px;opacity:.4;pointer-events:none" onclick="addKitToCart()">Adicionar fardo ao carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIS VENDIDOS -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">Em alta</span><h2 class="h2">Mais vendidos</h2></div>
+        <div class="brandtabs" id="vendtabs">
+          <button class="btab on" onclick="filterVend('todos',this)">Todos</button>
+          <button class="btab" onclick="filterVend('agua',this)">Vittari</button>
+          <button class="btab" onclick="filterVend('energetico',this)">+Power Energy</button>
+          <button class="btab" onclick="filterVend('sucos',this)">Natural Health+</button>
+        </div>
+      </div>
+      <div class="grid cols-4" id="grid-vendidos"></div>
+    </div>
+  </section>
+
+  <!-- COMPRE POR CATEGORIA -->
+  <section class="sec" id="cat-section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">Natural Health para todos os momentos</span><h2 class="h2">Aquele que mais te dá água na boca</h2></div>
+      </div>
+      <div class="catblocks">
+        <div class="catblock" onclick="goCat('agua')">
+          <div class="ph"><span class="ph-label">Água Vittari</span><img class="cb-img" src="https://ketgroisman.com.br/wp-content/uploads/2026/07/vittariwater_1774798205_3863609651299930128_70935677700.jpg" alt="Água com gás saborizada Vittari" loading="lazy" onerror="this.remove()"></div>
+          <div class="cb-body"><span class="eyebrow">01 — Vittari</span><h3>Água com gás saborizada</h3><p class="muted" style="font-size:13px">3 sabores refrescantes, zero açúcar.</p><span class="cb-link">Explorar <span class="arrow"></span></span></div>
+        </div>
+        <div class="catblock" onclick="goCat('energetico')">
+          <div class="ph"><span class="ph-label">+Power Energy</span><img class="cb-img" src="https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_50_01.png" alt="Energético +Power Energy" loading="lazy" onerror="this.remove()"></div>
+          <div class="cb-body"><span class="eyebrow">02 — +Power Energy</span><h3>Energético</h3><p class="muted" style="font-size:13px">Foco e disposição para o dia todo.</p><span class="cb-link">Explorar <span class="arrow"></span></span></div>
+        </div>
+        <div class="catblock" onclick="goCat('sucos')">
+          <div class="ph"><span class="ph-label">Suco NH+</span><img class="cb-img" src="https://ketgroisman.com.br/wp-content/uploads/2026/07/ChatGPT-Image-15-de-jul.-de-2026-00_49_58.png" alt="Sucos Natural Health+" loading="lazy" onerror="this.remove()"></div>
+          <div class="cb-body"><span class="eyebrow">03 — Natural Health+</span><h3>Sucos naturais</h3><p class="muted" style="font-size:13px">Fruta de verdade, sem conservantes.</p><span class="cb-link">Explorar <span class="arrow"></span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="social">
+    <div class="social-inner" id="social">
+      <div class="social-chips">
+        <div class="schip">
+          <svg viewBox="0 0 24 24"><path d="M4.5 19.5c-1.5-6 2-12.5 15-14-1 12-6.5 16-11.5 15.2"/><path d="M4 20c3-5.5 6.5-8.5 11-10.5"/></svg>
+          <span>3 linhas de produtos</span>
+        </div>
+        <div class="schip">
+          <svg viewBox="0 0 24 24"><path d="M12 3.5s6 6.2 6 10.1a6 6 0 0 1-12 0c0-3.9 6-10.1 6-10.1z"/><path d="M9.5 14.2a2.6 2.6 0 0 0 2.6 2.6"/></svg>
+          <span>Diversos sabores</span>
+        </div>
+        <div class="schip">
+          <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5.2c0 4.4-3 7.5-7 8.8-4-1.3-7-4.4-7-8.8V6l7-3z"/><path d="M8.8 12.1l2.2 2.2 4.3-4.3"/></svg>
+          <span>Compra online segura</span>
+        </div>
+      </div>
+      <div class="big"><span class="plus">+</span><span id="social-count">0</span></div>
+      <div class="cap">produtos escolhidos por clientes em todo o Brasil</div>
+      <!-- avatares posicionados via JS -->
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">O que dizem</span><h2 class="h2">Depoimentos de clientes</h2></div>
+        <a class="link-all">Ver todas as avaliações</a>
+      </div>
+      <div class="quotes" id="quotes"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE A EMPRESA -->
+  <section class="sec">
+    <div class="wrap about">
+      <div class="ph no-x about-image"><img src="https://clarissaloizel.com/wp-content/uploads/2026/07/Seja-revendedor.webp" alt="Seja um revendedor Natural Health" loading="lazy" onerror="this.parentElement.classList.remove('no-x');this.remove()"></div>
+      <div>
+        <span class="eyebrow">Nossa história</span>
+        <h2 class="h2" style="margin:12px 0 16px">Três marcas, um propósito: bem-estar de verdade</h2>
+        <p class="lead">A Natural Health nasceu para reunir o melhor da hidratação, energia e nutrição em um só lugar. Combinamos ingredientes selecionados e uma operação própria de logística para levar qualidade até você.</p>
+        <p class="lead" style="margin-top:14px">Sem açúcar desnecessário, sem enrolação. Só produtos que a gente teria orgulho de servir em casa.</p>
+        <div class="stats">
+          <div><b data-count="3">3</b><small>marcas próprias</small></div>
+          <div><b data-count="10">10</b><small>sabores no catálogo</small></div>
+          <div><b data-count="4.9" data-dec="1">4,9</b><small>nota média (12k avaliações)</small></div>
+        </div>
+        <div style="margin-top:26px"><a class="btn" onclick="go('revendedor')">Seja um revendedor</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="news">
+        <div>
+          <span class="eyebrow">Fique por dentro</span>
+          <h3 class="h2" style="margin-top:8px">Ganhe 10% no primeiro pedido</h3>
+          <p class="news-sub" style="margin-top:6px">Cadastre-se e receba ofertas exclusivas das 3 marcas.</p>
+        </div>
+        <div class="field">
+          <input type="email" placeholder="Seu melhor e-mail">
+          <button class="btn">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: OFERTA (LEVE 3 PAGUE 2) ================= -->
+<section class="page" id="page-oferta">
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Leve 6, Pague 5</b></div>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="promo-hero">
+        <div class="txt">
+          <span class="badge">Oferta por tempo limitado</span>
+          <div class="big-off">Leve 6<br>Pague 5</div>
+          <p class="lead">Monte um fardo com qualquer produto das 3 marcas. Na oferta Leve 6, Pague 5, o item de menor valor sai por nossa conta, direto no carrinho.</p>
+          <div class="countdown" style="margin:6px 0 4px">
+            <div class="u"><b id="cd-d">00</b><small>Dias</small></div>
+            <div class="u"><b id="cd-h">00</b><small>Horas</small></div>
+            <div class="u"><b id="cd-m">00</b><small>Min</small></div>
+            <div class="u"><b id="cd-s">00</b><small>Seg</small></div>
+          </div>
+          <small class="muted" id="cd-fim" style="font-size:12px;display:block"></small>
+          <div class="cta-row" style="margin-top:8px"><a class="btn" onclick="scrollGrid()">Montar meu fardo</a></div>
+        </div>
+        <div class="ph promo-campaign"><img src="https://cursoliveshop.com.br/wp-content/uploads/2026/07/Leve-3-pague-2-banner.jpg" alt="Banner da campanha Leve 6 Pague 5" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Simples assim</span><h2 class="h2">Como funciona</h2></div></div>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><h3 class="h3">Escolha 6 produtos</h3><p class="muted" style="font-size:14px">De qualquer categoria: Vittari, +Power Energy ou Natural Health+.</p></div>
+        <div class="step"><span class="num">2</span><h3 class="h3">Adicione ao carrinho</h3><p class="muted" style="font-size:14px">O desconto do item mais barato entre os 6 é aplicado automaticamente.</p></div>
+        <div class="step"><span class="num">3</span><h3 class="h3">Finalize e receba</h3><p class="muted" style="font-size:14px">Pague menos e receba em casa — frete grátis acima de R$ 100 na entrega normal.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="oferta-grid">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">Elegíveis</span><h2 class="h2">Produtos na promoção</h2></div>
+        <div class="brandtabs" id="ofertatabs">
+          <button class="btab on" onclick="filterOferta('todos',this)">Todos</button>
+          <button class="btab" onclick="filterOferta('agua',this)">Vittari</button>
+          <button class="btab" onclick="filterOferta('energetico',this)">+Power Energy</button>
+          <button class="btab" onclick="filterOferta('sucos',this)">Natural Health+</button>
+        </div>
+      </div>
+      <div class="grid cols-4" id="grid-oferta"></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: MAIS VENDIDOS ================= -->
+<section class="page" id="page-mais-vendidos">
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Mais Vendidos</b></div>
+  <div class="pagehero"><div class="wrap"><span class="eyebrow">Ranking geral</span><h1 class="h1">Mais vendidos</h1><p class="lead">Os produtos favoritos dos nossos clientes, atualizados semanalmente.</p></div></div>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="toolbar">
+        <div class="brandtabs" id="ranktabs">
+          <button class="btab on" onclick="filterRank('todos',this)">Todos</button>
+          <button class="btab" onclick="filterRank('agua',this)">Vittari</button>
+          <button class="btab" onclick="filterRank('energetico',this)">+Power Energy</button>
+          <button class="btab" onclick="filterRank('sucos',this)">Natural Health+</button>
+        </div>
+        <label class="selectbox"><span id="rank-sortlabel">Ordenar por: Mais vendidos</span>
+          <select onchange="rankSort(this)">
+            <option value="vendidos" selected>Mais vendidos</option>
+            <option value="rel">Relevância</option>
+            <option value="menor">Menor preço</option>
+            <option value="maior">Maior preço</option>
+            <option value="avaliacao">Melhor avaliação</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid cols-4" id="grid-ranking"></div>
+      <div class="pagination"><span>‹</span><span class="on">1</span><span>2</span><span>3</span><span>›</span></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: CATEGORIA (LANDING PAGE) ================= -->
+<section class="page" id="page-categoria">
+
+  <!-- HERO -->
+  <div class="clp-hero clp-hero-banner">
+    <picture>
+      <source media="(max-width:760px)" srcset="" id="clp-hero-src">
+      <img class="clp-hero-img" id="clp-hero-img" alt="" onerror="this.onerror=null;if(this.dataset.d)this.src=this.dataset.d">
+    </picture>
+    <div class="wrap clp-hero-in" style="display:none">
+      <div class="clp-hero-box">
+        <img class="blogo clp-hero-logo" id="clp-logo" alt="" onerror="this.style.display='none'">
+        <span class="clp-faixa" id="clp-faixa">Faixa</span>
+        <h1 class="h1" id="clp-title">Categoria</h1>
+        <p class="lead" id="clp-sub">Subtítulo</p>
+        <div class="cta-row">
+          <a class="btn" onclick="clpScroll('clp-produtos')"><svg class="bic" viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Ver sabores</a>
+          <a class="btn ghost" onclick="clpScroll('clp-porque')">Por que escolher</a>
+        </div>
+        <div class="clp-chips" id="clp-chips"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <a>Categorias</a> / <b id="cat-crumb">Categoria</b></div>
+
+  <!-- BENEFÍCIOS -->
+  <div class="promise clp-promise"><div class="wrap promise-row" id="clp-benefits"></div></div>
+
+  <!-- POR QUE ESCOLHER -->
+  <section class="sec" id="clp-porque">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow" id="clp-why-eyebrow">Diferenciais</span><h2 class="h2" id="clp-why-title">Por que escolher</h2></div></div>
+      <div class="clp-why" id="clp-why"></div>
+    </div>
+  </section>
+
+  <!-- PRODUTO A PRODUTO -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Conheça um a um</span><h2 class="h2" id="clp-detail-title">Cada sabor por dentro</h2></div></div>
+      <div id="clp-details"></div>
+    </div>
+  </section>
+
+  <!-- MOMENTOS -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Quando tomar</span><h2 class="h2" id="clp-when-title">Momentos</h2></div></div>
+      <div class="clp-moments" id="clp-moments"></div>
+    </div>
+  </section>
+
+  <!-- FICHA TÉCNICA -->
+  <section class="sec tight">
+    <div class="wrap clp-specs-wrap">
+      <div>
+        <span class="eyebrow">Ficha técnica</span>
+        <h2 class="h2" id="clp-specs-title" style="margin:10px 0 14px">O que tem dentro</h2>
+        <p class="lead" id="clp-specs-sub"></p>
+        <div class="clp-specs" id="clp-specs"></div>
+      </div>
+      <div class="clp-specs-media"><img id="clp-specs-img" alt="" onerror="this.style.display='none'"></div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Quem já provou</span><h2 class="h2" id="clp-rev-title">O que dizem</h2></div></div>
+      <div class="quotes" id="clp-reviews"></div>
+    </div>
+  </section>
+
+  <!-- LOJA DA CATEGORIA -->
+  <section class="sec" id="clp-produtos">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow" id="clp-shop-eyebrow">Leve para casa</span><h2 class="h2" id="clp-shop-title">Escolha os seus</h2></div>
+      </div>
+      <p class="lead" id="clp-shop-sub" style="margin:-14px 0 28px"></p>
+      <div class="clp-shop-grid" id="clp-shop-grid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Dúvidas</span><h2 class="h2">Perguntas frequentes</h2></div></div>
+      <div class="faq" id="clp-faq"></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: MINHA CONTA ================= -->
+<section class="page" id="page-conta">
+  <!-- AUTH (login / cadastro) -->
+  <div id="acc-auth">
+    <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Minha conta</b></div>
+    <div class="pagehero"><div class="wrap"><span class="eyebrow">Área do cliente</span><h1 class="h1">Entre ou crie sua conta</h1><p class="lead">Acompanhe pedidos, salve favoritos e finalize a compra mais rápido.</p></div></div>
+    <section class="sec">
+      <div class="wrap acc-auth-grid">
+        <div class="acc-card">
+          <h2 class="h3">Já tenho conta</h2>
+          <div class="field-l"><label>E-mail</label><input placeholder="voce@email.com"></div>
+          <div class="field-l"><label>Senha</label><input type="password" placeholder="••••••••"></div>
+          <a class="acc-forgot" onclick="toast('Recuperação de senha — wireframe')">Esqueci minha senha</a>
+          <button class="btn block" onclick="accLogin()">Entrar</button>
+          <div class="acc-or"><span>ou</span></div>
+          <button class="btn ghost block" onclick="accLogin()">Continuar com Google</button>
+        </div>
+        <div class="acc-card">
+          <h2 class="h3">Criar conta</h2>
+          <div class="field-l"><label>Nome completo</label><input placeholder="Seu nome"></div>
+          <div class="field-l"><label>E-mail</label><input placeholder="voce@email.com"></div>
+          <div class="field-l"><label>Celular / WhatsApp</label><input placeholder="(00) 00000-0000"></div>
+          <div class="field-l"><label>Senha</label><input type="password" placeholder="Crie uma senha"></div>
+          <label class="acc-checkline"><span class="fbox on"></span> Quero receber ofertas exclusivas por e-mail</label>
+          <button class="btn block" onclick="accLogin()">Criar minha conta</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- DASHBOARD (logado) -->
+  <div id="acc-dash" style="display:none">
+    <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Minha conta</b></div>
+    <div class="pagehero"><div class="wrap"><span class="eyebrow">Minha conta</span><h1 class="h1">Olá, Cliente</h1><p class="lead">Gerencie seus pedidos, dados, endereços e favoritos.</p></div></div>
+    <section class="sec">
+      <div class="wrap acc-layout">
+        <aside class="acc-nav">
+          <button class="acc-navi on" onclick="accNav('overview',this)">Visão geral</button>
+          <button class="acc-navi" onclick="accNav('pedidos',this)">Meus pedidos</button>
+          <button class="acc-navi" onclick="accNav('dados',this)">Meus dados</button>
+          <button class="acc-navi" onclick="accNav('enderecos',this)">Endereços</button>
+          <button class="acc-navi" onclick="accNav('pagamento',this)">Pagamento</button>
+          <button class="acc-navi acc-logout" onclick="accLogout()">Sair</button>
+        </aside>
+
+        <div class="acc-content">
+          <!-- VISÃO GERAL -->
+          <div class="acc-pane on" data-pane="overview">
+            <div class="acc-cards">
+              <div class="acc-mini"><span class="acc-mini-n" id="acc-o-count">3</span><small>pedidos feitos</small></div>
+              <div class="acc-mini"><span class="acc-mini-n">2</span><small>endereços salvos</small></div>
+              <div class="acc-mini"><span class="acc-mini-n">R$ 20</span><small>em cupons</small></div>
+            </div>
+            <h3 class="h3" style="margin:26px 0 14px">Último pedido</h3>
+            <div id="acc-last"></div>
+            <div class="acc-datacard" style="margin-top:24px">
+              <div><span class="eyebrow">Dados da conta</span><b>Cliente Natural Health</b><small>cliente@email.com · (00) 00000-0000</small></div>
+              <button class="btn ghost sm" onclick="accNav('dados',document.querySelector('.acc-navi:nth-child(3)'))">Editar</button>
+            </div>
+          </div>
+
+          <!-- MEUS PEDIDOS -->
+          <div class="acc-pane" data-pane="pedidos">
+            <h2 class="h3" style="margin-bottom:16px">Meus pedidos</h2>
+            <div id="acc-orders"></div>
+          </div>
+
+          <!-- DETALHE DO PEDIDO -->
+          <div class="acc-pane" data-pane="pedido">
+            <a class="co-back" onclick="accNav('pedidos',document.querySelector('.acc-navi:nth-child(2)'))">← Voltar aos pedidos</a>
+            <h2 class="h3" style="margin:14px 0 6px" id="acc-od-id">Pedido</h2>
+            <span class="acc-status" id="acc-od-status">Status</span>
+            <div class="acc-track" id="acc-od-track"></div>
+            <h3 class="h3" style="margin:24px 0 12px">Itens</h3>
+            <div id="acc-od-items"></div>
+            <div class="acc-od-total" id="acc-od-total"></div>
+          </div>
+
+          <!-- MEUS DADOS -->
+          <div class="acc-pane" data-pane="dados">
+            <h2 class="h3" style="margin-bottom:16px">Meus dados</h2>
+            <div class="form" style="border:none;padding:0">
+              <div class="field-l"><label>Nome completo</label><input value="Cliente Natural Health"></div>
+              <div class="field-l"><label>E-mail</label><input value="cliente@email.com"></div>
+              <div class="field-l"><label>CPF</label><input placeholder="000.000.000-00"></div>
+              <div class="field-l"><label>Celular</label><input value="(00) 00000-0000"></div>
+              <div class="field-l"><label>Nova senha</label><input type="password" placeholder="••••••••"></div>
+              <div class="field-l"><label>Confirmar senha</label><input type="password" placeholder="••••••••"></div>
+              <div class="full"><button class="btn" onclick="toast('Dados salvos — wireframe')">Salvar alterações</button></div>
+            </div>
+          </div>
+
+          <!-- ENDEREÇOS -->
+          <div class="acc-pane" data-pane="enderecos">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+              <h2 class="h3">Endereços</h2><button class="btn sm" onclick="toast('Novo endereço — wireframe')">+ Adicionar</button>
+            </div>
+            <div class="acc-addr-grid">
+              <div class="acc-addr"><span class="badge">Principal</span><b>Casa</b><p class="muted">Rua Exemplo, 123 — Bairro<br>Cidade — UF · 00000-000</p><div class="acc-addr-act"><a onclick="toast('Editar — wireframe')">Editar</a><a onclick="toast('Remover — wireframe')">Remover</a></div></div>
+              <div class="acc-addr"><b>Trabalho</b><p class="muted">Av. Comercial, 456 — Centro<br>Cidade — UF · 00000-000</p><div class="acc-addr-act"><a onclick="toast('Editar — wireframe')">Editar</a><a onclick="toast('Remover — wireframe')">Remover</a></div></div>
+            </div>
+          </div>
+
+          <!-- PAGAMENTO -->
+          <div class="acc-pane" data-pane="pagamento">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+              <h2 class="h3">Métodos de pagamento</h2><button class="btn sm" onclick="toast('Novo cartão — wireframe')">+ Adicionar cartão</button>
+            </div>
+            <div class="acc-cardlist">
+              <div class="acc-pcard"><div class="acc-pchip"></div><b>•••• •••• •••• 4821</b><small>Visa · vence 08/29</small></div>
+              <div class="acc-pcard"><div class="acc-pchip"></div><b>•••• •••• •••• 1099</b><small>Master · vence 03/28</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ================= PÁGINA: CHECKOUT ================= -->
+<section class="page" id="page-checkout">
+  <div class="co-secure"><div class="wrap co-secure-in"><span>🔒 Ambiente 100% seguro · Compra protegida</span><span class="co-secure-timer">Reservamos seu carrinho por <b id="co-timer">10:00</b></span></div></div>
+
+  <div class="wrap co-wrap">
+    <div class="co-steps" id="co-steps">
+      <div class="co-stp on" data-s="1"><span class="co-num">1</span> Sacola</div>
+      <div class="co-line"></div>
+      <div class="co-stp" data-s="2"><span class="co-num">2</span> Entrega</div>
+      <div class="co-line"></div>
+      <div class="co-stp" data-s="3"><span class="co-num">3</span> Pagamento</div>
+      <div class="co-line"></div>
+      <div class="co-stp" data-s="4"><span class="co-num">4</span> Pronto</div>
+    </div>
+
+    <div class="co-grid">
+      <div class="co-main">
+        <!-- STEP 1 -->
+        <div class="co-panel on" data-step="1">
+          <h2 class="h3">Sua sacola</h2>
+          <div id="co-items"></div>
+
+          <div class="co-bump" id="co-bump">
+            <label class="co-bump-in">
+              <span class="co-check" id="co-bump-check"></span>
+              <span class="co-bump-img" id="co-bump-img"></span>
+              <span class="co-bump-txt"><b>Adicione +Power Energy Zero Açúcar por só R$ 5,90</b><small>Oferta exclusiva do carrinho, liberada em pedidos acima de R$ 80.</small></span>
+              <span class="co-bump-price"><s>R$ 8,90</s> R$ 5,90</span>
+            </label>
+          </div>
+
+          <div class="co-crosstitle">Leve também <span class="muted">— combina com seu pedido</span></div>
+          <div class="grid cols-3" id="co-cross"></div>
+
+          <div class="co-actions">
+            <a class="co-back" onclick="closeCheckoutToStore()">← Continuar comprando</a>
+            <button class="btn" onclick="checkoutStep(2)">Ir para entrega →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="co-panel" data-step="2">
+          <h2 class="h3">Identificação e entrega</h2>
+          <div class="form" style="border:none;padding:0">
+            <div class="field-l"><label>Nome completo</label><input id="f-nome" placeholder="Seu nome"></div>
+            <div class="field-l"><label>E-mail</label><input id="f-email" placeholder="voce@email.com"></div>
+            <div class="field-l"><label>CPF</label><input id="f-cpf" placeholder="000.000.000-00"></div>
+            <div class="field-l"><label>Celular / WhatsApp</label><input id="f-fone" placeholder="(00) 00000-0000"></div>
+            <div class="field-l"><label>CEP</label><input id="f-cep" placeholder="00000-000"></div>
+            <div class="field-l"><label>Número</label><input id="f-num" placeholder="123"></div>
+            <div class="field-l full"><label>Endereço</label><input id="f-end" placeholder="Rua, avenida..."></div>
+            <div class="field-l"><label>Bairro</label><input id="f-bairro" placeholder="Bairro"></div>
+            <div class="field-l"><label>Cidade / UF</label><input id="f-cidade" placeholder="Cidade — UF"></div>
+          </div>
+
+          <h3 class="h3" style="margin-top:26px">Frete</h3>
+          <div class="co-ship">
+            <label class="co-ship-opt on" onclick="pickShip(this,'normal')"><span class="co-radio"></span><span><b>Entrega normal</b><small id="co-prazo-normal">Prazo a definir</small></span><b class="co-ship-free" id="co-val-normal">Grátis</b></label>
+            <label class="co-ship-opt" onclick="pickShip(this,'expressa')"><span class="co-radio"></span><span><b>Entrega expressa</b><small id="co-prazo-exp">Prazo a definir</small></span><b id="co-val-exp">R$ 19,90</b></label>
+            <small class="muted" style="font-size:12px">A entrega expressa é sempre paga: o frete grátis vale apenas para a entrega normal.</small>
+          </div>
+
+          <div class="co-actions">
+            <a class="co-back" onclick="checkoutStep(1)">← Voltar</a>
+            <button class="btn" onclick="checkoutStep(3)">Ir para pagamento →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="co-panel" data-step="3">
+          <h2 class="h3">Pagamento</h2>
+          <div class="co-pays">
+            <label class="co-pay on" onclick="pickPay(this,'pix')"><span class="co-radio"></span><span><b>Pix</b><small>Aprovação na hora</small></span><span class="badge" id="co-pix-badge" style="display:none">5% OFF</span></label>
+            <label class="co-pay" onclick="pickPay(this,'cartao')"><span class="co-radio"></span><span><b>Cartão de crédito</b><small>Até 6x sem juros</small></span></label>
+            <label class="co-pay" onclick="pickPay(this,'boleto')"><span class="co-radio"></span><span><b>Boleto</b><small>Compensa em 1–2 dias</small></span></label>
+          </div>
+
+          <div id="co-card-form" style="display:none">
+            <div class="form" style="border:none;padding:0;margin-top:18px">
+              <div class="field-l full"><label>Número do cartão</label><input placeholder="0000 0000 0000 0000"></div>
+              <div class="field-l"><label>Validade</label><input placeholder="MM/AA"></div>
+              <div class="field-l"><label>CVV</label><input placeholder="000"></div>
+              <div class="field-l full"><label>Nome no cartão</label><input placeholder="Como está no cartão"></div>
+              <div class="field-l full"><label>Parcelas</label>
+                <label class="selectbox" style="height:48px;width:100%;justify-content:flex-start"><span id="co-parcela">6x sem juros</span><select id="co-parcela-sel"></select></label>
+                <small class="muted" style="font-size:12px">Até 6x sem juros, com parcela mínima de R$ 5,00.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="co-pixbox" id="co-pix-box">
+            <div class="ph" style="width:120px;height:120px"></div>
+            <div><b id="co-pix-title">Pague com Pix</b><p class="muted" style="font-size:13px">Escaneie o QR code no app do seu banco. Aprovação imediata.</p></div>
+          </div>
+
+          <div class="co-actions">
+            <a class="co-back" onclick="checkoutStep(2)">← Voltar</a>
+            <button class="btn" onclick="placeOrder()">Finalizar pedido</button>
+          </div>
+          <div class="co-guarantee">✓ <a onclick="go('trocas')" style="border-bottom:1px solid var(--line)">Política de trocas para alimentos e bebidas</a> · ✓ Reembolso conforme a política · ✓ Dados protegidos (LGPD)</div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="co-panel" data-step="4">
+          <div class="co-done">
+            <div class="co-check-big">✓</div>
+            <h2 class="h2">Pedido confirmado!</h2>
+            <p class="lead">Seu pedido <b id="co-order-id">#NH-000000</b> foi recebido. Enviamos os detalhes para o seu e-mail.</p>
+            <div class="co-done-cta">
+              <button class="btn" onclick="go('home')">Voltar à loja</button>
+              <button class="btn ghost" onclick="go('mais-vendidos')">Continuar comprando</button>
+            </div>
+          </div>
+          <div class="co-upsell">
+            <div class="sec-head"><div class="t"><span class="eyebrow">Aproveite</span><h3 class="h3">Quem comprou também levou</h3></div></div>
+            <div class="grid cols-4" id="co-upsell-grid"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESUMO -->
+      <aside class="co-summary" id="co-summary">
+        <h3 class="h3">Resumo do pedido</h3>
+        <div class="co-sum-items" id="co-sum-items"></div>
+        <div class="co-coupon">
+          <input id="co-coupon-input" placeholder="Cupom de desconto">
+          <button class="btn sm ghost" onclick="applyCoupon()">Aplicar</button>
+        </div>
+        <div class="co-freebar" id="co-freebar"></div>
+        <div class="co-sum-rows" id="co-sum-rows"></div>
+        <button class="btn block" onclick="summaryNext()">Continuar</button>
+        <div class="co-trust"><span>🔒 Pagamento seguro</span><span>↩ <a onclick="go('trocas')">Trocas e devoluções</a></span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PÁGINA: PRODUTO (PDP) ================= -->
+<section class="page" id="page-produto">
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <a id="pdp-cat" onclick="goCat(pdpBrand)">Categoria</a> / <b id="pdp-crumb">Produto</b></div>
+  <div class="wrap pdp">
+    <div class="gallery">
+      <div class="card-media main" style="border:1px solid var(--line)">
+        <div class="bottle"></div>
+        <span class="media-label" id="pdp-medialabel">PRODUTO</span>
+        <img class="pimg" id="pdp-img" alt="" style="display:none" onerror="this.style.display='none'">
+      </div>
+      <div class="thumbs" id="pdp-thumbs"></div>
+    </div>
+    <div class="pdp-info">
+      <img class="blogo pdp-blogo" id="pdp-blogo" alt="" onerror="this.style.display='none'">
+      <span class="eyebrow" id="pdp-kicker">Marca · categoria</span>
+      <h1 class="h2" id="pdp-title">Produto</h1>
+      <div style="align-items:center;gap:8px;display:flex">
+        <span class="stars" id="pdp-stars"></span>
+        <span class="muted" style="font-size:13px" id="pdp-rev">0 avaliações</span>
+      </div>
+      <div class="price"><span id="pdp-price">R$ 0,00</span> <s id="pdp-old"></s></div>
+      <p class="lead" id="pdp-desc">Descrição do produto.</p>
+
+      <div><span class="eyebrow" style="display:block;margin-bottom:10px">Sabor</span>
+        <div class="variants" id="pdp-variants"></div>
+      </div>
+      <div><span class="eyebrow" style="display:block;margin-bottom:10px">Formato</span>
+        <div class="variants" id="pdp-formats">
+          <span class="variant on" onclick="pickFormat(this)">Unidade</span>
+          <span class="variant" onclick="pickFormat(this)">Fardo c/ 6 — Leve 6, Pague 5</span>
+          <span class="variant" onclick="pickFormat(this)">Caixa c/ 12 — 2 fardos</span>
+        </div>
+        <small class="muted" style="font-size:12px;display:block;margin-top:6px" id="pdp-formats-note"></small>
+      </div>
+      <div><span class="eyebrow" style="display:block;margin-bottom:10px">Quantidade</span>
+        <div class="variants" id="pdp-sizes"></div>
+      </div>
+
+      <div class="qtyrow" style="margin-top:6px" id="pdp-buyrow">
+        <div class="qty"><button onclick="pdpStep(-1)">−</button><span id="pdp-qty">1</span><button onclick="pdpStep(1)">+</button></div>
+        <button class="btn" style="flex:1" onclick="addPdp()">Adicionar ao carrinho</button>
+      </div>
+      <a class="btn ghost block" id="pdp-buy" onclick="addPdp(true)">Comprar agora</a>
+      <div id="pdp-sempreco" style="display:none;border:1.5px dashed var(--line-2);border-radius:var(--r);padding:14px;font-size:13px">
+        <b>Preço em breve.</b> Este formato já existe no catálogo e a página está publicada, mas o preço entra no lote 2.
+      </div>
+
+      <div style="display:flex;gap:20px;font-size:13px;color:var(--muted);margin-top:4px">
+        <span>✓ Frete grátis acima de R$ 100 (entrega normal)</span><span>✓ Entrega para todo o Brasil</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="pdp-tabs">
+        <div class="tabhead" id="pdp-tabhead">
+          <button class="on" data-tab="desc" onclick="switchPdpTab('desc',this)">Descrição</button>
+          <button data-tab="nutrition" onclick="switchPdpTab('nutrition',this)">Informação nutricional</button>
+          <button data-tab="reviews" onclick="switchPdpTab('reviews',this)">Avaliações</button>
+        </div>
+        <div class="pdp-tabpanel on" id="pdp-tab-desc"></div>
+        <div class="pdp-tabpanel" id="pdp-tab-nutrition"></div>
+        <div class="pdp-tabpanel" id="pdp-tab-reviews"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Você também vai gostar</span><h2 class="h2">Produtos relacionados</h2></div></div>
+      <div class="grid cols-4" id="grid-relacionados"></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: SEJA REVENDEDOR ================= -->
+<section class="page" id="page-revendedor">
+  <!-- HERO DA LANDING -->
+  <section class="lp-hero-sec">
+    <div class="wrap lp-hero">
+      <div class="lp-copy">
+        <span class="badge">Programa oficial de revenda</span>
+        <h1 class="h1">Lucre vendendo 3 marcas que o Brasil já ama</h1>
+        <p class="lead">Água Vittari, +Power Energy e Suco Natural Health+ com preço de atacado, pronta entrega e material de apoio pronto. Comece com pedido mínimo baixo e margens de até 45%.</p>
+        <div class="trust-chips">
+          <span class="tchip">Sem taxa de adesão</span>
+          <span class="tchip">Sem exclusividade</span>
+          <span class="tchip">Aprovação em 48h</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn" onclick="scrollForm()">Quero ser revendedor</a>
+          <a class="btn ghost" onclick="toast('Falar com consultor — wireframe')">Falar com um consultor</a>
+        </div>
+        <div class="lp-mini-social">
+          <span class="avstack" id="lp-avstack"></span>
+          <span class="muted" style="font-size:13.5px"><b style="color:var(--ink)">+<span data-count="3200">3.200</span> revendedores</b> já vendem com a gente</span>
+        </div>
+      </div>
+      <div class="lp-form-card">
+        <h3 class="h3">Receba as condições</h3>
+        <p class="muted" style="font-size:13px;margin-top:-6px">Preencha e um consultor fala com você.</p>
+        <div class="field-l"><label>Nome</label><input placeholder="Seu nome"></div>
+        <div class="field-l"><label>WhatsApp</label><input placeholder="(00) 00000-0000"></div>
+        <div class="field-l"><label>Cidade / UF</label><input placeholder="Cidade — UF"></div>
+        <button class="btn block" onclick="openThanks()">Quero receber condições</button>
+        <span class="muted" style="font-size:11px;text-align:center;display:block">Resposta em até 1 dia útil. Sem compromisso.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE NÚMEROS -->
+  <div class="statbar">
+    <div class="wrap statbar-row">
+      <div class="stat"><b data-count="3200" data-prefix="+">+3.200</b><small>revendedores ativos</small></div>
+      <div class="stat"><b data-count="450" data-suffix="+">450+</b><small>cidades atendidas</small></div>
+      <div class="stat"><b data-count="45" data-prefix="até " data-suffix="%">até 45%</b><small>de margem</small></div>
+      <div class="stat"><b data-count="48" data-suffix="h">48h</b><small>para aprovação</small></div>
+    </div>
+  </div>
+
+  <!-- POR QUE REVENDER -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Por que revender</span><h2 class="h2">Tudo pronto para você vender mais</h2></div></div>
+      <div class="rbenefits">
+        <div class="rbenefit"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12V6a1 1 0 0 1 1-1h6l10 10-7 7L3 12z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg></span><h3 class="h3">Preço de atacado</h3><p class="muted" style="font-size:14px">Quanto mais volume, menor o preço por unidade.</p></div>
+        <div class="rbenefit"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="12" height="9" rx="1"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18.5" r="1.6"/><circle cx="17" cy="18.5" r="1.6"/></svg></span><h3 class="h3">Pronta entrega</h3><p class="muted" style="font-size:14px">Estoque próprio e envio para todo o Brasil.</p></div>
+        <div class="rbenefit"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="9.5" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 7.5-2"/><circle cx="12" cy="15" r="1.2"/></svg></span><h3 class="h3">Sem exclusividade</h3><p class="muted" style="font-size:14px">Venda junto com o que você já trabalha.</p></div>
+        <div class="rbenefit"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 11v3h3l5 4V7l-5 4H3z"/><path d="M16 9.2a4 4 0 0 1 0 5.6"/><path d="M18.8 6.6a8 8 0 0 1 0 10.8"/></svg></span><h3 class="h3">Material de apoio</h3><p class="muted" style="font-size:14px">Displays, fotos e conteúdo pronto para postar.</p></div>
+        <div class="rbenefit"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M5.5 20c0-3.6 3-5.6 6.5-5.6s6.5 2 6.5 5.6"/></svg></span><h3 class="h3">Gerente dedicado</h3><p class="muted" style="font-size:14px">Uma pessoa de verdade para te ajudar a vender.</p></div>
+        <div class="rbenefit"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5z"/></svg></span><h3 class="h3">Marca reconhecida</h3><p class="muted" style="font-size:14px">Produtos que o cliente já conhece e procura.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KITS -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Kits de revenda</span><h2 class="h2">Escolha por onde começar</h2></div></div>
+      <div class="kits">
+        <div class="kit">
+          <span class="badge ktag">Iniciante</span>
+          <h3 class="h3">Kit Degustação</h3>
+          <div class="kprice">R$ 189 <small>/ 24 un.</small></div>
+          <ul class="kfeat"><li>Mix das 3 marcas</li><li>Sem pedido recorrente</li><li>Ideal para testar a saída</li></ul>
+          <button class="btn ghost block" onclick="scrollForm()">Quero este kit</button>
+        </div>
+        <div class="kit feat">
+          <span class="badge ktag">Mais escolhido</span>
+          <h3 class="h3">Kit Revenda</h3>
+          <div class="kprice">R$ 690 <small>/ 96 un.</small></div>
+          <ul class="kfeat"><li>Margem de até 40%</li><li>Material de apoio incluso</li><li>Frete grátis na 1ª compra</li></ul>
+          <button class="btn block" onclick="scrollForm()">Quero este kit</button>
+        </div>
+        <div class="kit">
+          <span class="badge ktag">Volume</span>
+          <h3 class="h3">Kit Atacado</h3>
+          <div class="kprice">R$ 1.890 <small>/ 288 un.</small></div>
+          <ul class="kfeat"><li>Melhor preço por unidade</li><li>Margem de até 45%</li><li>Gerente de conta dedicado</li></ul>
+          <button class="btn ghost block" onclick="scrollForm()">Quero este kit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARGEM -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="margin-strip">
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <span class="eyebrow">Sua margem</span>
+          <h2 class="h2">Compre a partir de R$ 4,20 e venda por R$ 7,90</h2>
+          <p class="lead">Margem média de até 45% por unidade. Um exemplo real com a Água Vittari 355ml.</p>
+          <div><a class="btn" onclick="scrollForm()">Ver tabela completa</a></div>
+        </div>
+        <div class="margin-vis">
+          <div class="mrow"><div class="mlab"><span>Você compra por</span><b>R$ 4,20</b></div><div class="mbar"><i data-w="42"></i></div></div>
+          <div class="mrow"><div class="mlab"><span>Preço sugerido</span><b>R$ 7,90</b></div><div class="mbar"><i data-w="79"></i></div></div>
+          <div class="mrow"><div class="mlab"><span>Sua margem</span><b>R$ 3,70 (≈45%)</b></div><div class="mbar"><i data-w="45"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRÁFICO -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Potencial</span><h2 class="h2">Quanto um revendedor fatura</h2></div>
+        <span class="muted" style="font-size:13px">Média dos nossos revendedores ativos · 2026</span>
+      </div>
+      <div class="lp-chart">
+        <div class="chart-y">
+          <span>R$ 12k</span><span>R$ 8k</span><span>R$ 4k</span><span>R$ 0</span>
+        </div>
+        <div class="chart-plot">
+          <div class="chart-grid"><i></i><i></i><i></i><i></i></div>
+          <div class="chart-bars">
+            <div class="cbar" data-h="18"><span class="cval">R$ 2,1k</span><i></i><span class="clab">Mês 1</span></div>
+            <div class="cbar" data-h="31"><span class="cval">R$ 3,7k</span><i></i><span class="clab">Mês 2</span></div>
+            <div class="cbar" data-h="44"><span class="cval">R$ 5,3k</span><i></i><span class="clab">Mês 3</span></div>
+            <div class="cbar" data-h="58"><span class="cval">R$ 7,0k</span><i></i><span class="clab">Mês 4</span></div>
+            <div class="cbar" data-h="73"><span class="cval">R$ 8,8k</span><i></i><span class="clab">Mês 5</span></div>
+            <div class="cbar hi" data-h="92"><span class="cval">R$ 11,1k</span><i></i><span class="clab">Mês 6</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-note">
+        <span class="cn-dot"></span>
+        <p>Revendedores que mantêm o mix das <b>3 marcas</b> faturam em média <b>2,4× mais</b> a partir do 4º mês. Valores ilustrativos baseados na média da base.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">3 passos</span><h2 class="h2">Como se tornar revendedor</h2></div></div>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><h3 class="h3">Preencha o cadastro</h3><p class="muted" style="font-size:14px">Conte um pouco sobre o seu negócio.</p></div>
+        <div class="step"><span class="num">2</span><h3 class="h3">Aprovação em 48h</h3><p class="muted" style="font-size:14px">Nosso time analisa e libera seu acesso.</p></div>
+        <div class="step"><span class="num">3</span><h3 class="h3">Comece a vender</h3><p class="muted" style="font-size:14px">Faça seu primeiro pedido no atacado.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS DE REVENDEDORES -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Quem já vende</span><h2 class="h2">Revendedores que cresceram com a gente</h2></div></div>
+      <div class="quotes">
+        <div class="quote"><span class="stars"><i></i><i></i><i></i><i></i><i></i></span><p>"Coloquei a Vittari no meu mercadinho e virou o refrigerante mais pedido. Margem ótima e reposição rápida."</p><div class="who"><span class="av2" data-av="Anderson Lima" data-fem="0"></span><span><b>Anderson Lima</b><small>Mercado · Fortaleza, CE</small></span></div></div>
+        <div class="quote"><span class="stars"><i></i><i></i><i></i><i></i><i></i></span><p>"O +Power Energy sai muito na minha lanchonete. O gerente de conta me ajudou a montar o mix ideal."</p><div class="who"><span class="av2" data-av="Priscila Nunes" data-fem="1"></span><span><b>Priscila Nunes</b><small>Lanchonete · Goiânia, GO</small></span></div></div>
+        <div class="quote"><span class="stars"><i></i><i></i><i></i><i></i><i></i></span><p>"Comecei com o kit degustação e hoje faço pedido de atacado todo mês. Recomendo demais."</p><div class="who"><span class="av2" data-av="Marcos Teixeira" data-fem="0"></span><span><b>Marcos Teixeira</b><small>Distribuidora · Campinas, SP</small></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO PRINCIPAL -->
+  <section class="sec" id="reseller-form">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Cadastro</span><h2 class="h2">Solicite sua conta de revenda</h2></div></div>
+      <div class="form">
+        <div class="field-l"><label>Nome completo</label><input placeholder="Seu nome"></div>
+        <div class="field-l"><label>Nome da empresa</label><input placeholder="Razão social / fantasia"></div>
+        <div class="field-l"><label>E-mail</label><input placeholder="voce@empresa.com"></div>
+        <div class="field-l"><label>Telefone / WhatsApp</label><input placeholder="(00) 00000-0000"></div>
+        <div class="field-l"><label>CNPJ (opcional)</label><input placeholder="00.000.000/0000-00"></div>
+        <div class="field-l"><label>Cidade / UF</label><input placeholder="Cidade — UF"></div>
+        <div class="field-l"><label>Tipo de negócio</label><input placeholder="Mercado, lanchonete, distribuidora..."></div>
+        <div class="field-l"><label>Volume estimado / mês</label><input placeholder="Ex.: 200 unidades"></div>
+        <div class="field-l full"><label>Conte mais sobre o seu negócio</label><textarea placeholder="O que você já vende, público, região de atuação..."></textarea></div>
+        <div class="full"><button class="btn block" onclick="openThanks()">Enviar cadastro</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sec-head"><div class="t"><span class="eyebrow">Dúvidas</span><h2 class="h2">Perguntas frequentes</h2></div></div>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="qa" onclick="toggleFaq(this)"><b>Qual o pedido mínimo para revenda?</b><span class="plus"></span></button>
+          <div class="qa-a"><div><p>O menor kit é o Degustação, com 24 unidades (R$ 189). A partir dele você monta pedidos do tamanho que quiser — quanto maior o volume, menor o preço por unidade.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="qa" onclick="toggleFaq(this)"><b>Preciso ter CNPJ?</b><span class="plus"></span></button>
+          <div class="qa-a"><div><p>Não é obrigatório. Aceitamos cadastro com CPF para revendedores autônomos. Com CNPJ, porém, você desbloqueia condições melhores de preço e prazo.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="qa" onclick="toggleFaq(this)"><b>Vocês entregam para todo o Brasil?</b><span class="plus"></span></button>
+          <div class="qa-a"><div><p>Sim, atendemos mais de 450 cidades com envio rastreado. O prazo médio é de 3 a 7 dias úteis, variando conforme a região, e o frete é grátis na primeira compra do Kit Revenda.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="qa" onclick="toggleFaq(this)"><b>Como funcionam os prazos de pagamento?</b><span class="plus"></span></button>
+          <div class="qa-a"><div><p>O primeiro pedido é à vista (Pix ou cartão em até 6x). A partir do segundo, revendedores com CNPJ ativo podem solicitar faturamento em 14 ou 28 dias com o gerente de conta.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="qa" onclick="toggleFaq(this)"><b>Recebo material de divulgação?</b><span class="plus"></span></button>
+          <div class="qa-a"><div><p>Sim. Todo revendedor aprovado recebe acesso ao nosso banco de fotos, artes prontas para redes sociais e, nos kits maiores, displays físicos para o ponto de venda.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="lp-cta">
+    <div class="wrap">
+      <div class="lp-cta-logo"><svg class="logo-svg logo-w" viewBox="0 0 1679 406" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M157.908 134.162C147.73 109.716 132.608 90.7991 114.869 77.121C86.9513 55.8762 52.3453 48.6006 18.3208 56.1672C12.2139 57.6224 6.10698 59.3685 3.05176e-05 61.6967L0.872416 63.7338C16.8668 103.895 46.2384 129.214 79.972 138.818C104.691 146.385 131.736 144.639 157.908 134.162Z" fill="#03591A"/> <path d="M160.525 128.051C150.347 111.171 145.403 93.4187 145.112 76.5393C144.822 50.3472 155.581 26.1922 175.356 8.73072C178.846 5.52946 182.917 2.61922 186.988 0L187.861 1.45512C205.018 28.8114 207.345 57.9138 198.33 82.6508C191.351 100.985 178.555 116.992 160.525 128.051Z" fill="#03591A"/> <path d="M135.224 158.899C202.982 158.899 257.653 213.321 257.653 281.42V368.437H225.664V365.526C203.272 390.263 170.993 405.688 134.933 405.688C65.7207 405.688 11.0491 350.975 11.3399 281.42C11.3399 213.612 66.0116 158.899 135.224 158.899ZM134.351 191.785C84.332 191.785 43.6194 232.237 43.9102 282.293C43.9103 332.349 84.3321 372.802 134.351 372.802C184.369 372.802 224.792 332.35 224.792 282.293C224.792 232.237 184.369 191.785 134.351 191.785Z" fill="#03591A"/> <path d="M342.54 202.48V94.8015H409.995C418.029 94.8015 424.707 96.4188 430.028 99.6533C435.454 102.888 439.523 107.114 442.236 112.331C444.949 117.547 446.305 123.182 446.305 129.233C446.305 136.12 444.688 142.276 441.453 147.702C438.219 153.023 433.837 157.301 428.307 160.535L449.435 202.48H410.621L394.188 166.326H377.128V202.48H342.54ZM377.128 142.38H401.387C404.1 142.38 406.395 141.337 408.273 139.25C410.151 137.059 411.091 134.19 411.091 130.642C411.091 128.451 410.673 126.521 409.838 124.851C409.004 123.182 407.856 121.878 406.395 120.939C404.935 119.895 403.265 119.373 401.387 119.373H377.128V142.38ZM503.711 204.358C493.799 204.358 485.191 202.845 477.887 199.819C470.687 196.689 465.105 191.941 461.14 185.577C457.28 179.212 455.35 171.074 455.35 161.161C455.35 151.458 457.28 143.424 461.14 137.059C465.001 130.694 470.374 125.947 477.261 122.817C484.252 119.582 492.442 117.965 501.833 117.965C511.745 117.965 520.144 119.53 527.031 122.66C534.021 125.686 539.343 130.381 542.995 136.746C546.647 143.111 548.472 151.249 548.472 161.161V166.483H486.495C486.495 170.239 487.017 173.473 488.06 176.186C489.208 178.899 490.981 180.986 493.381 182.447C495.885 183.803 499.12 184.481 503.085 184.481C505.902 184.481 508.25 184.168 510.128 183.542C512.11 182.916 513.675 182.081 514.823 181.038C516.075 179.89 516.962 178.586 517.484 177.125C518.005 175.665 518.266 174.099 518.266 172.43H548.472C548.472 177.334 547.533 181.768 545.655 185.733C543.777 189.698 540.96 193.089 537.204 195.906C533.448 198.619 528.752 200.706 523.118 202.167C517.588 203.627 511.119 204.358 503.711 204.358ZM486.651 151.771H517.014C517.014 149.58 516.701 147.649 516.075 145.98C515.449 144.206 514.51 142.745 513.258 141.598C512.11 140.346 510.649 139.407 508.876 138.781C507.206 138.155 505.276 137.841 503.085 137.841C499.642 137.841 496.772 138.415 494.477 139.563C492.181 140.711 490.408 142.328 489.156 144.415C487.903 146.397 487.069 148.849 486.651 151.771ZM594.641 204.358C587.338 204.358 581.077 202.793 575.86 199.663C570.643 196.428 566.626 191.628 563.809 185.264C561.096 178.795 559.74 170.708 559.74 161.005C559.74 151.406 561.096 143.424 563.809 137.059C566.626 130.694 570.643 125.947 575.86 122.817C581.077 119.582 587.338 117.965 594.641 117.965C597.563 117.965 600.38 118.33 603.093 119.06C605.91 119.686 608.466 120.73 610.762 122.191C613.162 123.547 615.144 125.321 616.709 127.512H617.805V89.0107H648.95V202.48H623.596L621.404 190.742H620.309C617.387 195.437 613.736 198.88 609.353 201.071C604.971 203.262 600.067 204.358 594.641 204.358ZM604.345 181.351C607.58 181.351 610.188 180.568 612.17 179.003C614.257 177.438 615.77 175.351 616.709 172.743C617.648 170.03 618.118 167.057 618.118 163.822V158.657C618.118 156.257 617.857 154.014 617.335 151.927C616.814 149.736 615.979 147.858 614.831 146.293C613.788 144.624 612.379 143.319 610.605 142.38C608.832 141.441 606.745 140.972 604.345 140.972C601.11 140.972 598.502 141.65 596.52 143.006C594.537 144.363 593.076 146.241 592.137 148.641C591.303 151.04 590.885 153.858 590.885 157.092V165.387C590.885 168.622 591.303 171.439 592.137 173.839C593.076 176.238 594.537 178.116 596.52 179.473C598.502 180.725 601.11 181.351 604.345 181.351ZM712.492 204.358C702.579 204.358 693.971 202.845 686.668 199.819C679.468 196.689 673.886 191.941 669.921 185.577C666.061 179.212 664.13 171.074 664.13 161.161C664.13 151.458 666.061 143.424 669.921 137.059C673.782 130.694 679.155 125.947 686.041 122.817C693.032 119.582 701.223 117.965 710.613 117.965C720.526 117.965 728.925 119.53 735.811 122.66C742.802 125.686 748.123 130.381 751.775 136.746C755.427 143.111 757.253 151.249 757.253 161.161V166.483H695.276C695.276 170.239 695.797 173.473 696.841 176.186C697.988 178.899 699.762 180.986 702.162 182.447C704.666 183.803 707.901 184.481 711.865 184.481C714.683 184.481 717.03 184.168 718.908 183.542C720.891 182.916 722.456 182.081 723.604 181.038C724.856 179.89 725.743 178.586 726.264 177.125C726.786 175.665 727.047 174.099 727.047 172.43H757.253C757.253 177.334 756.314 181.768 754.436 185.733C752.558 189.698 749.741 193.089 745.984 195.906C742.228 198.619 737.533 200.706 731.899 202.167C726.369 203.627 719.9 204.358 712.492 204.358ZM695.432 151.771H725.795C725.795 149.58 725.482 147.649 724.856 145.98C724.23 144.206 723.291 142.745 722.039 141.598C720.891 140.346 719.43 139.407 717.656 138.781C715.987 138.155 714.057 137.841 711.865 137.841C708.422 137.841 705.553 138.415 703.257 139.563C700.962 140.711 699.188 142.328 697.936 144.415C696.684 146.397 695.849 148.849 695.432 151.771ZM342.54 372.48V264.801H371.963L405.456 303.459C406.395 304.503 407.647 306.016 409.212 307.998C410.778 309.98 412.343 312.015 413.908 314.102C415.577 316.084 416.829 317.702 417.664 318.954L418.446 318.641C418.342 315.719 418.29 312.85 418.29 310.033C418.29 307.111 418.29 304.92 418.29 303.459V264.801H449.748V372.48H420.481L382.762 329.44C380.989 327.353 379.476 325.475 378.224 323.805C376.972 322.032 375.772 320.362 374.624 318.797L373.841 319.11C373.946 321.093 373.998 323.075 373.998 325.057C373.998 327.04 373.998 328.501 373.998 329.44V372.48H342.54ZM495.137 374.358C490.859 374.358 486.946 373.94 483.399 373.106C479.851 372.375 476.773 371.123 474.165 369.35C471.556 367.471 469.522 365.072 468.061 362.15C466.705 359.124 466.026 355.472 466.026 351.195C466.026 345.038 467.279 340.03 469.783 336.17C472.391 332.309 476.147 329.335 481.051 327.249C485.955 325.162 491.903 323.753 498.893 323.023C505.988 322.188 514.075 321.771 523.152 321.771V317.702C523.152 315.406 522.578 313.58 521.431 312.224C520.387 310.763 518.979 309.667 517.205 308.937C515.431 308.207 513.397 307.841 511.101 307.841C509.327 307.841 507.501 308.05 505.623 308.468C503.745 308.885 502.18 309.615 500.928 310.659C499.78 311.702 499.206 313.163 499.206 315.041V315.667H468.531C468.426 315.25 468.374 314.884 468.374 314.571C468.374 314.258 468.374 313.893 468.374 313.476C468.374 308.363 469.991 303.929 473.226 300.173C476.565 296.312 481.417 293.338 487.781 291.252C494.25 289.06 502.18 287.965 511.571 287.965C519.187 287.965 526.23 288.8 532.699 290.469C539.168 292.138 544.385 294.956 548.35 298.92C552.315 302.781 554.298 308.102 554.298 314.884V347.125C554.298 348.795 554.715 350.255 555.55 351.508C556.384 352.655 557.636 353.229 559.306 353.229H564.94V371.228C563.688 371.958 561.601 372.636 558.68 373.262C555.863 373.993 552.524 374.358 548.663 374.358C544.49 374.358 540.838 373.94 537.708 373.106C534.577 372.271 532.021 371.071 530.039 369.506C528.161 367.941 526.856 366.115 526.126 364.028H525.03C522.839 366.011 520.283 367.784 517.361 369.35C514.544 370.915 511.31 372.115 507.658 372.949C504.006 373.888 499.832 374.358 495.137 374.358ZM507.814 354.951C509.797 354.951 511.675 354.69 513.449 354.168C515.327 353.542 516.996 352.76 518.457 351.821C519.918 350.777 521.065 349.577 521.9 348.221C522.735 346.76 523.152 345.195 523.152 343.526V336.483C516.996 336.483 511.988 336.952 508.127 337.891C504.371 338.83 501.606 340.082 499.832 341.647C498.059 343.213 497.172 345.038 497.172 347.125C497.172 349.212 497.693 350.829 498.737 351.977C499.78 353.125 501.084 353.907 502.65 354.325C504.319 354.742 506.041 354.951 507.814 354.951ZM610.17 374.358C604.536 374.358 599.527 373.732 595.145 372.48C590.867 371.123 587.528 368.828 585.129 365.593C582.729 362.359 581.529 357.924 581.529 352.29V310.972H569.947V289.843H582.781L589.511 264.801H612.674V289.843H630.203V310.972H612.674V342.43C612.674 345.978 613.248 348.69 614.396 350.568C615.544 352.342 617.891 353.229 621.439 353.229H630.203V371.541C628.534 372.062 626.447 372.532 623.943 372.949C621.543 373.471 619.091 373.836 616.587 374.045C614.187 374.254 612.048 374.358 610.17 374.358ZM673.139 374.358C663.331 374.358 656.08 371.645 651.385 366.219C646.689 360.794 644.342 353.177 644.342 343.369V289.843H675.487V339.613C675.487 341.282 675.696 342.847 676.113 344.308C676.635 345.769 677.313 347.021 678.148 348.064C678.982 349.108 680.078 349.942 681.434 350.568C682.791 351.09 684.304 351.351 685.973 351.351C688.582 351.351 690.825 350.777 692.703 349.629C694.685 348.377 696.198 346.76 697.242 344.778C698.389 342.795 698.963 340.656 698.963 338.361V289.843H730.109V372.48H704.598L703.033 359.959H701.937C699.955 362.985 697.398 365.593 694.268 367.784C691.242 369.976 687.903 371.593 684.251 372.636C680.6 373.784 676.896 374.358 673.139 374.358ZM749.045 372.48V289.843H774.556L776.591 302.364H777.686C779.043 299.233 780.764 296.573 782.851 294.382C785.042 292.191 787.546 290.573 790.363 289.53C793.181 288.382 796.154 287.808 799.284 287.808C801.371 287.808 803.249 288.017 804.919 288.434C806.588 288.852 807.788 289.269 808.518 289.686V315.823H798.502C795.163 315.823 792.294 316.293 789.894 317.232C787.598 318.067 785.72 319.371 784.26 321.145C782.903 322.814 781.86 324.901 781.129 327.405C780.503 329.805 780.19 332.57 780.19 335.7V372.48H749.045ZM841.475 374.358C837.197 374.358 833.284 373.94 829.736 373.106C826.189 372.375 823.111 371.123 820.502 369.35C817.894 367.471 815.859 365.072 814.398 362.15C813.042 359.124 812.364 355.472 812.364 351.195C812.364 345.038 813.616 340.03 816.12 336.17C818.729 332.309 822.485 329.335 827.389 327.249C832.293 325.162 838.24 323.753 845.231 323.023C852.326 322.188 860.412 321.771 869.49 321.771V317.702C869.49 315.406 868.916 313.58 867.768 312.224C866.725 310.763 865.316 309.667 863.542 308.937C861.769 308.207 859.734 307.841 857.438 307.841C855.665 307.841 853.839 308.05 851.961 308.468C850.083 308.885 848.517 309.615 847.265 310.659C846.118 311.702 845.544 313.163 845.544 315.041V315.667H814.868C814.764 315.25 814.712 314.884 814.712 314.571C814.712 314.258 814.712 313.893 814.712 313.476C814.712 308.363 816.329 303.929 819.563 300.173C822.902 296.312 827.754 293.338 834.119 291.252C840.588 289.06 848.517 287.965 857.908 287.965C865.525 287.965 872.568 288.8 879.037 290.469C885.506 292.138 890.723 294.956 894.688 298.92C898.653 302.781 900.635 308.102 900.635 314.884V347.125C900.635 348.795 901.052 350.255 901.887 351.508C902.722 352.655 903.974 353.229 905.643 353.229H911.278V371.228C910.026 371.958 907.939 372.636 905.017 373.262C902.2 373.993 898.861 374.358 895.001 374.358C890.827 374.358 887.175 373.94 884.045 373.106C880.915 372.271 878.359 371.071 876.376 369.506C874.498 367.941 873.194 366.115 872.463 364.028H871.368C869.177 366.011 866.62 367.784 863.699 369.35C860.882 370.915 857.647 372.115 853.995 372.949C850.343 373.888 846.17 374.358 841.475 374.358ZM854.152 354.951C856.134 354.951 858.012 354.69 859.786 354.168C861.664 353.542 863.334 352.76 864.794 351.821C866.255 350.777 867.403 349.577 868.238 348.221C869.072 346.76 869.49 345.195 869.49 343.526V336.483C863.334 336.483 858.325 336.952 854.465 337.891C850.709 338.83 847.944 340.082 846.17 341.647C844.396 343.213 843.509 345.038 843.509 347.125C843.509 349.212 844.031 350.829 845.074 351.977C846.118 353.125 847.422 353.907 848.987 354.325C850.656 354.742 852.378 354.951 854.152 354.951ZM921.449 372.48V259.011H952.595V372.48H921.449ZM973.62 372.48V264.801H1008.21V304.085H1046.24V264.801H1080.83V372.48H1046.24V331.631H1008.21V372.48H973.62ZM1146.41 374.358C1136.49 374.358 1127.89 372.845 1120.58 369.819C1113.38 366.689 1107.8 361.941 1103.84 355.577C1099.98 349.212 1098.05 341.074 1098.05 331.161C1098.05 321.458 1099.98 313.424 1103.84 307.059C1107.7 300.694 1113.07 295.947 1119.96 292.817C1126.95 289.582 1135.14 287.965 1144.53 287.965C1154.44 287.965 1162.84 289.53 1169.73 292.66C1176.72 295.686 1182.04 300.381 1185.69 306.746C1189.34 313.111 1191.17 321.249 1191.17 331.161V336.483H1129.19C1129.19 340.239 1129.71 343.473 1130.76 346.186C1131.9 348.899 1133.68 350.986 1136.08 352.447C1138.58 353.803 1141.82 354.481 1145.78 354.481C1148.6 354.481 1150.95 354.168 1152.82 353.542C1154.81 352.916 1156.37 352.081 1157.52 351.038C1158.77 349.89 1159.66 348.586 1160.18 347.125C1160.7 345.665 1160.96 344.099 1160.96 342.43H1191.17C1191.17 347.334 1190.23 351.768 1188.35 355.733C1186.47 359.698 1183.66 363.089 1179.9 365.906C1176.14 368.619 1171.45 370.706 1165.81 372.167C1160.28 373.627 1153.81 374.358 1146.41 374.358ZM1129.35 321.771H1159.71C1159.71 319.58 1159.4 317.649 1158.77 315.98C1158.14 314.206 1157.21 312.745 1155.95 311.598C1154.81 310.346 1153.35 309.407 1151.57 308.781C1149.9 308.155 1147.97 307.841 1145.78 307.841C1142.34 307.841 1139.47 308.415 1137.17 309.563C1134.88 310.711 1133.1 312.328 1131.85 314.415C1130.6 316.397 1129.76 318.849 1129.35 321.771ZM1230.61 374.358C1226.33 374.358 1222.42 373.94 1218.87 373.106C1215.32 372.375 1212.24 371.123 1209.64 369.35C1207.03 367.471 1204.99 365.072 1203.53 362.15C1202.17 359.124 1201.5 355.472 1201.5 351.195C1201.5 345.038 1202.75 340.03 1205.25 336.17C1207.86 332.309 1211.62 329.335 1216.52 327.249C1221.43 325.162 1227.37 323.753 1234.36 323.023C1241.46 322.188 1249.55 321.771 1258.62 321.771V317.702C1258.62 315.406 1258.05 313.58 1256.9 312.224C1255.86 310.763 1254.45 309.667 1252.68 308.937C1250.9 308.207 1248.87 307.841 1246.57 307.841C1244.8 307.841 1242.97 308.05 1241.09 308.468C1239.22 308.885 1237.65 309.615 1236.4 310.659C1235.25 311.702 1234.68 313.163 1234.68 315.041V315.667H1204C1203.9 315.25 1203.84 314.884 1203.84 314.571C1203.84 314.258 1203.84 313.893 1203.84 313.476C1203.84 308.363 1205.46 303.929 1208.7 300.173C1212.04 296.312 1216.89 293.338 1223.25 291.252C1229.72 289.06 1237.65 287.965 1247.04 287.965C1254.66 287.965 1261.7 288.8 1268.17 290.469C1274.64 292.138 1279.86 294.956 1283.82 298.92C1287.79 302.781 1289.77 308.102 1289.77 314.884V347.125C1289.77 348.795 1290.19 350.255 1291.02 351.508C1291.85 352.655 1293.11 353.229 1294.78 353.229H1300.41V371.228C1299.16 371.958 1297.07 372.636 1294.15 373.262C1291.33 373.993 1287.99 374.358 1284.13 374.358C1279.96 374.358 1276.31 373.94 1273.18 373.106C1270.05 372.271 1267.49 371.071 1265.51 369.506C1263.63 367.941 1262.33 366.115 1261.6 364.028H1260.5C1258.31 366.011 1255.75 367.784 1252.83 369.35C1250.01 370.915 1246.78 372.115 1243.13 372.949C1239.48 373.888 1235.3 374.358 1230.61 374.358ZM1243.28 354.951C1245.27 354.951 1247.15 354.69 1248.92 354.168C1250.8 353.542 1252.47 352.76 1253.93 351.821C1255.39 350.777 1256.54 349.577 1257.37 348.221C1258.21 346.76 1258.62 345.195 1258.62 343.526V336.483C1252.47 336.483 1247.46 336.952 1243.6 337.891C1239.84 338.83 1237.08 340.082 1235.3 341.647C1233.53 343.213 1232.64 345.038 1232.64 347.125C1232.64 349.212 1233.16 350.829 1234.21 351.977C1235.25 353.125 1236.55 353.907 1238.12 354.325C1239.79 354.742 1241.51 354.951 1243.28 354.951ZM1310.58 372.48V259.011H1341.73V372.48H1310.58ZM1395.62 374.358C1389.99 374.358 1384.98 373.732 1380.59 372.48C1376.32 371.123 1372.98 368.828 1370.58 365.593C1368.18 362.359 1366.98 357.924 1366.98 352.29V310.972H1355.4V289.843H1368.23L1374.96 264.801H1398.12V289.843H1415.65V310.972H1398.12V342.43C1398.12 345.978 1398.7 348.69 1399.85 350.568C1400.99 352.342 1403.34 353.229 1406.89 353.229H1415.65V371.541C1413.98 372.062 1411.9 372.532 1409.39 372.949C1406.99 373.471 1404.54 373.836 1402.04 374.045C1399.64 374.254 1397.5 374.358 1395.62 374.358ZM1430.1 372.48V259.011H1461.25V298.451H1462.34C1464.12 296.155 1466.36 294.277 1469.07 292.817C1471.79 291.252 1474.71 290.052 1477.84 289.217C1480.97 288.382 1484.05 287.965 1487.07 287.965C1493.65 287.965 1499.02 289.217 1503.19 291.721C1507.47 294.121 1510.65 297.616 1512.74 302.207C1514.83 306.798 1515.87 312.38 1515.87 318.954V372.48H1484.73V322.71C1484.73 320.936 1484.46 319.371 1483.94 318.015C1483.53 316.554 1482.9 315.302 1482.06 314.258C1481.23 313.215 1480.13 312.432 1478.78 311.911C1477.53 311.285 1476.01 310.972 1474.24 310.972C1471.63 310.972 1469.34 311.598 1467.35 312.85C1465.47 313.998 1463.96 315.563 1462.81 317.545C1461.77 319.423 1461.25 321.562 1461.25 323.962V372.48H1430.1Z" fill="#FFFFFF"/> <path d="M1566.42 372.48V341.491H1535.43V320.832H1566.42V289.843H1587.08V320.832H1618.07V341.491H1587.08V372.48H1566.42Z" fill="#FF9A0C"/> </svg></div>
+      <h2 class="h2" style="color:#fff">Pronto para aumentar seu faturamento?</h2>
+      <p style="color:#c9c9c9;max-width:52ch;margin:14px auto 24px">Junte-se a milhares de revendedores oficiais Natural Health e comece a vender ainda esta semana.</p>
+      <a class="btn" style="background:#fff;color:var(--ink);border-color:#fff" onclick="scrollForm()">Quero ser revendedor</a>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: CENTRAL DE ATENDIMENTO (3.4) ================= -->
+<section class="page" id="page-atendimento">
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Central de atendimento</b></div>
+  <div class="pagehero"><div class="wrap"><span class="eyebrow">Fale com a gente</span><h1 class="h1">Central de atendimento</h1><p class="lead">Nosso WhatsApp é canal de venda ativo: é por ele que você resolve pedido, prazo, troca e revenda mais rápido.</p></div></div>
+  <section class="sec">
+    <div class="wrap legal">
+      <div class="promise" style="border:1px solid var(--line);border-radius:var(--r);margin-bottom:26px">
+        <div class="wrap promise-row">
+          <div class="pm"><span class="pm-ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4z"/></svg></span>
+            <span><b>WhatsApp</b><small><a href="https://wa.me/5562994064911" target="_blank" rel="noopener">(62) 99406-4911</a></small></span></div>
+          <div class="pm"><span class="pm-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span>
+            <span><b>E-mail</b><small><a href="mailto:sac@suconaturalhealth.com.br">sac@suconaturalhealth.com.br</a></small></span></div>
+          <div class="pm"><span class="pm-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+            <span><b>Horário</b><small>Segunda a sexta, horário comercial</small></span></div>
+        </div>
+      </div>
+      <h3>Prazos de entrega</h3>
+      <p>Trabalhamos com duas modalidades: <b>entrega normal</b>, com frete grátis para pedidos acima de R$ 100, e <b>entrega expressa</b>, que é sempre paga, sem exceção de valor. Os valores e prazos exatos de cada modalidade estão em definição e serão publicados aqui.</p>
+      <h3>Acompanhar meu pedido</h3>
+      <p>O código de rastreio aparece em <a onclick="openAccount()">Minha conta</a>, na aba de pedidos, assim que a etiqueta é gerada. Enquanto o pedido está em separação, o campo fica como aguardando.</p>
+      <h3>Trocas e devoluções</h3>
+      <p>A política completa, com as regras específicas para alimento e bebida, está em <a onclick="go('trocas')">Trocas e devoluções</a>.</p>
+      <h3>Quero revender</h3>
+      <p>Se o seu contato é sobre atacado, tabela de preços ou kits de revenda, o caminho mais rápido é a página <a onclick="go('revendedor')">Seja Revendedor Oficial</a> ou o WhatsApp acima.</p>
+      <p class="upd">Natural Mais Indústria e Comércio, Importação e Exportação Ltda · CNPJ 30.787.205/0001-20 · Aparecida de Goiânia, GO</p>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: POLÍTICA DE PRIVACIDADE (3.2) ================= -->
+<section class="page" id="page-privacidade">
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Política de Privacidade</b></div>
+  <div class="pagehero"><div class="wrap"><span class="eyebrow">Legal · LGPD</span><h1 class="h1">Política de Privacidade</h1><p class="lead">Como coletamos, usamos, armazenamos e protegemos os seus dados pessoais.</p></div></div>
+  <section class="sec">
+    <div class="wrap legal">
+      <div class="draft"><b>Texto provisório.</b> Redação final das páginas legais é responsabilidade do marketing/jurídico (itens 3.2 e 3.3 do escopo). A rota, o link do rodapé e a estrutura já estão publicados.</div>
+      <h3>1. Quem é o controlador dos seus dados</h3>
+      <p>Natural Mais Indústria e Comércio, Importação e Exportação Ltda, CNPJ 30.787.205/0001-20, com sede em Aparecida de Goiânia, GO, é a controladora dos dados pessoais tratados nesta loja, nos termos da Lei nº 13.709/2018 (LGPD).</p>
+      <h3>2. Quais dados coletamos</h3>
+      <ul>
+        <li>Dados de cadastro: nome, CPF, e-mail e telefone/WhatsApp.</li>
+        <li>Dados de entrega: CEP, endereço, número, bairro, cidade e estado.</li>
+        <li>Dados de pedido: itens comprados, valores, forma de pagamento e histórico de compras.</li>
+        <li>Dados de navegação: páginas visitadas, origem do acesso e cookies, para medir e melhorar a loja.</li>
+      </ul>
+      <p>Não armazenamos dados completos de cartão de crédito: o pagamento é processado diretamente pelo provedor de pagamentos.</p>
+      <h3>3. Para que usamos</h3>
+      <ul>
+        <li>Processar, faturar, entregar e dar suporte ao seu pedido (execução de contrato).</li>
+        <li>Cumprir obrigações fiscais e legais (obrigação legal).</li>
+        <li>Prevenir fraude e uso indevido de cupons de uso único por CPF (legítimo interesse).</li>
+        <li>Enviar comunicações de marketing, apenas com o seu consentimento, que pode ser retirado a qualquer momento.</li>
+      </ul>
+      <h3>4. Com quem compartilhamos</h3>
+      <p>Compartilhamos o mínimo necessário com transportadoras, provedores de pagamento, emissores de nota fiscal e prestadores de tecnologia que operam a loja. Não vendemos dados pessoais.</p>
+      <h3>5. Por quanto tempo guardamos</h3>
+      <p>Dados de pedido são mantidos pelo prazo exigido pela legislação fiscal. Dados de cadastro permanecem enquanto a conta estiver ativa. Depois disso, são eliminados ou anonimizados.</p>
+      <h3>6. Seus direitos como titular</h3>
+      <p>Você pode solicitar confirmação de tratamento, acesso, correção, anonimização, portabilidade, informação sobre compartilhamento, revogação de consentimento e eliminação dos seus dados. O pedido pode ser feito pelo e-mail sac@suconaturalhealth.com.br ou pelo WhatsApp (62) 99406-4911, e é respondido dentro do prazo legal.</p>
+      <h3>7. Cookies</h3>
+      <p>Usamos cookies necessários para o funcionamento do carrinho e do checkout, e cookies de medição para entender o uso da loja. Você pode bloquear cookies no navegador, ciente de que isso pode afetar a finalização da compra.</p>
+      <h3>8. Segurança</h3>
+      <p>Adotamos medidas técnicas e administrativas para proteger os dados contra acesso não autorizado, perda ou alteração. Em caso de incidente relevante, comunicamos os titulares e a ANPD conforme a LGPD.</p>
+      <p class="upd">Última atualização: pendente da versão final aprovada pelo jurídico.</p>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: TROCAS E DEVOLUÇÕES (3.3) ================= -->
+<section class="page" id="page-trocas">
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Trocas e Devoluções</b></div>
+  <div class="pagehero"><div class="wrap"><span class="eyebrow">Legal</span><h1 class="h1">Trocas e Devoluções</h1><p class="lead">Política específica para alimentos e bebidas: lacre, perecibilidade e avaria no transporte.</p></div></div>
+  <section class="sec">
+    <div class="wrap legal">
+      <div class="draft"><b>Texto provisório.</b> Redação final das páginas legais é responsabilidade do marketing/jurídico (itens 3.2 e 3.3 do escopo). A rota, o link do rodapé e a estrutura já estão publicados.</div>
+      <h3>1. Arrependimento em até 7 dias (compra online)</h3>
+      <p>Conforme o artigo 49 do Código de Defesa do Consumidor, você pode desistir da compra em até 7 dias corridos contados do recebimento. Por se tratar de alimento e bebida, a devolução por arrependimento só é aceita com o <b>lacre íntegro</b>, embalagem original, sem sinais de uso e dentro da validade.</p>
+      <h3>2. Produto com lacre violado</h3>
+      <p>Produtos com lacre rompido, tampa aberta ou embalagem perfurada não podem ser revendidos nem reintegrados ao estoque, por segurança alimentar. Nesses casos não há troca por arrependimento — apenas as hipóteses de vício do produto descritas abaixo.</p>
+      <h3>3. Produto perecível</h3>
+      <p>Sucos e bebidas sem conservantes exigem cuidado com temperatura e prazo. Não aceitamos devolução de item que tenha ficado fora das condições de armazenamento indicadas no rótulo, nem de produto com validade vencida por armazenamento inadequado após a entrega.</p>
+      <h3>4. Avaria no transporte</h3>
+      <p>Confira a embalagem na frente do entregador. Se a caixa estiver molhada, amassada ou com vazamento, <b>recuse o recebimento</b> e registre a ocorrência com o transportador. Se a avaria só for percebida depois, comunique em até <b>72 horas</b> pelo WhatsApp (62) 99406-4911 ou por sac@suconaturalhealth.com.br, com fotos da caixa, do lacre e do produto. A reposição ou o reembolso é feito sem custo para você.</p>
+      <h3>5. Produto com vício ou fora de especificação</h3>
+      <p>Item trocado, faltando, com rótulo divergente ou com alteração de sabor, cor ou aspecto deve ser comunicado em até 30 dias do recebimento, com fotos e o número do lote impresso na embalagem. Analisamos com o controle de qualidade e, confirmado o vício, repomos o produto ou devolvemos o valor pago.</p>
+      <h3>6. Como solicitar</h3>
+      <ul>
+        <li>Envie número do pedido, fotos e a descrição do problema pelos canais de atendimento.</li>
+        <li>Recebendo a autorização, o produto é coletado ou postado sem custo para você quando a responsabilidade é nossa.</li>
+        <li>O reembolso é feito pelo mesmo meio de pagamento em até 10 dias úteis após a conferência.</li>
+      </ul>
+      <h3>7. Pedidos de revenda</h3>
+      <p>Pedidos no atacado seguem a política comercial acordada com o gestor comercial e podem ter regras próprias de troca por lote.</p>
+      <p class="upd">Última atualização: pendente da versão final aprovada pelo jurídico.</p>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PÁGINA: TERMOS DE USO (3.2) ================= -->
+<section class="page" id="page-termos">
+  <div class="wrap breadcrumb"><a onclick="go('home')">Início</a> / <b>Termos de Uso</b></div>
+  <div class="pagehero"><div class="wrap"><span class="eyebrow">Legal</span><h1 class="h1">Termos de Uso</h1><p class="lead">Regras de uso da loja, das ofertas e das condições de compra.</p></div></div>
+  <section class="sec">
+    <div class="wrap legal">
+      <div class="draft"><b>Texto provisório.</b> Redação final das páginas legais é responsabilidade do marketing/jurídico (itens 3.2 e 3.3 do escopo). A rota, o link do rodapé e a estrutura já estão publicados.</div>
+      <h3>1. Aceite</h3>
+      <p>Ao navegar ou comprar nesta loja, você concorda com estes termos. A loja é operada por Natural Mais Indústria e Comércio, Importação e Exportação Ltda, CNPJ 30.787.205/0001-20, Aparecida de Goiânia, GO.</p>
+      <h3>2. Cadastro</h3>
+      <p>As informações fornecidas devem ser verdadeiras e atualizadas. O CPF é usado para identificar o cliente e controlar cupons de uso único. Você é responsável pela guarda das suas credenciais.</p>
+      <h3>3. Preços e disponibilidade</h3>
+      <p>Preços e estoques podem mudar sem aviso. Em caso de erro evidente de preço ou de indisponibilidade após a compra, entramos em contato para cancelar com reembolso integral ou oferecer alternativa.</p>
+      <h3>4. Ofertas e descontos</h3>
+      <ul>
+        <li>A oferta de fardo Leve 6, Pague 5 é mecânica de produto e é aplicada automaticamente no carrinho.</li>
+        <li>Cupons têm teto de 10%, uso único por CPF e prazo de validade.</li>
+        <li><b>Os descontos não são cumulativos.</b> O carrinho recebe sempre o melhor desconto aplicável, nunca a soma de dois.</li>
+        <li>As ofertas podem ser alteradas ou encerradas a qualquer momento, respeitados os pedidos já concluídos.</li>
+      </ul>
+      <h3>5. Frete</h3>
+      <p>O frete grátis acima de R$ 100 vale somente para a entrega normal. A entrega expressa é sempre paga, sem exceção de valor.</p>
+      <h3>6. Pagamento</h3>
+      <p>Os pagamentos são processados por provedor externo. O parcelamento em cartão é de até 6x sem juros, respeitada a parcela mínima de R$ 5,00.</p>
+      <h3>7. Trocas, devoluções e privacidade</h3>
+      <p>Aplicam-se a <a onclick="go('trocas')">Política de Trocas e Devoluções</a> e a <a onclick="go('privacidade')">Política de Privacidade</a>, que integram estes termos.</p>
+      <h3>8. Propriedade intelectual</h3>
+      <p>Marcas, logotipos, textos, fotos e layout são de titularidade da empresa e não podem ser usados sem autorização, salvo o material de apoio liberado a revendedores cadastrados.</p>
+      <h3>9. Foro</h3>
+      <p>Fica eleito o foro da comarca de Aparecida de Goiânia, GO, salvo a hipótese legal de foro do domicílio do consumidor.</p>
+      <p class="upd">Última atualização: pendente da versão final aprovada pelo jurídico.</p>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand brand-foot" onclick="go('home')" aria-label="Natural Health"><svg class="logo-svg" viewBox="0 0 1679 406" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M157.908 134.162C147.73 109.716 132.608 90.7991 114.869 77.121C86.9513 55.8762 52.3453 48.6006 18.3208 56.1672C12.2139 57.6224 6.10698 59.3685 3.05176e-05 61.6967L0.872416 63.7338C16.8668 103.895 46.2384 129.214 79.972 138.818C104.691 146.385 131.736 144.639 157.908 134.162Z" fill="#03591A"/> <path d="M160.525 128.051C150.347 111.171 145.403 93.4187 145.112 76.5393C144.822 50.3472 155.581 26.1922 175.356 8.73072C178.846 5.52946 182.917 2.61922 186.988 0L187.861 1.45512C205.018 28.8114 207.345 57.9138 198.33 82.6508C191.351 100.985 178.555 116.992 160.525 128.051Z" fill="#03591A"/> <path d="M135.224 158.899C202.982 158.899 257.653 213.321 257.653 281.42V368.437H225.664V365.526C203.272 390.263 170.993 405.688 134.933 405.688C65.7207 405.688 11.0491 350.975 11.3399 281.42C11.3399 213.612 66.0116 158.899 135.224 158.899ZM134.351 191.785C84.332 191.785 43.6194 232.237 43.9102 282.293C43.9103 332.349 84.3321 372.802 134.351 372.802C184.369 372.802 224.792 332.35 224.792 282.293C224.792 232.237 184.369 191.785 134.351 191.785Z" fill="#03591A"/> <path d="M342.54 202.48V94.8015H409.995C418.029 94.8015 424.707 96.4188 430.028 99.6533C435.454 102.888 439.523 107.114 442.236 112.331C444.949 117.547 446.305 123.182 446.305 129.233C446.305 136.12 444.688 142.276 441.453 147.702C438.219 153.023 433.837 157.301 428.307 160.535L449.435 202.48H410.621L394.188 166.326H377.128V202.48H342.54ZM377.128 142.38H401.387C404.1 142.38 406.395 141.337 408.273 139.25C410.151 137.059 411.091 134.19 411.091 130.642C411.091 128.451 410.673 126.521 409.838 124.851C409.004 123.182 407.856 121.878 406.395 120.939C404.935 119.895 403.265 119.373 401.387 119.373H377.128V142.38ZM503.711 204.358C493.799 204.358 485.191 202.845 477.887 199.819C470.687 196.689 465.105 191.941 461.14 185.577C457.28 179.212 455.35 171.074 455.35 161.161C455.35 151.458 457.28 143.424 461.14 137.059C465.001 130.694 470.374 125.947 477.261 122.817C484.252 119.582 492.442 117.965 501.833 117.965C511.745 117.965 520.144 119.53 527.031 122.66C534.021 125.686 539.343 130.381 542.995 136.746C546.647 143.111 548.472 151.249 548.472 161.161V166.483H486.495C486.495 170.239 487.017 173.473 488.06 176.186C489.208 178.899 490.981 180.986 493.381 182.447C495.885 183.803 499.12 184.481 503.085 184.481C505.902 184.481 508.25 184.168 510.128 183.542C512.11 182.916 513.675 182.081 514.823 181.038C516.075 179.89 516.962 178.586 517.484 177.125C518.005 175.665 518.266 174.099 518.266 172.43H548.472C548.472 177.334 547.533 181.768 545.655 185.733C543.777 189.698 540.96 193.089 537.204 195.906C533.448 198.619 528.752 200.706 523.118 202.167C517.588 203.627 511.119 204.358 503.711 204.358ZM486.651 151.771H517.014C517.014 149.58 516.701 147.649 516.075 145.98C515.449 144.206 514.51 142.745 513.258 141.598C512.11 140.346 510.649 139.407 508.876 138.781C507.206 138.155 505.276 137.841 503.085 137.841C499.642 137.841 496.772 138.415 494.477 139.563C492.181 140.711 490.408 142.328 489.156 144.415C487.903 146.397 487.069 148.849 486.651 151.771ZM594.641 204.358C587.338 204.358 581.077 202.793 575.86 199.663C570.643 196.428 566.626 191.628 563.809 185.264C561.096 178.795 559.74 170.708 559.74 161.005C559.74 151.406 561.096 143.424 563.809 137.059C566.626 130.694 570.643 125.947 575.86 122.817C581.077 119.582 587.338 117.965 594.641 117.965C597.563 117.965 600.38 118.33 603.093 119.06C605.91 119.686 608.466 120.73 610.762 122.191C613.162 123.547 615.144 125.321 616.709 127.512H617.805V89.0107H648.95V202.48H623.596L621.404 190.742H620.309C617.387 195.437 613.736 198.88 609.353 201.071C604.971 203.262 600.067 204.358 594.641 204.358ZM604.345 181.351C607.58 181.351 610.188 180.568 612.17 179.003C614.257 177.438 615.77 175.351 616.709 172.743C617.648 170.03 618.118 167.057 618.118 163.822V158.657C618.118 156.257 617.857 154.014 617.335 151.927C616.814 149.736 615.979 147.858 614.831 146.293C613.788 144.624 612.379 143.319 610.605 142.38C608.832 141.441 606.745 140.972 604.345 140.972C601.11 140.972 598.502 141.65 596.52 143.006C594.537 144.363 593.076 146.241 592.137 148.641C591.303 151.04 590.885 153.858 590.885 157.092V165.387C590.885 168.622 591.303 171.439 592.137 173.839C593.076 176.238 594.537 178.116 596.52 179.473C598.502 180.725 601.11 181.351 604.345 181.351ZM712.492 204.358C702.579 204.358 693.971 202.845 686.668 199.819C679.468 196.689 673.886 191.941 669.921 185.577C666.061 179.212 664.13 171.074 664.13 161.161C664.13 151.458 666.061 143.424 669.921 137.059C673.782 130.694 679.155 125.947 686.041 122.817C693.032 119.582 701.223 117.965 710.613 117.965C720.526 117.965 728.925 119.53 735.811 122.66C742.802 125.686 748.123 130.381 751.775 136.746C755.427 143.111 757.253 151.249 757.253 161.161V166.483H695.276C695.276 170.239 695.797 173.473 696.841 176.186C697.988 178.899 699.762 180.986 702.162 182.447C704.666 183.803 707.901 184.481 711.865 184.481C714.683 184.481 717.03 184.168 718.908 183.542C720.891 182.916 722.456 182.081 723.604 181.038C724.856 179.89 725.743 178.586 726.264 177.125C726.786 175.665 727.047 174.099 727.047 172.43H757.253C757.253 177.334 756.314 181.768 754.436 185.733C752.558 189.698 749.741 193.089 745.984 195.906C742.228 198.619 737.533 200.706 731.899 202.167C726.369 203.627 719.9 204.358 712.492 204.358ZM695.432 151.771H725.795C725.795 149.58 725.482 147.649 724.856 145.98C724.23 144.206 723.291 142.745 722.039 141.598C720.891 140.346 719.43 139.407 717.656 138.781C715.987 138.155 714.057 137.841 711.865 137.841C708.422 137.841 705.553 138.415 703.257 139.563C700.962 140.711 699.188 142.328 697.936 144.415C696.684 146.397 695.849 148.849 695.432 151.771ZM342.54 372.48V264.801H371.963L405.456 303.459C406.395 304.503 407.647 306.016 409.212 307.998C410.778 309.98 412.343 312.015 413.908 314.102C415.577 316.084 416.829 317.702 417.664 318.954L418.446 318.641C418.342 315.719 418.29 312.85 418.29 310.033C418.29 307.111 418.29 304.92 418.29 303.459V264.801H449.748V372.48H420.481L382.762 329.44C380.989 327.353 379.476 325.475 378.224 323.805C376.972 322.032 375.772 320.362 374.624 318.797L373.841 319.11C373.946 321.093 373.998 323.075 373.998 325.057C373.998 327.04 373.998 328.501 373.998 329.44V372.48H342.54ZM495.137 374.358C490.859 374.358 486.946 373.94 483.399 373.106C479.851 372.375 476.773 371.123 474.165 369.35C471.556 367.471 469.522 365.072 468.061 362.15C466.705 359.124 466.026 355.472 466.026 351.195C466.026 345.038 467.279 340.03 469.783 336.17C472.391 332.309 476.147 329.335 481.051 327.249C485.955 325.162 491.903 323.753 498.893 323.023C505.988 322.188 514.075 321.771 523.152 321.771V317.702C523.152 315.406 522.578 313.58 521.431 312.224C520.387 310.763 518.979 309.667 517.205 308.937C515.431 308.207 513.397 307.841 511.101 307.841C509.327 307.841 507.501 308.05 505.623 308.468C503.745 308.885 502.18 309.615 500.928 310.659C499.78 311.702 499.206 313.163 499.206 315.041V315.667H468.531C468.426 315.25 468.374 314.884 468.374 314.571C468.374 314.258 468.374 313.893 468.374 313.476C468.374 308.363 469.991 303.929 473.226 300.173C476.565 296.312 481.417 293.338 487.781 291.252C494.25 289.06 502.18 287.965 511.571 287.965C519.187 287.965 526.23 288.8 532.699 290.469C539.168 292.138 544.385 294.956 548.35 298.92C552.315 302.781 554.298 308.102 554.298 314.884V347.125C554.298 348.795 554.715 350.255 555.55 351.508C556.384 352.655 557.636 353.229 559.306 353.229H564.94V371.228C563.688 371.958 561.601 372.636 558.68 373.262C555.863 373.993 552.524 374.358 548.663 374.358C544.49 374.358 540.838 373.94 537.708 373.106C534.577 372.271 532.021 371.071 530.039 369.506C528.161 367.941 526.856 366.115 526.126 364.028H525.03C522.839 366.011 520.283 367.784 517.361 369.35C514.544 370.915 511.31 372.115 507.658 372.949C504.006 373.888 499.832 374.358 495.137 374.358ZM507.814 354.951C509.797 354.951 511.675 354.69 513.449 354.168C515.327 353.542 516.996 352.76 518.457 351.821C519.918 350.777 521.065 349.577 521.9 348.221C522.735 346.76 523.152 345.195 523.152 343.526V336.483C516.996 336.483 511.988 336.952 508.127 337.891C504.371 338.83 501.606 340.082 499.832 341.647C498.059 343.213 497.172 345.038 497.172 347.125C497.172 349.212 497.693 350.829 498.737 351.977C499.78 353.125 501.084 353.907 502.65 354.325C504.319 354.742 506.041 354.951 507.814 354.951ZM610.17 374.358C604.536 374.358 599.527 373.732 595.145 372.48C590.867 371.123 587.528 368.828 585.129 365.593C582.729 362.359 581.529 357.924 581.529 352.29V310.972H569.947V289.843H582.781L589.511 264.801H612.674V289.843H630.203V310.972H612.674V342.43C612.674 345.978 613.248 348.69 614.396 350.568C615.544 352.342 617.891 353.229 621.439 353.229H630.203V371.541C628.534 372.062 626.447 372.532 623.943 372.949C621.543 373.471 619.091 373.836 616.587 374.045C614.187 374.254 612.048 374.358 610.17 374.358ZM673.139 374.358C663.331 374.358 656.08 371.645 651.385 366.219C646.689 360.794 644.342 353.177 644.342 343.369V289.843H675.487V339.613C675.487 341.282 675.696 342.847 676.113 344.308C676.635 345.769 677.313 347.021 678.148 348.064C678.982 349.108 680.078 349.942 681.434 350.568C682.791 351.09 684.304 351.351 685.973 351.351C688.582 351.351 690.825 350.777 692.703 349.629C694.685 348.377 696.198 346.76 697.242 344.778C698.389 342.795 698.963 340.656 698.963 338.361V289.843H730.109V372.48H704.598L703.033 359.959H701.937C699.955 362.985 697.398 365.593 694.268 367.784C691.242 369.976 687.903 371.593 684.251 372.636C680.6 373.784 676.896 374.358 673.139 374.358ZM749.045 372.48V289.843H774.556L776.591 302.364H777.686C779.043 299.233 780.764 296.573 782.851 294.382C785.042 292.191 787.546 290.573 790.363 289.53C793.181 288.382 796.154 287.808 799.284 287.808C801.371 287.808 803.249 288.017 804.919 288.434C806.588 288.852 807.788 289.269 808.518 289.686V315.823H798.502C795.163 315.823 792.294 316.293 789.894 317.232C787.598 318.067 785.72 319.371 784.26 321.145C782.903 322.814 781.86 324.901 781.129 327.405C780.503 329.805 780.19 332.57 780.19 335.7V372.48H749.045ZM841.475 374.358C837.197 374.358 833.284 373.94 829.736 373.106C826.189 372.375 823.111 371.123 820.502 369.35C817.894 367.471 815.859 365.072 814.398 362.15C813.042 359.124 812.364 355.472 812.364 351.195C812.364 345.038 813.616 340.03 816.12 336.17C818.729 332.309 822.485 329.335 827.389 327.249C832.293 325.162 838.24 323.753 845.231 323.023C852.326 322.188 860.412 321.771 869.49 321.771V317.702C869.49 315.406 868.916 313.58 867.768 312.224C866.725 310.763 865.316 309.667 863.542 308.937C861.769 308.207 859.734 307.841 857.438 307.841C855.665 307.841 853.839 308.05 851.961 308.468C850.083 308.885 848.517 309.615 847.265 310.659C846.118 311.702 845.544 313.163 845.544 315.041V315.667H814.868C814.764 315.25 814.712 314.884 814.712 314.571C814.712 314.258 814.712 313.893 814.712 313.476C814.712 308.363 816.329 303.929 819.563 300.173C822.902 296.312 827.754 293.338 834.119 291.252C840.588 289.06 848.517 287.965 857.908 287.965C865.525 287.965 872.568 288.8 879.037 290.469C885.506 292.138 890.723 294.956 894.688 298.92C898.653 302.781 900.635 308.102 900.635 314.884V347.125C900.635 348.795 901.052 350.255 901.887 351.508C902.722 352.655 903.974 353.229 905.643 353.229H911.278V371.228C910.026 371.958 907.939 372.636 905.017 373.262C902.2 373.993 898.861 374.358 895.001 374.358C890.827 374.358 887.175 373.94 884.045 373.106C880.915 372.271 878.359 371.071 876.376 369.506C874.498 367.941 873.194 366.115 872.463 364.028H871.368C869.177 366.011 866.62 367.784 863.699 369.35C860.882 370.915 857.647 372.115 853.995 372.949C850.343 373.888 846.17 374.358 841.475 374.358ZM854.152 354.951C856.134 354.951 858.012 354.69 859.786 354.168C861.664 353.542 863.334 352.76 864.794 351.821C866.255 350.777 867.403 349.577 868.238 348.221C869.072 346.76 869.49 345.195 869.49 343.526V336.483C863.334 336.483 858.325 336.952 854.465 337.891C850.709 338.83 847.944 340.082 846.17 341.647C844.396 343.213 843.509 345.038 843.509 347.125C843.509 349.212 844.031 350.829 845.074 351.977C846.118 353.125 847.422 353.907 848.987 354.325C850.656 354.742 852.378 354.951 854.152 354.951ZM921.449 372.48V259.011H952.595V372.48H921.449ZM973.62 372.48V264.801H1008.21V304.085H1046.24V264.801H1080.83V372.48H1046.24V331.631H1008.21V372.48H973.62ZM1146.41 374.358C1136.49 374.358 1127.89 372.845 1120.58 369.819C1113.38 366.689 1107.8 361.941 1103.84 355.577C1099.98 349.212 1098.05 341.074 1098.05 331.161C1098.05 321.458 1099.98 313.424 1103.84 307.059C1107.7 300.694 1113.07 295.947 1119.96 292.817C1126.95 289.582 1135.14 287.965 1144.53 287.965C1154.44 287.965 1162.84 289.53 1169.73 292.66C1176.72 295.686 1182.04 300.381 1185.69 306.746C1189.34 313.111 1191.17 321.249 1191.17 331.161V336.483H1129.19C1129.19 340.239 1129.71 343.473 1130.76 346.186C1131.9 348.899 1133.68 350.986 1136.08 352.447C1138.58 353.803 1141.82 354.481 1145.78 354.481C1148.6 354.481 1150.95 354.168 1152.82 353.542C1154.81 352.916 1156.37 352.081 1157.52 351.038C1158.77 349.89 1159.66 348.586 1160.18 347.125C1160.7 345.665 1160.96 344.099 1160.96 342.43H1191.17C1191.17 347.334 1190.23 351.768 1188.35 355.733C1186.47 359.698 1183.66 363.089 1179.9 365.906C1176.14 368.619 1171.45 370.706 1165.81 372.167C1160.28 373.627 1153.81 374.358 1146.41 374.358ZM1129.35 321.771H1159.71C1159.71 319.58 1159.4 317.649 1158.77 315.98C1158.14 314.206 1157.21 312.745 1155.95 311.598C1154.81 310.346 1153.35 309.407 1151.57 308.781C1149.9 308.155 1147.97 307.841 1145.78 307.841C1142.34 307.841 1139.47 308.415 1137.17 309.563C1134.88 310.711 1133.1 312.328 1131.85 314.415C1130.6 316.397 1129.76 318.849 1129.35 321.771ZM1230.61 374.358C1226.33 374.358 1222.42 373.94 1218.87 373.106C1215.32 372.375 1212.24 371.123 1209.64 369.35C1207.03 367.471 1204.99 365.072 1203.53 362.15C1202.17 359.124 1201.5 355.472 1201.5 351.195C1201.5 345.038 1202.75 340.03 1205.25 336.17C1207.86 332.309 1211.62 329.335 1216.52 327.249C1221.43 325.162 1227.37 323.753 1234.36 323.023C1241.46 322.188 1249.55 321.771 1258.62 321.771V317.702C1258.62 315.406 1258.05 313.58 1256.9 312.224C1255.86 310.763 1254.45 309.667 1252.68 308.937C1250.9 308.207 1248.87 307.841 1246.57 307.841C1244.8 307.841 1242.97 308.05 1241.09 308.468C1239.22 308.885 1237.65 309.615 1236.4 310.659C1235.25 311.702 1234.68 313.163 1234.68 315.041V315.667H1204C1203.9 315.25 1203.84 314.884 1203.84 314.571C1203.84 314.258 1203.84 313.893 1203.84 313.476C1203.84 308.363 1205.46 303.929 1208.7 300.173C1212.04 296.312 1216.89 293.338 1223.25 291.252C1229.72 289.06 1237.65 287.965 1247.04 287.965C1254.66 287.965 1261.7 288.8 1268.17 290.469C1274.64 292.138 1279.86 294.956 1283.82 298.92C1287.79 302.781 1289.77 308.102 1289.77 314.884V347.125C1289.77 348.795 1290.19 350.255 1291.02 351.508C1291.85 352.655 1293.11 353.229 1294.78 353.229H1300.41V371.228C1299.16 371.958 1297.07 372.636 1294.15 373.262C1291.33 373.993 1287.99 374.358 1284.13 374.358C1279.96 374.358 1276.31 373.94 1273.18 373.106C1270.05 372.271 1267.49 371.071 1265.51 369.506C1263.63 367.941 1262.33 366.115 1261.6 364.028H1260.5C1258.31 366.011 1255.75 367.784 1252.83 369.35C1250.01 370.915 1246.78 372.115 1243.13 372.949C1239.48 373.888 1235.3 374.358 1230.61 374.358ZM1243.28 354.951C1245.27 354.951 1247.15 354.69 1248.92 354.168C1250.8 353.542 1252.47 352.76 1253.93 351.821C1255.39 350.777 1256.54 349.577 1257.37 348.221C1258.21 346.76 1258.62 345.195 1258.62 343.526V336.483C1252.47 336.483 1247.46 336.952 1243.6 337.891C1239.84 338.83 1237.08 340.082 1235.3 341.647C1233.53 343.213 1232.64 345.038 1232.64 347.125C1232.64 349.212 1233.16 350.829 1234.21 351.977C1235.25 353.125 1236.55 353.907 1238.12 354.325C1239.79 354.742 1241.51 354.951 1243.28 354.951ZM1310.58 372.48V259.011H1341.73V372.48H1310.58ZM1395.62 374.358C1389.99 374.358 1384.98 373.732 1380.59 372.48C1376.32 371.123 1372.98 368.828 1370.58 365.593C1368.18 362.359 1366.98 357.924 1366.98 352.29V310.972H1355.4V289.843H1368.23L1374.96 264.801H1398.12V289.843H1415.65V310.972H1398.12V342.43C1398.12 345.978 1398.7 348.69 1399.85 350.568C1400.99 352.342 1403.34 353.229 1406.89 353.229H1415.65V371.541C1413.98 372.062 1411.9 372.532 1409.39 372.949C1406.99 373.471 1404.54 373.836 1402.04 374.045C1399.64 374.254 1397.5 374.358 1395.62 374.358ZM1430.1 372.48V259.011H1461.25V298.451H1462.34C1464.12 296.155 1466.36 294.277 1469.07 292.817C1471.79 291.252 1474.71 290.052 1477.84 289.217C1480.97 288.382 1484.05 287.965 1487.07 287.965C1493.65 287.965 1499.02 289.217 1503.19 291.721C1507.47 294.121 1510.65 297.616 1512.74 302.207C1514.83 306.798 1515.87 312.38 1515.87 318.954V372.48H1484.73V322.71C1484.73 320.936 1484.46 319.371 1483.94 318.015C1483.53 316.554 1482.9 315.302 1482.06 314.258C1481.23 313.215 1480.13 312.432 1478.78 311.911C1477.53 311.285 1476.01 310.972 1474.24 310.972C1471.63 310.972 1469.34 311.598 1467.35 312.85C1465.47 313.998 1463.96 315.563 1462.81 317.545C1461.77 319.423 1461.25 321.562 1461.25 323.962V372.48H1430.1Z" fill="black"/> <path d="M1566.42 372.48V341.491H1535.43V320.832H1566.42V289.843H1587.08V320.832H1618.07V341.491H1587.08V372.48H1566.42Z" fill="#FF9A0C"/> </svg></a>
+        <p>Água saborizada, energético e sucos naturais reunidos em uma só loja.</p>
+        <ul class="foot-contact">
+          <li><a href="https://wa.me/5562994064911" target="_blank" rel="noopener">WhatsApp (62) 99406-4911</a></li>
+          <li><a href="mailto:sac@suconaturalhealth.com.br">sac@suconaturalhealth.com.br</a></li>
+        </ul>
+      </div>
+      <div><h4>Loja</h4><ul>
+        <li><a onclick="go('home')">Início</a></li>
+        <li><a onclick="go('oferta')">Leve 6, Pague 5</a></li>
+        <li><a onclick="go('mais-vendidos')">Mais vendidos</a></li>
+        <li><a onclick="goCat('agua')">Água Vittari</a></li>
+        <li><a onclick="goCat('energetico')">+Power Energy</a></li>
+        <li><a onclick="goCat('sucos')">Suco Natural Health+</a></li>
+      </ul></div>
+      <div><h4>Institucional</h4><ul>
+        <li><a>Sobre a Natural Health</a></li>
+        <li><a onclick="go('revendedor')">Seja revendedor</a></li>
+        <li><a>Trabalhe conosco</a></li>
+        <li><a>Blog</a></li>
+      </ul></div>
+      <div><h4>Ajuda</h4><ul>
+        <li><a onclick="go('atendimento')">Central de atendimento</a></li>
+        <li><a onclick="go('trocas')">Trocas e devoluções</a></li>
+        <li><a onclick="go('atendimento')">Prazos de entrega</a></li>
+        <li><a onclick="go('privacidade')">Política de privacidade</a></li>
+        <li><a onclick="go('termos')">Termos de uso</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Natural Mais Indústria e Comércio, Importação e Exportação Ltda · Aparecida de Goiânia, GO</span>
+      <span>CNPJ 30.787.205/0001-20 · <a onclick="go('termos')">Termos de uso</a> · <a onclick="go('privacidade')">Privacidade</a> · <a onclick="go('trocas')">Trocas e devoluções</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SEARCH OVERLAY ============ -->
+<div class="search-panel" id="searchPanel">
+  <div class="wrap">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      <input placeholder="Buscar produtos, marcas e sabores..." id="searchInput">
+      <button class="close-x" onclick="closeSearch()"></button>
+    </div>
+    <div class="sugg-title" style="margin-top:22px">Buscas populares</div>
+    <div class="sugg">
+      <span class="chip">Água com gás</span><span class="chip">Energético zero</span>
+      <span class="chip">Suco sem açúcar adicionado</span><span class="chip">Caixa c/ 12</span><span class="chip">Vittari limão</span>
+    </div>
+    <div class="search-results">
+      <div class="sugg-title">Resultados</div>
+      <div class="grid cols-4" id="grid-search"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+<aside class="drawer" id="cart">
+  <div class="drawer-head"><h3 id="cart-title">Seu carrinho</h3><button class="close-x" onclick="closeCart()"></button></div>
+  <div class="progress-off" id="cart-progress"></div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="drawer-foot" id="cart-foot">
+    <div class="row"><span>Subtotal</span><span id="cart-subtotal">R$ 0,00</span></div>
+    <div class="row" id="cart-disc" style="display:none"><span class="d-nome"></span><span class="d-val"></span></div>
+    <div class="row"><span>Frete</span><span id="cart-shipping">Calculado no checkout</span></div>
+    <div class="row total"><span>Total</span><span id="cart-total">R$ 0,00</span></div>
+    <button class="btn block" style="margin-bottom:10px" onclick="goCheckout()">Finalizar compra</button>
+    <button class="btn ghost block sm" onclick="closeCart()">Continuar comprando</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<!-- ============ KIT PICKER MODAL ============ -->
+<div class="kitmodal" id="kitModal">
+  <div class="overlay on" style="position:absolute" onclick="closeKit()"></div>
+  <div class="kitmodal-card">
+    <div class="kitmodal-head">
+      <div class="t"><h3 class="h3">Escolha os produtos do seu fardo</h3><small id="kit-modal-sub">Selecione 6 itens · o mais barato sai grátis</small></div>
+      <button class="close-x" onclick="closeKit()"></button>
+    </div>
+    <div class="kitmodal-body">
+      <div class="kitpick-grid" id="kitpick-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ POPUP DE CONVERSÃO ============ -->
+<div class="copop" id="coPopup">
+  <div class="overlay on" style="position:absolute" onclick="closePopup()"></div>
+  <div class="copop-card">
+    <button class="close-x" style="position:absolute;top:14px;right:14px" onclick="closePopup()"></button>
+    <span class="eyebrow">Só pra você, agora</span>
+    <h3 class="h2">Ganhe <span style="white-space:nowrap">10% OFF</span> em todo o pedido</h3>
+    <p class="muted">Use o cupom abaixo antes de finalizar. Válido só nesta sessão.</p>
+    <div class="copop-code" onclick="usePopupCoupon()"><b>PRIMEIRA10</b><span>Aplicar cupom</span></div>
+    <button class="co-back" onclick="closePopup()" style="margin-top:6px">Não quero desconto</button>
+  </div>
+</div>
+
+<!-- ============ MODAL: REGRAS DA PROMOÇÃO ============ -->
+<div class="kitmodal" id="rulesModal">
+  <div class="overlay on" style="position:absolute" onclick="closeRules()"></div>
+  <div class="kitmodal-card">
+    <div class="kitmodal-head">
+      <div class="t"><h3 class="h3">Regras da promoção</h3><small>Leve 6, Pague 5 · Natural Health</small></div>
+      <button class="close-x" onclick="closeRules()"></button>
+    </div>
+    <div class="kitmodal-body">
+      <div class="rules-diagram" id="rules-diagram"></div>
+      <div class="rules-highlight">O produto de <b>menor valor</b> entre os 6 sai <b>100% grátis</b>, aplicado automaticamente no carrinho.</div>
+
+      <div class="rules-grid">
+        <div class="rule"><span class="rule-n">1</span><div><b>Monte um fardo de 6 itens</b><p>Combine à vontade entre Água Vittari, +Power Energy e Suco Natural Health+.</p></div></div>
+        <div class="rule"><span class="rule-n">2</span><div><b>O 6º item é grátis</b><p>O desconto equivale ao produto de menor preço do fardo.</p></div></div>
+        <div class="rule"><span class="rule-n">3</span><div><b>Sem limite de fardos</b><p>Quer levar 12 itens? São 2 fardos e 2 unidades grátis.</p></div></div>
+        <div class="rule"><span class="rule-n">4</span><div><b>Aplicado no carrinho</b><p>Nada de cupom: o desconto aparece sozinho ao fechar os 6 itens.</p></div></div>
+      </div>
+
+      <div class="rules-terms">
+        <b>Condições gerais</b>
+        <ul>
+          <li>Promoção válida por tempo limitado e enquanto durarem os estoques.</li>
+          <li>Não cumulativa com cupons nem com outros descontos: o carrinho recebe sempre o melhor desconto aplicável, nunca a soma de dois.</li>
+          <li>Válida para todas as marcas do site, salvo itens marcados como fora de promoção.</li>
+          <li>A Natural Health pode alterar ou encerrar a promoção a qualquer momento.</li>
+        </ul>
+      </div>
+
+      <button class="btn block sm" onclick="closeRules();openKit()">Montar meu kit agora</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: OBRIGADO (revendedor) ============ -->
+<div class="kitmodal" id="thanksModal">
+  <div class="overlay on" style="position:absolute" onclick="closeThanks()"></div>
+  <div class="kitmodal-card thanks-card">
+    <button class="close-x" style="position:absolute;top:14px;right:14px" onclick="closeThanks()"></button>
+    <div class="thanks-ic">✓</div>
+    <h3 class="h2">Cadastro enviado!</h3>
+    <p>Recebemos os seus dados. Um consultor da Natural Health entra em contato em até <b>1 dia útil</b> pelo WhatsApp ou e-mail com a tabela de preços e as condições da sua região.</p>
+    <div class="thanks-steps">
+      <span><b>1</b> Análise do cadastro</span>
+      <span><b>2</b> Contato do consultor</span>
+      <span><b>3</b> Primeiro pedido</span>
+    </div>
+    <button class="btn block" onclick="closeThanks()">Entendi, obrigado</button>
+    <small class="muted">Enquanto isso, aproveite para conhecer as linhas que você vai revender.</small>
+  </div>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-head">
+    <a class="brand brand-mob" onclick="go('home');closeMobile()" aria-label="Natural Health"><svg class="logo-svg" viewBox="0 0 1679 406" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M157.908 134.162C147.73 109.716 132.608 90.7991 114.869 77.121C86.9513 55.8762 52.3453 48.6006 18.3208 56.1672C12.2139 57.6224 6.10698 59.3685 3.05176e-05 61.6967L0.872416 63.7338C16.8668 103.895 46.2384 129.214 79.972 138.818C104.691 146.385 131.736 144.639 157.908 134.162Z" fill="#03591A"/> <path d="M160.525 128.051C150.347 111.171 145.403 93.4187 145.112 76.5393C144.822 50.3472 155.581 26.1922 175.356 8.73072C178.846 5.52946 182.917 2.61922 186.988 0L187.861 1.45512C205.018 28.8114 207.345 57.9138 198.33 82.6508C191.351 100.985 178.555 116.992 160.525 128.051Z" fill="#03591A"/> <path d="M135.224 158.899C202.982 158.899 257.653 213.321 257.653 281.42V368.437H225.664V365.526C203.272 390.263 170.993 405.688 134.933 405.688C65.7207 405.688 11.0491 350.975 11.3399 281.42C11.3399 213.612 66.0116 158.899 135.224 158.899ZM134.351 191.785C84.332 191.785 43.6194 232.237 43.9102 282.293C43.9103 332.349 84.3321 372.802 134.351 372.802C184.369 372.802 224.792 332.35 224.792 282.293C224.792 232.237 184.369 191.785 134.351 191.785Z" fill="#03591A"/> <path d="M342.54 202.48V94.8015H409.995C418.029 94.8015 424.707 96.4188 430.028 99.6533C435.454 102.888 439.523 107.114 442.236 112.331C444.949 117.547 446.305 123.182 446.305 129.233C446.305 136.12 444.688 142.276 441.453 147.702C438.219 153.023 433.837 157.301 428.307 160.535L449.435 202.48H410.621L394.188 166.326H377.128V202.48H342.54ZM377.128 142.38H401.387C404.1 142.38 406.395 141.337 408.273 139.25C410.151 137.059 411.091 134.19 411.091 130.642C411.091 128.451 410.673 126.521 409.838 124.851C409.004 123.182 407.856 121.878 406.395 120.939C404.935 119.895 403.265 119.373 401.387 119.373H377.128V142.38ZM503.711 204.358C493.799 204.358 485.191 202.845 477.887 199.819C470.687 196.689 465.105 191.941 461.14 185.577C457.28 179.212 455.35 171.074 455.35 161.161C455.35 151.458 457.28 143.424 461.14 137.059C465.001 130.694 470.374 125.947 477.261 122.817C484.252 119.582 492.442 117.965 501.833 117.965C511.745 117.965 520.144 119.53 527.031 122.66C534.021 125.686 539.343 130.381 542.995 136.746C546.647 143.111 548.472 151.249 548.472 161.161V166.483H486.495C486.495 170.239 487.017 173.473 488.06 176.186C489.208 178.899 490.981 180.986 493.381 182.447C495.885 183.803 499.12 184.481 503.085 184.481C505.902 184.481 508.25 184.168 510.128 183.542C512.11 182.916 513.675 182.081 514.823 181.038C516.075 179.89 516.962 178.586 517.484 177.125C518.005 175.665 518.266 174.099 518.266 172.43H548.472C548.472 177.334 547.533 181.768 545.655 185.733C543.777 189.698 540.96 193.089 537.204 195.906C533.448 198.619 528.752 200.706 523.118 202.167C517.588 203.627 511.119 204.358 503.711 204.358ZM486.651 151.771H517.014C517.014 149.58 516.701 147.649 516.075 145.98C515.449 144.206 514.51 142.745 513.258 141.598C512.11 140.346 510.649 139.407 508.876 138.781C507.206 138.155 505.276 137.841 503.085 137.841C499.642 137.841 496.772 138.415 494.477 139.563C492.181 140.711 490.408 142.328 489.156 144.415C487.903 146.397 487.069 148.849 486.651 151.771ZM594.641 204.358C587.338 204.358 581.077 202.793 575.86 199.663C570.643 196.428 566.626 191.628 563.809 185.264C561.096 178.795 559.74 170.708 559.74 161.005C559.74 151.406 561.096 143.424 563.809 137.059C566.626 130.694 570.643 125.947 575.86 122.817C581.077 119.582 587.338 117.965 594.641 117.965C597.563 117.965 600.38 118.33 603.093 119.06C605.91 119.686 608.466 120.73 610.762 122.191C613.162 123.547 615.144 125.321 616.709 127.512H617.805V89.0107H648.95V202.48H623.596L621.404 190.742H620.309C617.387 195.437 613.736 198.88 609.353 201.071C604.971 203.262 600.067 204.358 594.641 204.358ZM604.345 181.351C607.58 181.351 610.188 180.568 612.17 179.003C614.257 177.438 615.77 175.351 616.709 172.743C617.648 170.03 618.118 167.057 618.118 163.822V158.657C618.118 156.257 617.857 154.014 617.335 151.927C616.814 149.736 615.979 147.858 614.831 146.293C613.788 144.624 612.379 143.319 610.605 142.38C608.832 141.441 606.745 140.972 604.345 140.972C601.11 140.972 598.502 141.65 596.52 143.006C594.537 144.363 593.076 146.241 592.137 148.641C591.303 151.04 590.885 153.858 590.885 157.092V165.387C590.885 168.622 591.303 171.439 592.137 173.839C593.076 176.238 594.537 178.116 596.52 179.473C598.502 180.725 601.11 181.351 604.345 181.351ZM712.492 204.358C702.579 204.358 693.971 202.845 686.668 199.819C679.468 196.689 673.886 191.941 669.921 185.577C666.061 179.212 664.13 171.074 664.13 161.161C664.13 151.458 666.061 143.424 669.921 137.059C673.782 130.694 679.155 125.947 686.041 122.817C693.032 119.582 701.223 117.965 710.613 117.965C720.526 117.965 728.925 119.53 735.811 122.66C742.802 125.686 748.123 130.381 751.775 136.746C755.427 143.111 757.253 151.249 757.253 161.161V166.483H695.276C695.276 170.239 695.797 173.473 696.841 176.186C697.988 178.899 699.762 180.986 702.162 182.447C704.666 183.803 707.901 184.481 711.865 184.481C714.683 184.481 717.03 184.168 718.908 183.542C720.891 182.916 722.456 182.081 723.604 181.038C724.856 179.89 725.743 178.586 726.264 177.125C726.786 175.665 727.047 174.099 727.047 172.43H757.253C757.253 177.334 756.314 181.768 754.436 185.733C752.558 189.698 749.741 193.089 745.984 195.906C742.228 198.619 737.533 200.706 731.899 202.167C726.369 203.627 719.9 204.358 712.492 204.358ZM695.432 151.771H725.795C725.795 149.58 725.482 147.649 724.856 145.98C724.23 144.206 723.291 142.745 722.039 141.598C720.891 140.346 719.43 139.407 717.656 138.781C715.987 138.155 714.057 137.841 711.865 137.841C708.422 137.841 705.553 138.415 703.257 139.563C700.962 140.711 699.188 142.328 697.936 144.415C696.684 146.397 695.849 148.849 695.432 151.771ZM342.54 372.48V264.801H371.963L405.456 303.459C406.395 304.503 407.647 306.016 409.212 307.998C410.778 309.98 412.343 312.015 413.908 314.102C415.577 316.084 416.829 317.702 417.664 318.954L418.446 318.641C418.342 315.719 418.29 312.85 418.29 310.033C418.29 307.111 418.29 304.92 418.29 303.459V264.801H449.748V372.48H420.481L382.762 329.44C380.989 327.353 379.476 325.475 378.224 323.805C376.972 322.032 375.772 320.362 374.624 318.797L373.841 319.11C373.946 321.093 373.998 323.075 373.998 325.057C373.998 327.04 373.998 328.501 373.998 329.44V372.48H342.54ZM495.137 374.358C490.859 374.358 486.946 373.94 483.399 373.106C479.851 372.375 476.773 371.123 474.165 369.35C471.556 367.471 469.522 365.072 468.061 362.15C466.705 359.124 466.026 355.472 466.026 351.195C466.026 345.038 467.279 340.03 469.783 336.17C472.391 332.309 476.147 329.335 481.051 327.249C485.955 325.162 491.903 323.753 498.893 323.023C505.988 322.188 514.075 321.771 523.152 321.771V317.702C523.152 315.406 522.578 313.58 521.431 312.224C520.387 310.763 518.979 309.667 517.205 308.937C515.431 308.207 513.397 307.841 511.101 307.841C509.327 307.841 507.501 308.05 505.623 308.468C503.745 308.885 502.18 309.615 500.928 310.659C499.78 311.702 499.206 313.163 499.206 315.041V315.667H468.531C468.426 315.25 468.374 314.884 468.374 314.571C468.374 314.258 468.374 313.893 468.374 313.476C468.374 308.363 469.991 303.929 473.226 300.173C476.565 296.312 481.417 293.338 487.781 291.252C494.25 289.06 502.18 287.965 511.571 287.965C519.187 287.965 526.23 288.8 532.699 290.469C539.168 292.138 544.385 294.956 548.35 298.92C552.315 302.781 554.298 308.102 554.298 314.884V347.125C554.298 348.795 554.715 350.255 555.55 351.508C556.384 352.655 557.636 353.229 559.306 353.229H564.94V371.228C563.688 371.958 561.601 372.636 558.68 373.262C555.863 373.993 552.524 374.358 548.663 374.358C544.49 374.358 540.838 373.94 537.708 373.106C534.577 372.271 532.021 371.071 530.039 369.506C528.161 367.941 526.856 366.115 526.126 364.028H525.03C522.839 366.011 520.283 367.784 517.361 369.35C514.544 370.915 511.31 372.115 507.658 372.949C504.006 373.888 499.832 374.358 495.137 374.358ZM507.814 354.951C509.797 354.951 511.675 354.69 513.449 354.168C515.327 353.542 516.996 352.76 518.457 351.821C519.918 350.777 521.065 349.577 521.9 348.221C522.735 346.76 523.152 345.195 523.152 343.526V336.483C516.996 336.483 511.988 336.952 508.127 337.891C504.371 338.83 501.606 340.082 499.832 341.647C498.059 343.213 497.172 345.038 497.172 347.125C497.172 349.212 497.693 350.829 498.737 351.977C499.78 353.125 501.084 353.907 502.65 354.325C504.319 354.742 506.041 354.951 507.814 354.951ZM610.17 374.358C604.536 374.358 599.527 373.732 595.145 372.48C590.867 371.123 587.528 368.828 585.129 365.593C582.729 362.359 581.529 357.924 581.529 352.29V310.972H569.947V289.843H582.781L589.511 264.801H612.674V289.843H630.203V310.972H612.674V342.43C612.674 345.978 613.248 348.69 614.396 350.568C615.544 352.342 617.891 353.229 621.439 353.229H630.203V371.541C628.534 372.062 626.447 372.532 623.943 372.949C621.543 373.471 619.091 373.836 616.587 374.045C614.187 374.254 612.048 374.358 610.17 374.358ZM673.139 374.358C663.331 374.358 656.08 371.645 651.385 366.219C646.689 360.794 644.342 353.177 644.342 343.369V289.843H675.487V339.613C675.487 341.282 675.696 342.847 676.113 344.308C676.635 345.769 677.313 347.021 678.148 348.064C678.982 349.108 680.078 349.942 681.434 350.568C682.791 351.09 684.304 351.351 685.973 351.351C688.582 351.351 690.825 350.777 692.703 349.629C694.685 348.377 696.198 346.76 697.242 344.778C698.389 342.795 698.963 340.656 698.963 338.361V289.843H730.109V372.48H704.598L703.033 359.959H701.937C699.955 362.985 697.398 365.593 694.268 367.784C691.242 369.976 687.903 371.593 684.251 372.636C680.6 373.784 676.896 374.358 673.139 374.358ZM749.045 372.48V289.843H774.556L776.591 302.364H777.686C779.043 299.233 780.764 296.573 782.851 294.382C785.042 292.191 787.546 290.573 790.363 289.53C793.181 288.382 796.154 287.808 799.284 287.808C801.371 287.808 803.249 288.017 804.919 288.434C806.588 288.852 807.788 289.269 808.518 289.686V315.823H798.502C795.163 315.823 792.294 316.293 789.894 317.232C787.598 318.067 785.72 319.371 784.26 321.145C782.903 322.814 781.86 324.901 781.129 327.405C780.503 329.805 780.19 332.57 780.19 335.7V372.48H749.045ZM841.475 374.358C837.197 374.358 833.284 373.94 829.736 373.106C826.189 372.375 823.111 371.123 820.502 369.35C817.894 367.471 815.859 365.072 814.398 362.15C813.042 359.124 812.364 355.472 812.364 351.195C812.364 345.038 813.616 340.03 816.12 336.17C818.729 332.309 822.485 329.335 827.389 327.249C832.293 325.162 838.24 323.753 845.231 323.023C852.326 322.188 860.412 321.771 869.49 321.771V317.702C869.49 315.406 868.916 313.58 867.768 312.224C866.725 310.763 865.316 309.667 863.542 308.937C861.769 308.207 859.734 307.841 857.438 307.841C855.665 307.841 853.839 308.05 851.961 308.468C850.083 308.885 848.517 309.615 847.265 310.659C846.118 311.702 845.544 313.163 845.544 315.041V315.667H814.868C814.764 315.25 814.712 314.884 814.712 314.571C814.712 314.258 814.712 313.893 814.712 313.476C814.712 308.363 816.329 303.929 819.563 300.173C822.902 296.312 827.754 293.338 834.119 291.252C840.588 289.06 848.517 287.965 857.908 287.965C865.525 287.965 872.568 288.8 879.037 290.469C885.506 292.138 890.723 294.956 894.688 298.92C898.653 302.781 900.635 308.102 900.635 314.884V347.125C900.635 348.795 901.052 350.255 901.887 351.508C902.722 352.655 903.974 353.229 905.643 353.229H911.278V371.228C910.026 371.958 907.939 372.636 905.017 373.262C902.2 373.993 898.861 374.358 895.001 374.358C890.827 374.358 887.175 373.94 884.045 373.106C880.915 372.271 878.359 371.071 876.376 369.506C874.498 367.941 873.194 366.115 872.463 364.028H871.368C869.177 366.011 866.62 367.784 863.699 369.35C860.882 370.915 857.647 372.115 853.995 372.949C850.343 373.888 846.17 374.358 841.475 374.358ZM854.152 354.951C856.134 354.951 858.012 354.69 859.786 354.168C861.664 353.542 863.334 352.76 864.794 351.821C866.255 350.777 867.403 349.577 868.238 348.221C869.072 346.76 869.49 345.195 869.49 343.526V336.483C863.334 336.483 858.325 336.952 854.465 337.891C850.709 338.83 847.944 340.082 846.17 341.647C844.396 343.213 843.509 345.038 843.509 347.125C843.509 349.212 844.031 350.829 845.074 351.977C846.118 353.125 847.422 353.907 848.987 354.325C850.656 354.742 852.378 354.951 854.152 354.951ZM921.449 372.48V259.011H952.595V372.48H921.449ZM973.62 372.48V264.801H1008.21V304.085H1046.24V264.801H1080.83V372.48H1046.24V331.631H1008.21V372.48H973.62ZM1146.41 374.358C1136.49 374.358 1127.89 372.845 1120.58 369.819C1113.38 366.689 1107.8 361.941 1103.84 355.577C1099.98 349.212 1098.05 341.074 1098.05 331.161C1098.05 321.458 1099.98 313.424 1103.84 307.059C1107.7 300.694 1113.07 295.947 1119.96 292.817C1126.95 289.582 1135.14 287.965 1144.53 287.965C1154.44 287.965 1162.84 289.53 1169.73 292.66C1176.72 295.686 1182.04 300.381 1185.69 306.746C1189.34 313.111 1191.17 321.249 1191.17 331.161V336.483H1129.19C1129.19 340.239 1129.71 343.473 1130.76 346.186C1131.9 348.899 1133.68 350.986 1136.08 352.447C1138.58 353.803 1141.82 354.481 1145.78 354.481C1148.6 354.481 1150.95 354.168 1152.82 353.542C1154.81 352.916 1156.37 352.081 1157.52 351.038C1158.77 349.89 1159.66 348.586 1160.18 347.125C1160.7 345.665 1160.96 344.099 1160.96 342.43H1191.17C1191.17 347.334 1190.23 351.768 1188.35 355.733C1186.47 359.698 1183.66 363.089 1179.9 365.906C1176.14 368.619 1171.45 370.706 1165.81 372.167C1160.28 373.627 1153.81 374.358 1146.41 374.358ZM1129.35 321.771H1159.71C1159.71 319.58 1159.4 317.649 1158.77 315.98C1158.14 314.206 1157.21 312.745 1155.95 311.598C1154.81 310.346 1153.35 309.407 1151.57 308.781C1149.9 308.155 1147.97 307.841 1145.78 307.841C1142.34 307.841 1139.47 308.415 1137.17 309.563C1134.88 310.711 1133.1 312.328 1131.85 314.415C1130.6 316.397 1129.76 318.849 1129.35 321.771ZM1230.61 374.358C1226.33 374.358 1222.42 373.94 1218.87 373.106C1215.32 372.375 1212.24 371.123 1209.64 369.35C1207.03 367.471 1204.99 365.072 1203.53 362.15C1202.17 359.124 1201.5 355.472 1201.5 351.195C1201.5 345.038 1202.75 340.03 1205.25 336.17C1207.86 332.309 1211.62 329.335 1216.52 327.249C1221.43 325.162 1227.37 323.753 1234.36 323.023C1241.46 322.188 1249.55 321.771 1258.62 321.771V317.702C1258.62 315.406 1258.05 313.58 1256.9 312.224C1255.86 310.763 1254.45 309.667 1252.68 308.937C1250.9 308.207 1248.87 307.841 1246.57 307.841C1244.8 307.841 1242.97 308.05 1241.09 308.468C1239.22 308.885 1237.65 309.615 1236.4 310.659C1235.25 311.702 1234.68 313.163 1234.68 315.041V315.667H1204C1203.9 315.25 1203.84 314.884 1203.84 314.571C1203.84 314.258 1203.84 313.893 1203.84 313.476C1203.84 308.363 1205.46 303.929 1208.7 300.173C1212.04 296.312 1216.89 293.338 1223.25 291.252C1229.72 289.06 1237.65 287.965 1247.04 287.965C1254.66 287.965 1261.7 288.8 1268.17 290.469C1274.64 292.138 1279.86 294.956 1283.82 298.92C1287.79 302.781 1289.77 308.102 1289.77 314.884V347.125C1289.77 348.795 1290.19 350.255 1291.02 351.508C1291.85 352.655 1293.11 353.229 1294.78 353.229H1300.41V371.228C1299.16 371.958 1297.07 372.636 1294.15 373.262C1291.33 373.993 1287.99 374.358 1284.13 374.358C1279.96 374.358 1276.31 373.94 1273.18 373.106C1270.05 372.271 1267.49 371.071 1265.51 369.506C1263.63 367.941 1262.33 366.115 1261.6 364.028H1260.5C1258.31 366.011 1255.75 367.784 1252.83 369.35C1250.01 370.915 1246.78 372.115 1243.13 372.949C1239.48 373.888 1235.3 374.358 1230.61 374.358ZM1243.28 354.951C1245.27 354.951 1247.15 354.69 1248.92 354.168C1250.8 353.542 1252.47 352.76 1253.93 351.821C1255.39 350.777 1256.54 349.577 1257.37 348.221C1258.21 346.76 1258.62 345.195 1258.62 343.526V336.483C1252.47 336.483 1247.46 336.952 1243.6 337.891C1239.84 338.83 1237.08 340.082 1235.3 341.647C1233.53 343.213 1232.64 345.038 1232.64 347.125C1232.64 349.212 1233.16 350.829 1234.21 351.977C1235.25 353.125 1236.55 353.907 1238.12 354.325C1239.79 354.742 1241.51 354.951 1243.28 354.951ZM1310.58 372.48V259.011H1341.73V372.48H1310.58ZM1395.62 374.358C1389.99 374.358 1384.98 373.732 1380.59 372.48C1376.32 371.123 1372.98 368.828 1370.58 365.593C1368.18 362.359 1366.98 357.924 1366.98 352.29V310.972H1355.4V289.843H1368.23L1374.96 264.801H1398.12V289.843H1415.65V310.972H1398.12V342.43C1398.12 345.978 1398.7 348.69 1399.85 350.568C1400.99 352.342 1403.34 353.229 1406.89 353.229H1415.65V371.541C1413.98 372.062 1411.9 372.532 1409.39 372.949C1406.99 373.471 1404.54 373.836 1402.04 374.045C1399.64 374.254 1397.5 374.358 1395.62 374.358ZM1430.1 372.48V259.011H1461.25V298.451H1462.34C1464.12 296.155 1466.36 294.277 1469.07 292.817C1471.79 291.252 1474.71 290.052 1477.84 289.217C1480.97 288.382 1484.05 287.965 1487.07 287.965C1493.65 287.965 1499.02 289.217 1503.19 291.721C1507.47 294.121 1510.65 297.616 1512.74 302.207C1514.83 306.798 1515.87 312.38 1515.87 318.954V372.48H1484.73V322.71C1484.73 320.936 1484.46 319.371 1483.94 318.015C1483.53 316.554 1482.9 315.302 1482.06 314.258C1481.23 313.215 1480.13 312.432 1478.78 311.911C1477.53 311.285 1476.01 310.972 1474.24 310.972C1471.63 310.972 1469.34 311.598 1467.35 312.85C1465.47 313.998 1463.96 315.563 1462.81 317.545C1461.77 319.423 1461.25 321.562 1461.25 323.962V372.48H1430.1Z" fill="black"/> <path d="M1566.42 372.48V341.491H1535.43V320.832H1566.42V289.843H1587.08V320.832H1618.07V341.491H1587.08V372.48H1566.42Z" fill="#FF9A0C"/> </svg></a>
+    <button class="close-x" onclick="closeMobile()"></button>
+  </div>
+  <a onclick="go('home');closeMobile()">Início</a>
+  <a onclick="go('oferta');closeMobile()">Leve 6, Pague 5</a>
+  <a onclick="go('mais-vendidos');closeMobile()">Mais Vendidos</a>
+  <a onclick="goCat('agua');closeMobile()">Água Vittari</a>
+  <a onclick="goCat('energetico');closeMobile()">+Power Energy</a>
+  <a onclick="goCat('sucos');closeMobile()">Suco Natural Health+</a>
+  <a onclick="go('revendedor');closeMobile()">Seja Revendedor Oficial</a>
+  <a onclick="openAccount();closeMobile()">Minha conta</a>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Natural Health Store",
+  "settings": [],
+  "presets": [{"name":"Natural Health Store"}]
+}
+{% endschema %}
