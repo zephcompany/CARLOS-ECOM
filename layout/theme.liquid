@@ -14,88 +14,13 @@
   {{ content_for_header }}
   {{ 'natural-health.css' | asset_url | stylesheet_tag }}
   <style>
-    /* CART HOTFIX v2 */
+    /* Evita piscar o contador antigo antes da leitura do carrinho real. */
     #cart-count{display:none}
-    .cqty{
-      display:inline-flex!important;
-      align-items:center!important;
-      gap:0!important;
-      border:1px solid var(--line)!important;
-      border-radius:var(--r)!important;
-      margin-top:8px!important;
-      overflow:hidden!important;
-      background:#fff!important;
-      vertical-align:middle!important;
-    }
-    .cqty button{
-      width:32px!important;
-      height:30px!important;
-      display:flex!important;
-      align-items:center!important;
-      justify-content:center!important;
-      padding:0!important;
-      margin:0!important;
-      line-height:1!important;
-      font-size:17px!important;
-      color:var(--ink)!important;
-      background:#fff!important;
-    }
-    .cqty button:hover{background:var(--fill)!important}
-    .cqty span{
-      width:34px!important;
-      height:30px!important;
-      display:flex!important;
-      align-items:center!important;
-      justify-content:center!important;
-      margin:0!important;
-      padding:0!important;
-      border-left:1px solid var(--line)!important;
-      border-right:1px solid var(--line)!important;
-      font-size:13px!important;
-      font-weight:700!important;
-      line-height:1!important;
-    }
   </style>
 </head>
 <body>
   {{ content_for_layout }}
   <script src="{{ 'natural-health.js' | asset_url }}" defer></script>
-  <script>
-    /* CART / BUY NOW HOTFIX v2 - inline para garantir aplicação no tema ativo */
-    (function(){
-      function root(){
-        return (window.Shopify && Shopify.routes && Shopify.routes.root) || '/';
-      }
-      function findProduct(id){
-        var list=window.NH_SHOPIFY_PRODUCTS||[];
-        for(var i=0;i<list.length;i++){
-          if(String(list[i].id)===String(id))return list[i];
-        }
-        return null;
-      }
-      function applyHotfix(){
-        var badge=document.getElementById('cart-count');
-        if(badge){
-          badge.style.display='none';
-          fetch(root()+'cart.js',{credentials:'same-origin'})
-            .then(function(r){return r.json();})
-            .then(function(cart){
-              var count=Number(cart.item_count||0);
-              badge.textContent=count;
-              badge.style.display=count>0?'flex':'none';
-            }).catch(function(){});
-        }
-
-        window.buyNow=function(id,qty){
-          qty=Math.max(1,Number(qty)||1);
-          var p=findProduct(id);
-          if(!p || !p.variantId)return;
-          window.location.href=root()+'cart/'+encodeURIComponent(p.variantId)+':'+qty;
-        };
-      }
-      document.addEventListener('DOMContentLoaded',applyHotfix);
-      window.addEventListener('load',applyHotfix);
-    })();
-  </script>
+  <script src="{{ 'nh-hotfix.js' | asset_url }}" defer></script>
 </body>
 </html>
