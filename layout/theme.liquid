@@ -13,9 +13,51 @@
   {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
   {{ content_for_header }}
   {{ 'natural-health.css' | asset_url | stylesheet_tag }}
+  <style>
+    /* Hotfix: evita o contador fake "3" antes de sincronizar com o carrinho Shopify. */
+    #cart-count{display:none}
+
+    /* Hotfix: seletor de quantidade do drawer. */
+    .cqty{
+      display:inline-flex;
+      align-items:center;
+      gap:0;
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      margin-top:8px;
+      overflow:hidden;
+      background:#fff;
+    }
+    .cqty button{
+      width:30px;
+      height:28px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:0;
+      line-height:1;
+      font-size:16px;
+      color:var(--ink);
+      background:#fff;
+    }
+    .cqty button:hover{background:var(--fill)}
+    .cqty span{
+      width:32px;
+      height:28px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-left:1px solid var(--line);
+      border-right:1px solid var(--line);
+      font-size:13px;
+      font-weight:700;
+      line-height:1;
+    }
+  </style>
 </head>
 <body>
   {{ content_for_layout }}
   <script src="{{ 'natural-health.js' | asset_url }}" defer></script>
+  <script src="{{ 'nh-hotfix.js' | asset_url }}" defer></script>
 </body>
 </html>
