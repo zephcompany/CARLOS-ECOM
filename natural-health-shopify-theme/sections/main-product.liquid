@@ -1,0 +1,22 @@
+<section class="shopify-system-page">
+  <a href="{{ routes.root_url }}" style="display:inline-block;margin-bottom:24px">← Voltar à loja</a>
+  <div class="shopify-product-page">
+    <div class="media">
+      {% if product.featured_image %}{{ product.featured_image | image_url: width: 1400 | image_tag: loading: 'eager', alt: product.title }}{% endif %}
+    </div>
+    <div class="info">
+      <span class="eyebrow">{{ product.type }}</span>
+      <h1 class="h1">{{ product.title }}</h1>
+      <div class="price">{{ product.selected_or_first_available_variant.price | money }} {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}<s style="font-size:16px;color:#8c8c8c">{{ product.selected_or_first_available_variant.compare_at_price | money }}</s>{% endif %}</div>
+      <div class="lead">{{ product.description }}</div>
+      {% form 'product', product %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <label for="Quantity-{{ section.id }}" class="eyebrow">Quantidade</label>
+        <input id="Quantity-{{ section.id }}" name="quantity" type="number" min="1" value="1" style="height:46px;width:90px;border:1px solid #111;padding:0 12px;margin:8px 0 14px">
+        <button class="btn block" type="submit" {% unless product.available %}disabled{% endunless %}>{% if product.available %}Adicionar ao carrinho{% else %}Esgotado{% endif %}</button>
+      {% endform %}
+      <a class="btn ghost block" href="{{ routes.cart_url }}">Ver carrinho</a>
+    </div>
+  </div>
+</section>
+{% schema %}{"name":"Produto","settings":[]}{% endschema %}
