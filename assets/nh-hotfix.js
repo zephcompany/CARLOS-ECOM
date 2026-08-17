@@ -3,6 +3,14 @@
     return (window.Shopify && Shopify.routes && Shopify.routes.root) || '/';
   }
 
+  function findProduct(id){
+    var list=window.NH_SHOPIFY_PRODUCTS||[];
+    for(var i=0;i<list.length;i++){
+      if(String(list[i].id)===String(id))return list[i];
+    }
+    return null;
+  }
+
   function refreshCartBadge(){
     var badge=document.getElementById('cart-count');
     if(!badge)return;
@@ -20,9 +28,11 @@
   function applyOverrides(){
     refreshCartBadge();
 
+    /* Comprar Agora: vai direto ao checkout somente com o produto/quantidade escolhidos,
+       sem abrir nem depender do drawer do carrinho. */
     window.buyNow=function(id,qty){
       qty=Math.max(1,Number(qty)||1);
-      var p=(typeof window.byId==='function')?window.byId(id):null;
+      var p=findProduct(id);
       if(!p || !p.variantId)return;
       window.location.href=root()+'cart/'+encodeURIComponent(p.variantId)+':'+qty+'?checkout';
     };
